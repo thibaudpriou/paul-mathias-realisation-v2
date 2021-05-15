@@ -4,6 +4,7 @@ body {
 	font-size: 14px;
 	line-height: 1.5;
 	color: #333;
+	background-color: #ececec;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -34,3 +35,120 @@ code {
 		font-size: 16px;
 	}
 }
+
+@font-face {
+	font-family: 'SourceSansPro-BlackIt';
+	src: url('../fonts/SourceSansPro-BlackIt.eot');
+	src: url('../fonts/SourceSansPro-BlackIt.woff2') format('woff2'),
+		url('../fonts/SourceSansPro-BlackIt.woff') format('woff'),
+		url('../fonts/SourceSansPro-BlackIt.ttf') format('truetype'),
+		url('../fonts/SourceSansPro-BlackIt.svg#SourceSansPro-BlackIt')
+			format('svg'),
+		url('../fonts/SourceSansPro-BlackIt.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SourceSansPro-Semibold';
+	src: url('../fonts/SourceSansPro-Semibold.eot');
+	src: url('../fonts/SourceSansPro-Semibold.woff2') format('woff2'),
+		url('../fonts/SourceSansPro-Semibold.woff') format('woff'),
+		url('../fonts/SourceSansPro-Semibold.ttf') format('truetype'),
+		url('../fonts/SourceSansPro-Semibold.svg#SourceSansPro-Semibold')
+			format('svg'),
+		url('../fonts/SourceSansPro-Semibold.eot?#iefix')
+			format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SourceSansPro-LightIt';
+	src: url('../fonts/SourceSansPro-LightIt.eot');
+	src: url('../fonts/SourceSansPro-LightIt.woff2') format('woff2'),
+		url('../fonts/SourceSansPro-LightIt.woff') format('woff'),
+		url('../fonts/SourceSansPro-LightIt.ttf') format('truetype'),
+		url('../fonts/SourceSansPro-LightIt.svg#SourceSansPro-LightIt')
+			format('svg'),
+		url('../fonts/SourceSansPro-LightIt.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SourceSansPro-ExtraLight';
+	src: url('../fonts/SourceSansPro-ExtraLight.eot');
+	src: url('../fonts/SourceSansPro-ExtraLight.woff2') format('woff2'),
+		url('../fonts/SourceSansPro-ExtraLight.woff') format('woff'),
+		url('../fonts/SourceSansPro-ExtraLight.ttf') format('truetype'),
+		url('../fonts/SourceSansPro-ExtraLight.svg#SourceSansPro-ExtraLight')
+			format('svg'),
+		url('../fonts/SourceSansPro-ExtraLight.eot?#iefix')
+			format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SourceSansPro-Regular';
+	src: url('../fonts/SourceSansPro-Regular.eot');
+	src: url('../fonts/SourceSansPro-Regular.woff2') format('woff2'),
+		url('../fonts/SourceSansPro-Regular.woff') format('woff'),
+		url('../fonts/SourceSansPro-Regular.ttf') format('truetype'),
+		url('../fonts/SourceSansPro-Regular.svg#SourceSansPro-Regular')
+			format('svg'),
+		url('../fonts/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* -- FADE IN -- */
+@keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @-moz-keyframes fadein {
+    /* Firefox < 16 */
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes fadein {
+    /* Safari, Chrome and Opera > 12.1 */
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @-ms-keyframes fadein {
+    /* Internet Explorer */
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @-o-keyframes fadein {
+    /* Opera < 12.1 */
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
