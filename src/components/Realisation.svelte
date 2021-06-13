@@ -36,6 +36,14 @@
     embla = EmblaCarousel(emblaNode as HTMLElement, options);
     embla.on("init", updateControls);
     embla.on("select", updateControls);
+
+    // lazy-loading of hidden images
+    setTimeout(() => {
+      for (const img of emblaNode.querySelectorAll('.lazy-loaded') as HTMLElement[]) {
+       img.setAttribute('src', img.getAttribute('data-src'))
+       img.setAttribute('srcset', img.getAttribute('data-srcset'))
+      }
+    }, 1000)
   });
 
   function scrollPrev() {
@@ -72,10 +80,15 @@
     <div class="embla__container">
       {#each samples as sample, i}
         <div class="embla__slide">
+          <!-- hidden carousel images's loading is deferred (custom JS coupled w/ native lazy-loading) -->
           <img
             class="img"
-            src={sample.src}
-            srcset={sample.srcset}
+            class:lazy-loaded={i !== 0}
+            src={i === 0 ? sample.src : ""}
+            srcset={i === 0 ? sample.srcset : ""}
+            data-src={sample.src}
+            data-srcset={sample.srcset}
+            loading="lazy"
             alt={sample.alt}
           />
         </div>
