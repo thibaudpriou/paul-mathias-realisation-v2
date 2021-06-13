@@ -118,6 +118,8 @@
   .container {
     position: relative;
     font-family: 'SourceSansPro-BlackIt';
+    max-height: 100vh;
+    overflow: hidden;
   }
 
   .description {
@@ -178,11 +180,11 @@
   .embla__slide {
     position: relative;
     flex: 0 0 100%;
+    font-size: 0; /* to remove gap under element caused by line-breaks or whitespaces */
   }
 
   .img {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
   }
 
   .control {

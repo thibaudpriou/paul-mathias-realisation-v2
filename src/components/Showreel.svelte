@@ -28,7 +28,9 @@
 
 <style>
   .demo {
-    width: 100%;
+    min-width: 100%;
     display: block; /* to remove gap under element caused by line-breaks or whitespaces */
+    height: 100vh;
+    object-fit: cover;
   }
 </style>
