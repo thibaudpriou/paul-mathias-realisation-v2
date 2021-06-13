@@ -67,6 +67,7 @@
   .link {
     position: relative;
     display: inline-block;
+    white-space: nowrap;
   }
 
   .link:after {
