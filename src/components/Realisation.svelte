@@ -210,7 +210,7 @@
 
   .indicators {
     position: absolute;
-    bottom: 2em;
+    bottom: 2.5vw;
     width: 100%;
     z-index: 1;
     display: flex;
@@ -221,9 +221,8 @@
 
   .indicator {
     cursor: pointer;
-    margin-left: 3em;
-    margin-right: 3em;
-    width: 8em;
+    margin: 0 3vw;
+    width: 10vw;
     background: none;
     border: none;
     height: 0.45em;
