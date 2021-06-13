@@ -80,10 +80,9 @@
     <div class="embla__container">
       {#each samples as sample, i}
         <div class="embla__slide">
-          <!-- hidden carousel images's loading is deferred (custom JS coupled w/ native lazy-loading) -->
+          <!-- hidden carousel images's loading is deferred -->
           <img
             class="img"
-            class:lazy-loaded={i !== 0}
             src={i === 0 ? sample.src : ""}
             srcset={i === 0 ? sample.srcset : ""}
             data-src={sample.src}
