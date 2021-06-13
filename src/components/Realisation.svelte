@@ -32,7 +32,7 @@
   let activeSampleIdx: number = 0;
 
   onMount(() => {
-    const options = { loop: false, speed: 8 };
+    const options = { loop: false, speed: 8, dragFree: true };
     embla = EmblaCarousel(emblaNode as HTMLElement, options);
     embla.on("init", updateControls);
     embla.on("select", updateControls);
