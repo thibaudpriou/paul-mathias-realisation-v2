@@ -48,6 +48,8 @@
     display: flex;
     align-items: center;
     background-color: rgba(255,255,255,.25);
+
+    transition: background-color .5s;
   }
 
   .container {
