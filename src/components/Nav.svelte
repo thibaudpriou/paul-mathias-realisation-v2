@@ -3,11 +3,12 @@
   import NavDivider from "../components/NavDivider.svelte";
 
   export let segment: string;
+  export let blackVariant: boolean;
   export let categories: ICategory[];
 </script>
 
 <nav
-  class:nav-black={segment === "about"}
+  class:nav-black={blackVariant}
 >
   <a
     class="link logo-link"
@@ -46,6 +47,7 @@
     min-height: 3.3em;
     display: flex;
     align-items: center;
+    background-color: rgba(255,255,255,.25);
   }
 
   .container {
@@ -125,16 +127,16 @@
 
   /* Black variant */
   .nav-black {
-    background-color: rgba(0,0,0,.25);
     color: white;
     fill: white;
+    background-color: rgba(0,0,0,.25);
   }
 
   .nav-black .directors {
     border-color: white;
   }
 
-  .nav-black  .link:after {
+  .nav-black .link:after {
     background: white;
   }
 </style>

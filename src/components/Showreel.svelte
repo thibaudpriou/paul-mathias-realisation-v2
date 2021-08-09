@@ -14,7 +14,7 @@
     src="http://cdn.dashjs.org/latest/dash.all.min.js"></script>
 </svelte:head>
 
-<div class="container" bind:this={container}>
+<div class="container" bind:this={container} id="showreel">
   <!-- TODO fix video url -->
   <video
     data-dashjs-player

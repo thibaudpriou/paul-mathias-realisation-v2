@@ -1,22 +1,55 @@
 <script context="module" lang="ts">
-  import categories from '../config';
+  import categories from "../config";
 </script>
 
 <script lang="ts">
   import Footer from "../components/Footer.svelte";
-import Nav from "../components/Nav.svelte";
+  import Nav from "../components/Nav.svelte";
 
   export let segment: string;
+  let blackNavVariant = false;
+
+  $: {
+    // reset "blackNavVariant" data on "segment" prop change
+    blackNavVariant = (segment === undefined);
+  }
+
+  let lastKnownScrollPosition = 0;
+  let ticking = false;
+
+  function adaptNavColor(scrollPos) {
+    if (segment !== undefined) return;
+
+    const showreel: HTMLElement = document.getElementById("showreel");
+    if (!showreel) return;
+
+    blackNavVariant = (scrollPos <= showreel.offsetHeight);
+  }
+
+  function onScroll() {
+    lastKnownScrollPosition = window.scrollY;
+
+    if (!ticking) {
+      window.requestAnimationFrame(function () {
+        adaptNavColor(lastKnownScrollPosition);
+        ticking = false;
+      });
+
+      ticking = true;
+    }
+  }
 </script>
 
+<svelte:window on:scroll={onScroll} />
+
 <header class="navbar-container">
-  <Nav {segment} {categories} />
+  <Nav {segment} blackVariant={blackNavVariant} {categories} />
 </header>
 <main>
   <slot />
 </main>
 <footer>
-  <Footer/>
+  <Footer />
 </footer>
 
 <style>
@@ -30,11 +63,9 @@ import Nav from "../components/Nav.svelte";
   .navbar-container {
     position: fixed;
     top: 0px;
-    z-index:1;
-    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
     color: black;
     width: 100%;
-
 
     -webkit-animation: slidedown 1s ease 1s;
     -moz-animation: slidedown 1s ease 1s;
@@ -59,43 +90,43 @@ import Nav from "../components/Nav.svelte";
       transform: translateY(-100%);
     }
     to {
-      transform: translateY(0); 
+      transform: translateY(0);
     }
   }
 
   @-moz-keyframes slidedown {
     from {
-      transform: translateY(-100%); 
+      transform: translateY(-100%);
     }
     to {
-      transform: translateY(0); 
+      transform: translateY(0);
     }
   }
 
   @-webkit-keyframes slidedown {
     from {
-      transform: translateY(-100%); 
+      transform: translateY(-100%);
     }
     to {
-      transform: translateY(0); 
+      transform: translateY(0);
     }
   }
 
   @-ms-keyframes slidedown {
     from {
-      transform: translateY(-100%); 
+      transform: translateY(-100%);
     }
     to {
-      transform: translateY(0); 
+      transform: translateY(0);
     }
   }
 
   @-o-keyframes slidedown {
     from {
-      transform: translateY(-100%); 
+      transform: translateY(-100%);
     }
     to {
-      transform: translateY(0); 
+      transform: translateY(0);
     }
   }
 </style>
