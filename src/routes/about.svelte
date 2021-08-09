@@ -73,11 +73,11 @@
     display: flex;
     min-width: 40%;
 
-    -webkit-animation: fadein 1.5s ease;
-    -moz-animation: fadein 1.5s ease;
-    -ms-animation: fadein 1.5s ease;
-    -o-animation: fadein 1.5s ease;
-    animation: fadein 1.5s ease;
+    -webkit-animation: fadein 1s ease;
+    -moz-animation: fadein 1s ease;
+    -ms-animation: fadein 1s ease;
+    -o-animation: fadein 1s ease;
+    animation: fadein 1s ease;
     -webkit-animation-fill-mode: both;
     -moz-animation-fill-mode: both;
     -ms-animation-fill-mode: both;
@@ -112,11 +112,11 @@
     margin: 0;
     margin-top: 1em;
 
-    -webkit-animation: fadein 1s ease 1.5s;
-    -moz-animation: fadein 1s ease 1.5s;
-    -ms-animation: fadein 1s ease 1.5s;
-    -o-animation: fadein 1s ease 1.5s;
-    animation: fadein 1s ease 1.5s;
+    -webkit-animation: fadein .5s ease 1s;
+    -moz-animation: fadein .5s ease 1s;
+    -ms-animation: fadein .5s ease 1s;
+    -o-animation: fadein .5s ease 1s;
+    animation: fadein .5s ease 1s;
     -webkit-animation-fill-mode: both;
     -moz-animation-fill-mode: both;
     -ms-animation-fill-mode: both;

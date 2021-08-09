@@ -14,11 +14,11 @@
     font-family: "SourceSansPro-Regular";
     color: black;
     width: 100%;
-    -webkit-animation: fadein 1s ease 2.5s;
-    -moz-animation: fadein 1s ease 2.5s;
-    -ms-animation: fadein 1s ease 2.5s;
-    -o-animation: fadein 1s ease 2.5s;
-    animation: fadein 1s ease 2.5s;
+    -webkit-animation: fadein 1s ease 2s;
+    -moz-animation: fadein 1s ease 2s;
+    -ms-animation: fadein 1s ease 2s;
+    -o-animation: fadein 1s ease 2s;
+    animation: fadein 1s ease 2s;
     -webkit-animation-fill-mode: both;
     -moz-animation-fill-mode: both;
     -ms-animation-fill-mode: both;
