@@ -7,7 +7,7 @@
     .sort((r1, r2) => r1.globalRank - r2.globalRank);
 </script>
 
-<script>
+<script lang="ts">
   import Realisation from "../components/Realisation.svelte";
   import Showreel from "../components/Showreel.svelte";
 </script>
