@@ -11,8 +11,6 @@
 </script>
 
 <script lang="ts">
-import Contact from "../components/Footer.svelte";
-
   export let category: ICategory;
   $: realisations = category.realisations.sort((r1, r2) => r1.rank - r2.rank);
 </script>

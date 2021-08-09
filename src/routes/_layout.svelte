@@ -5,6 +5,7 @@
 <script lang="ts">
   import Footer from "../components/Footer.svelte";
   import Nav from "../components/Nav.svelte";
+  import Page from '../components/Page.svelte';
 
   export let segment: string;
   let blackNavVariant = false;
@@ -46,7 +47,9 @@
   <Nav {segment} blackVariant={blackNavVariant} {categories} />
 </header>
 <main>
-  <slot />
+  <Page refresh={segment} transitionDuration={200}>
+    <slot/>
+  </Page>
 </main>
 <footer>
   <Footer />
