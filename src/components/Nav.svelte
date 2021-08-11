@@ -19,6 +19,14 @@
   </a>
   <span class="directors">Directors</span>
   <ul class="container">
+    <li>
+      <a
+        class="link"
+        aria-current={segment === "all" ? "page" : undefined}
+        href="all">Tout voir</a
+      >
+    </li>
+    <li class="nav-divider"><NavDivider /></li>
     {#each categories.sort((c1, c2) => c1.rank - c2.rank) as category}
       <li>
         <a
