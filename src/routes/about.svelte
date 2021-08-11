@@ -1,3 +1,10 @@
+<script lang="ts">
+  const FOUNDING_YEAR = 2016;
+
+  let foundingAge: number = new Date().getFullYear() - FOUNDING_YEAR;
+
+
+</script>
 
 <svelte:head>
   <title>Paul & Mathias - À Propos</title>
@@ -38,15 +45,15 @@
       <hr class="hr-sizein" />
       <p class="about-text">
         Rencontrés durant nos études, cela fait un peu
-        <strong>plus de 4 ans</strong> que nous réalisons ensemble divers
-        projets audiovisuels. Motivés par les mêmes références, nous aimons
-        créer des <strong>univers atypiques</strong> dans lesquels évoluent des
-        personnages <strong>hauts en couleur</strong>. Notre passion pour la
-        technique nous amène à nous intéresser à
-        <strong>des méthodes de réalisation dans l'air du temps</strong>. Nous
-        mettons notre expérience et nos compétences en exergue afin d’atteindre
-        notre objectif principal&nbsp;:
-        <strong>créer de l’émotion</strong> dans le cœur de nos spectateurs.
+        <strong>plus de {foundingAge} ans</strong> que Paul Gojecki et Mathias Priou réalisent ensemble
+        divers projets audiovisuels. Motivés par les mêmes références, ils
+        aiment créer des <strong>univers atypiques</strong> dans lesquels
+        évoluent des personnages <strong>hauts en couleur</strong>. Leur
+        passion pour la technique les amène à s'intéresser à
+        <strong>des méthodes de réalisation dans l'air du temps</strong>. Ils
+        mettent leur expérience et leurs compétences en exergue afin d’atteindre
+        leur objectif principal&nbsp;:
+        <strong>créer de l’émotion</strong> dans le cœur des spectateurs.
       </p>
     </div>
   </section>
@@ -112,11 +119,11 @@
     margin: 0;
     margin-top: 1em;
 
-    -webkit-animation: fadein .5s ease 1s;
-    -moz-animation: fadein .5s ease 1s;
-    -ms-animation: fadein .5s ease 1s;
-    -o-animation: fadein .5s ease 1s;
-    animation: fadein .5s ease 1s;
+    -webkit-animation: fadein 0.5s ease 1s;
+    -moz-animation: fadein 0.5s ease 1s;
+    -ms-animation: fadein 0.5s ease 1s;
+    -o-animation: fadein 0.5s ease 1s;
+    animation: fadein 0.5s ease 1s;
     -webkit-animation-fill-mode: both;
     -moz-animation-fill-mode: both;
     -ms-animation-fill-mode: both;
