@@ -20,6 +20,9 @@
   .transition-container {
     width: 100%;
     min-height: 100vh;
-    background-color: #ececec;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
   }
 </style>

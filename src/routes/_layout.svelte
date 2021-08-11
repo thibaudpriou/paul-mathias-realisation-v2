@@ -5,14 +5,14 @@
 <script lang="ts">
   import Footer from "../components/Footer.svelte";
   import Nav from "../components/Nav.svelte";
-  import Page from '../components/Page.svelte';
+  import Page from "../components/Page.svelte";
 
   export let segment: string;
   let blackNavVariant = false;
 
   $: {
     // reset "blackNavVariant" data on "segment" prop change
-    blackNavVariant = (segment === undefined);
+    blackNavVariant = segment === undefined;
   }
 
   let lastKnownScrollPosition = 0;
@@ -24,7 +24,7 @@
     const showreel: HTMLElement = document.getElementById("showreel");
     if (!showreel) return;
 
-    blackNavVariant = (scrollPos <= showreel.offsetHeight);
+    blackNavVariant = scrollPos <= showreel.offsetHeight;
   }
 
   function onScroll() {
@@ -46,14 +46,14 @@
 <header class="navbar-container">
   <Nav {segment} blackVariant={blackNavVariant} {categories} />
 </header>
-<main>
-  <Page refresh={segment} transitionDuration={30}>
-    <slot/>
-  </Page>
-</main>
-<footer>
-  <Footer />
-</footer>
+<Page refresh={segment} transitionDuration={10}>
+  <main class:inverted={segment === "about"}>
+    <slot />
+  </main>
+  <footer class:inverted={segment === "about"}>
+    <Footer />
+  </footer>
+</Page>
 
 <style>
   main {
@@ -63,10 +63,14 @@
     width: 100%;
   }
 
+  .inverted {
+    background-color: #ececec;
+  }
+
   .navbar-container {
     position: fixed;
     top: 0px;
-    z-index: 1;
+    z-index: 2;
     color: black;
     width: 100%;
 
