@@ -47,7 +47,7 @@
   <Nav {segment} blackVariant={blackNavVariant} {categories} />
 </header>
 <main>
-  <Page refresh={segment} transitionDuration={200}>
+  <Page refresh={segment} transitionDuration={30}>
     <slot/>
   </Page>
 </main>
