@@ -39,6 +39,7 @@
     align-items: center;
     color: white;
     opacity: 0.9;
+    font-size: clamp(.5em, 1.25vw, 1.25em);
   }
   
   .description > * {
@@ -50,7 +51,7 @@
   }
 
   .title {
-    font-size: 3vw;
+    font-size: 3em;
     text-align: center;
     font-weight: 700;
     font-style: italic;
@@ -58,13 +59,13 @@
   }
 
   .subtitle {
-    font-size: 1.5vw;
+    font-size: 1.5em;
   }
 
   .seeVideoLink {
     text-decoration: none;
-    font-size: 1.5vw;
-    padding: 0 1.5em 0 1.5em;
+    font-size: 1.5em;
+    padding: 0 1.5rem 0 1.5rem;
     border: 1px solid #fff;
     font-style: italic;
     box-sizing: border-box;
