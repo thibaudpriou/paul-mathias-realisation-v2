@@ -2,6 +2,7 @@
   import CarouselControl from "./CarouselControl.svelte";
   import CarouselIndicator from "./CarouselIndicator.svelte";
   import type IRealisation from "../types/realisation";
+  import { fade } from "svelte/transition";
 
   // --- props
   export let samples: IRealisation["samples"];
@@ -10,7 +11,7 @@
 
   // --- data
   let activeSlideIdx: number = 0;
-  const TRANSITION_DURATION = 2000;
+  export let transitionDuration: number = 600;
 
   // --- reactive
   $: slides = samples
@@ -49,12 +50,28 @@
   function goTo(index: number) {
     activeSlideIdx = index;
   }
+
+  function customFadeIn(node, { delay = 0, duration = 400 }) {
+    const o = +getComputedStyle(node).opacity;
+
+    return {
+      delay,
+      duration,
+      css: (t) => `
+        opacity: ${t * o};
+        z-index: 1;
+      `,
+    };
+  }
+
 </script>
 
 <div class="slides-container">
   {#each slides as slide}
     {#if slide.idx === activeSlideIdx}
       <img
+        in:customFadeIn={{ duration: transitionDuration }}
+        out:fade={{ delay: transitionDuration, duration: 0 }}
         class="slide"
         src={slide.src}
         srcset={slide.srcset}
@@ -135,6 +152,8 @@
   .slides-container {
     width: 100%;
     height: min(100vh, 100vw * 9 / 16);
+    position: relative;
+    z-index: 0; /* stacking context creation for extra-safety */
   }
 
   .slide {
@@ -142,5 +161,9 @@
     width: 100%;
     object-fit: cover;
     object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
   }
 </style>
