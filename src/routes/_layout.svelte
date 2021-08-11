@@ -49,10 +49,15 @@
 <Page refresh={segment} transitionDuration={10}>
   <main class:inverted={segment === "about"}>
     <slot />
+    {#if segment !== "about"}
+      <img class="banner-pre-footer" src="/imgs/footer-banner.png" alt="" />
+    {/if}
   </main>
-  <footer class:inverted={segment === "about"}>
-    <Footer />
-  </footer>
+  {#if segment !== "about"}
+    <footer class:inverted={segment === "about"}>
+      <Footer />
+    </footer>
+  {/if}
 </Page>
 
 <style>
@@ -61,6 +66,7 @@
     box-sizing: border-box;
     z-index: 0;
     width: 100%;
+    min-height: 100vh;
   }
 
   .inverted {
@@ -86,10 +92,12 @@
     animation-fill-mode: both;
   }
 
-  footer {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+  .banner-pre-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100vw * 9 / 16;
   }
 
   @keyframes slidedown {

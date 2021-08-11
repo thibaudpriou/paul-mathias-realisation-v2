@@ -2,49 +2,38 @@
   let copyrightYear = new Date().getFullYear();
 </script>
 
-<section class="contact-content">
+<div class="container">
+  <!-- <div> -->
   <a class="mail-link" href="mailto:paulmathias.realisation@gmail.com"
     >paulmathias.realisation@gmail.com</a
   >
-</section>
-<span class="copyright-container">©{copyrightYear}</span>
+  <span class="copyright-container">©{copyrightYear}</span>
+  <!-- </div> -->
+</div>
 
 <style>
-  .mail-link {
-    font-family: "SourceSansPro-Regular";
-    color: black;
-    width: 100%;
-    -webkit-animation: fadein 1s ease 2s;
-    -moz-animation: fadein 1s ease 2s;
-    -ms-animation: fadein 1s ease 2s;
-    -o-animation: fadein 1s ease 2s;
-    animation: fadein 1s ease 2s;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -ms-animation-fill-mode: both;
-    -o-animation-fill-mode: both;
-    animation-fill-mode: both;
-    font-weight: bold;
+  .container {
+    margin: 2em 0;
+    text-align: center;
   }
 
-  .contact-content {
-    margin-top: 3em;
+  .container > * {
+    margin-left: 1em;
+  }
+
+  .container > *:first-child {
+    margin-left: 0;
+  }
+
+  .mail-link {
+    font-family: "SourceSansPro-Regular";
     width: 100%;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    font-weight: bold;
   }
 
   .copyright-container {
     width: 100%;
     text-align: center;
     font-family: "SourceSansPro-Semibold";
-    margin-top: auto;
-    padding-bottom: 2em;
-    margin-top: 2em;
-    flex-grow: 1;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
   }
 </style>
