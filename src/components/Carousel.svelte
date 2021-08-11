@@ -131,4 +131,16 @@
     height: 3em;
     z-index: -1;
   }
+
+  .slides-container {
+    width: 100%;
+    height: min(100vh, 100vw * 9 / 16);
+  }
+
+  .slide {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
 </style>
