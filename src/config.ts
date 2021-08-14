@@ -10,7 +10,7 @@ const categories: ICategory[] = [
       {
         title: "Château Garreau Armagnac",
         type: RealisationType.Ad,
-        videoUrl: "https://vimeo.com/video/510700451",
+        videoUrl: "https://vimeo.com/510700451",
         samples: [
           {
             alt: "Échantillon publicité Château Garreau Armagnac 1",
