@@ -39,7 +39,7 @@
     align-items: center;
     color: white;
     opacity: 0.9;
-    font-size: clamp(.5em, 1.25vw, 1.25em);
+    font-size: clamp(.5em, 1.25vw, 1em);
   }
   
   .description > * {
