@@ -3,6 +3,8 @@
   import IconHambuger from "./icons/IconHambuger.svelte";
   import NavLink from "./NavLink.svelte";
   import NavLinks from "./NavLinks.svelte";
+  import InstagramLogo from "./social/InstagramLogo.svelte";
+  import VimeoLogo from "./social/VimeoLogo.svelte";
 
   export let segment: string;
   export let blackVariant: boolean;
@@ -37,6 +39,10 @@
 
   <span class="links">
     <NavLinks {categories} {segment} {blackVariant} on:nav-link={closeMenu} />
+    <div class="social-links">
+      <span class="social-link"><VimeoLogo /></span>
+      <span class="social-link"><InstagramLogo /></span>
+    </div>
   </span>
 </nav>
 
@@ -105,6 +111,23 @@
     display: flex;
   }
 
+  .social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+  }
+
+  .social-link {
+    width: 1.5em;
+    height: 1.5em;
+    display: inline-flex;
+    margin-left: 1em;
+  }
+
+  .social-link:first-child {
+    margin-left: 0;
+  }
+
   .black-variant {
     color: white;
     fill: white;
@@ -139,6 +162,10 @@
       justify-content: flex-end;
       flex-direction: row;
       padding: 0;
+    }
+
+    .social-links {
+      display: none;
     }
   }
 </style>
