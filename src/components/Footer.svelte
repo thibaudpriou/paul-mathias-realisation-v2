@@ -13,8 +13,9 @@
 
 <style>
   .container {
-    margin: 2em 0;
+    margin: 1.25em 0;
     text-align: center;
+    font-size: clamp(.5em, 1.25vw, 1em);
   }
 
   .container > * {
