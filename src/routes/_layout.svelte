@@ -54,7 +54,7 @@
     {/if}
   </main>
   {#if segment !== "about"}
-    <footer class:inverted={segment === "about"}>
+    <footer class="footer" class:inverted={segment === "about"}>
       <Footer />
     </footer>
   {/if}
@@ -97,6 +97,11 @@
     bottom: 0;
     left: 0;
     width: 100%;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
   }
 
   @keyframes slidedown {
