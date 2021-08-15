@@ -1,9 +1,10 @@
 <script lang="ts">
+  import VimeoLogo from "../components/social/VimeoLogo.svelte";
+  import InstagramLogo from "../components/social/InstagramLogo.svelte";
+
   const FOUNDING_YEAR = 2016;
 
   let foundingAge: number = new Date().getFullYear() - FOUNDING_YEAR;
-
-
 </script>
 
 <svelte:head>
@@ -45,11 +46,13 @@
       <hr class="hr-sizein" />
       <p class="about-text">
         Rencontrés durant nos études, cela fait un peu
-        <strong>plus de {foundingAge} ans</strong> que Paul Gojecki et Mathias Priou réalisent ensemble
-        divers projets audiovisuels. Motivés par les mêmes références, ils
-        aiment créer des <strong>univers atypiques</strong> dans lesquels
-        évoluent des personnages <strong>hauts en couleur</strong>. Leur
-        passion pour la technique les amène à s'intéresser à
+        <strong>plus de {foundingAge} ans</strong> que Paul Gojecki et Mathias
+        Priou réalisent ensemble divers projets audiovisuels. Motivés par les
+        mêmes références, ils aiment créer des
+        <strong>univers atypiques</strong>
+        dans lesquels évoluent des personnages
+        <strong>hauts en couleur</strong>. Leur passion pour la technique les
+        amène à s'intéresser à
         <strong>des méthodes de réalisation dans l'air du temps</strong>. Ils
         mettent leur expérience et leurs compétences en exergue afin d’atteindre
         leur objectif principal&nbsp;:
@@ -58,6 +61,8 @@
     </div>
   </section>
   <hr class="hr-sizein hr-full" />
+  <!-- <VimeoLogo background /> -->
+  <InstagramLogo background />
 </div>
 
 <style>

@@ -1,120 +1,64 @@
 <script lang="ts">
   import type ICategory from "../types/category";
-  import NavDivider from "../components/NavDivider.svelte";
+  import IconHambuger from "./icons/IconHambuger.svelte";
+  import NavLink from "./NavLink.svelte";
+  import NavLinks from "./NavLinks.svelte";
 
   export let segment: string;
   export let blackVariant: boolean;
   export let categories: ICategory[];
+
+  let collapsed: boolean = false;
+
+  function closeMenu() {
+    collapsed = false;
+  }
 </script>
 
-<nav
-  class:nav-black={blackVariant}
->
-  <a
-    class="link logo-link"
-    aria-current={segment === undefined ? "page" : undefined}
-    href="."
-  >
-    <span class="navbar-brand">Paul <span class="fine-text">X</span> Mathias</span>
-  </a>
-  <span class="directors">Directors</span>
-  <ul class="container">
-    <li>
-      <a
-        class="link"
-        aria-current={segment === "all" ? "page" : undefined}
-        href="all">Tout voir</a
+<nav class:black-variant={blackVariant} class:collapsed>
+  <span class="main">
+    <NavLink
+      logo
+      isAriaCurrent={segment === undefined}
+      href="."
+      {blackVariant}
+      on:nav-link={closeMenu}
+    >
+      <span class="navbar-brand"
+        >Paul <span class="fine-text">X</span> Mathias</span
       >
-    </li>
-    <li class="nav-divider"><NavDivider /></li>
-    {#each categories.sort((c1, c2) => c1.rank - c2.rank) as category}
-      <li>
-        <a
-          class="link"
-          aria-current={segment === category.path ? "page" : undefined}
-          href={category.path}>{category.title}</a
-        >
-      </li>
-      <li class="nav-divider"><NavDivider /></li>
-    {/each}
-    <li>
-      <a
-        class="link"
-        aria-current={segment === "about" ? "page" : undefined}
-        href="about">À Propos</a
-      >
-    </li>
-    <li class="nav-divider"><NavDivider /></li>
-  </ul>
+    </NavLink>
+    <span class="directors">Directors</span>
+
+    <button class="collapser" on:click={() => (collapsed = !collapsed)}>
+      <IconHambuger />
+    </button>
+  </span>
+
+  <span class="links">
+    <NavLinks {categories} {segment} {blackVariant} on:nav-link={closeMenu} />
+  </span>
 </nav>
 
 <style>
   nav {
     font-weight: 300;
-    padding: 0 2.5em;
-    min-height: 3.3em;
+    padding: 0.2em 2.5em;
     display: flex;
-    align-items: center;
-    background-color: rgba(255,255,255,.25);
+    flex-direction: column;
+    background-color: rgba(255, 255, 255);
 
-    transition: background-color .5s;
+    transition: background-color 0.5s;
   }
 
-  .container {
-    margin: 0;
-    padding: 0;
+  .main {
     display: flex;
-    flex-direction: row;
-    list-style: none;
-    align-items: center;
     flex-grow: 1;
-    justify-content: flex-end;
-  }
-
-  li {
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-
-  .link {
-    position: relative;
-    display: inline-block;
-    white-space: nowrap;
-  }
-
-  .link:after {
-    content: '';
-    background: black;
-    width: 0;
-    height: 1px;
-    position: absolute;
-    bottom: .25em;
-    left: 0.5em;
-  }
-
-  .link:hover:after,
-  .link[aria-current="page"]:not(.logo-link):after {
-    width: calc(100% - 1em);
-    transition: width .2s ease-in-out;
-  }
-
-  a {
-    text-decoration: none;
-    padding: 0.5em 0.5em;
-    display: block;
-  }
-  .nav-divider {
-    width: 0.25em;
-    height: 0.25em;
-    display: flex;
-    margin: 0 2em;
-  }
-  .nav-divider:last-child {
-    display: none;
+    align-items: center;
   }
 
   .navbar-brand {
-    font-family: 'SourceSansPro-LightIt';
+    font-family: "SourceSansPro-LightIt";
     display: inline-block;
     font-size: 1.25em;
     white-space: nowrap;
@@ -125,28 +69,76 @@
   .directors {
     margin-left: 1em;
     padding-left: 1.5em;
-    font-family: 'SourceSansPro-Regular';
+    font-family: "SourceSansPro-Regular";
     font-weight: lighter;
     border-left: solid 1px black;
   }
 
   .navbar-brand .fine-text {
-    font-family: 'SourceSansPro-ExtraLight';
+    font-family: "SourceSansPro-ExtraLight";
     font-size: 65%;
   }
 
-  /* Black variant */
-  .nav-black {
-    color: white;
-    fill: white;
-    background-color: rgba(0,0,0,.25);
+  .collapser {
+    width: 1em;
+    height: 1em;
+    box-sizing: content-box;
+    margin-left: auto;
+
+    background: none;
+    cursor: pointer;
+    padding: 0.25em 0.75em;
+    border-radius: 0.25em;
+    border: 1px solid black;
   }
 
-  .nav-black .directors {
+  .links {
+    display: none;
+    flex-grow: 1;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em 0;
+  }
+
+  .collapsed .links {
+    display: flex;
+  }
+
+  .black-variant {
+    color: white;
+    fill: white;
+    stroke: white;
+    background-color: rgba(0, 0, 0);
+  }
+
+  .black-variant .directors {
     border-color: white;
   }
 
-  .nav-black .link:after {
-    background: white;
+  .black-variant .collapser {
+    border-color: white;
+  }
+
+  @media (min-width: 1100px) {
+    nav {
+      flex-direction: row;
+      background-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .black-variant {
+      background-color: rgba(0, 0, 0, 0.25);
+    }
+
+    .collapser {
+      display: none;
+    }
+
+    .links {
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: row;
+      padding: 0;
+    }
   }
 </style>

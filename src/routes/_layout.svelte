@@ -78,18 +78,9 @@
     top: 0px;
     z-index: 2;
     color: black;
+    stroke: black;
+    fill: black;
     width: 100%;
-
-    -webkit-animation: slidedown 1s ease 1s;
-    -moz-animation: slidedown 1s ease 1s;
-    -ms-animation: slidedown 1s ease 1s;
-    -o-animation: slidedown 1s ease 1s;
-    animation: slidedown 1s ease 1s;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -ms-animation-fill-mode: both;
-    -o-animation-fill-mode: both;
-    animation-fill-mode: both;
   }
 
   .banner-pre-footer {
@@ -102,6 +93,21 @@
   .footer {
     display: flex;
     justify-content: center;
+  }
+
+  @media (min-width: 1100px) {
+    .navbar-container {
+      -webkit-animation: slidedown 1s ease 1s;
+      -moz-animation: slidedown 1s ease 1s;
+      -ms-animation: slidedown 1s ease 1s;
+      -o-animation: slidedown 1s ease 1s;
+      animation: slidedown 1s ease 1s;
+      -webkit-animation-fill-mode: both;
+      -moz-animation-fill-mode: both;
+      -ms-animation-fill-mode: both;
+      -o-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
   }
 
   @keyframes slidedown {

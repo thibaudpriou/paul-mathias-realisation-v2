@@ -21,8 +21,14 @@
     width: 100%;
     min-height: 100vh;
     position: absolute;
-    top: 0;
+    top: calc(.2em * 2 + .5em * 2 + 1.25em * 1.5); /* lol: see padding/font-sizes of nav children */
     left: 0;
     z-index: 1;
+  }
+
+  @media (min-width: 1100px) {
+    .transition-container {
+      top: 0;
+    }
   }
 </style>
