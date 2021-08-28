@@ -97,6 +97,16 @@
     padding: 0.25em 0.75em;
     border-radius: 0.25em;
     border: 1px solid black;
+    position: relative;
+  }
+
+  .collapser::after {
+    content: '';
+    position: absolute;
+    top: -.5em;
+    left: -.5em;
+    width: calc(100% + 1em);
+    height: calc(100% + 1em);
   }
 
   .links {
