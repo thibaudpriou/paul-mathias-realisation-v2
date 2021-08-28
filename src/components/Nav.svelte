@@ -7,7 +7,7 @@
   import VimeoLogo from "./social/VimeoLogo.svelte";
 
   export let segment: string;
-  export let blackVariant: boolean;
+  export let blackVariant: boolean; // ! ignored for mobile version
   export let categories: ICategory[];
 
   let collapsed: boolean = false;
@@ -101,10 +101,10 @@
   }
 
   .collapser::after {
-    content: '';
+    content: "";
     position: absolute;
-    top: -.5em;
-    left: -.5em;
+    top: -0.5em;
+    left: -0.5em;
     width: calc(100% + 1em);
     height: calc(100% + 1em);
   }
@@ -155,21 +155,6 @@
     margin-left: 0;
   }
 
-  .black-variant {
-    color: white;
-    fill: white;
-    stroke: white;
-    background-color: rgba(0, 0, 0);
-  }
-
-  .black-variant .directors {
-    border-color: white;
-  }
-
-  .black-variant .collapser {
-    border-color: white;
-  }
-
   @media (min-width: 1100px) {
     nav {
       flex-direction: row;
@@ -177,7 +162,21 @@
     }
 
     .black-variant {
+      /* only for desktop */
+      color: white;
+      fill: white;
+      stroke: white;
       background-color: rgba(0, 0, 0, 0.25);
+    }
+
+    .black-variant .directors {
+      /* only for desktop */
+      border-color: white;
+    }
+
+    .black-variant .collapser {
+      /* only for desktop */
+      border-color: white;
     }
 
     .collapser {
