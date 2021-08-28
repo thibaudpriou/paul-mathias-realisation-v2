@@ -1955,6 +1955,11 @@ svelte@^3.17.3:
   resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.38.2.tgz#55e5c681f793ae349b5cc2fe58e5782af4275ef5"
   integrity sha512-q5Dq0/QHh4BLJyEVWGe7Cej5NWs040LWjMbicBGZ+3qpFWJ1YObRmUDZKbbovddLC9WW7THTj3kYbTOFmU9fbg==
 
+swipe-detect@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/swipe-detect/-/swipe-detect-1.0.1.tgz#02da15ce856aa9db51723e1a71fdbe8e2ce84538"
+  integrity sha512-/Bo8OUr/Mak2B5ITCkTQ3WOjLn12H2QDvi4QpRx3T1/NyhlSRnYQyUbIWr8Fro/wJre4DvtOBZTW+9h8wTR8zA==
+
 terser@^5.0.0:
   version "5.7.0"
   resolved "https://registry.yarnpkg.com/terser/-/terser-5.7.0.tgz#a761eeec206bc87b605ab13029876ead938ae693"

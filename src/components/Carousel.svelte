@@ -1,17 +1,17 @@
 <script lang="ts">
+  import { fade } from "svelte/transition";
   import CarouselControl from "./CarouselControl.svelte";
   import CarouselIndicator from "./CarouselIndicator.svelte";
   import type IRealisation from "../types/realisation";
-  import { fade } from "svelte/transition";
 
   // --- props
   export let samples: IRealisation["samples"];
+  export let transitionDuration: number = 600;
 
   // ! remove embla-carousel from package.json
 
   // --- data
   let activeSlideIdx: number = 0;
-  export let transitionDuration: number = 600;
 
   // --- reactive
   $: slides = samples
@@ -39,12 +39,14 @@
     };
   }
 
-  function goPrev() {
-    activeSlideIdx = (activeSlideIdx - 1) % slides.length;
+  export function goPrev() {
+    if (activeSlideIdx === 0) return;
+    goTo(activeSlideIdx - 1);
   }
 
-  function goNext() {
-    goTo((activeSlideIdx + 1) % slides.length);
+  export function goNext() {
+    if (activeSlideIdx === slides.length - 1) return;
+    goTo(activeSlideIdx + 1);
   }
 
   function goTo(index: number) {

@@ -1,11 +1,33 @@
 <script lang="ts">
+  import { onMount } from "svelte";
+  import swipeDetect from "swipe-detect";
   import type IRealisation from "../types/realisation";
   import Carousel from "./Carousel.svelte";
 
+  // --- props
   export let realisation: IRealisation;
+
+  // --- data
+  let container: HTMLElement;
+  let carousel: Carousel;
+  const THRESHOLD_FOR_SWIPE = 50;
+
+  function onSwipe(dir: "left" | "right" | "up" | "down") {
+    if (dir === 'right') {
+      return carousel.goPrev()
+    }
+    if (dir === 'left') {
+      return carousel.goNext()
+    }
+  }
+
+  onMount(() => {
+    if (!container) return;
+    swipeDetect(container, onSwipe, THRESHOLD_FOR_SWIPE);
+  });
 </script>
 
-<section class="container">
+<section class="container" bind:this={container}>
   <div class="description">
     <h2 class="title">{realisation.title}</h2>
     <span class="subtitle">{realisation.type}</span>
@@ -16,13 +38,13 @@
       target="_blank">Voir</a
     >
   </div>
-  <Carousel samples={realisation.samples}/>
+  <Carousel samples={realisation.samples} bind:this={carousel} />
 </section>
 
 <style>
   .container {
     position: relative;
-    font-family: 'SourceSansPro-BlackIt';
+    font-family: "SourceSansPro-BlackIt";
     max-height: 100vh;
     overflow: hidden;
   }
@@ -39,11 +61,11 @@
     align-items: center;
     color: white;
     opacity: 0.9;
-    font-size: clamp(.5em, 1.25vw, 1em);
+    font-size: clamp(0.5em, 1.25vw, 1em);
   }
-  
+
   .description > * {
-    margin-top: .5em;
+    margin-top: 0.5em;
   }
 
   .description > *:first-child {

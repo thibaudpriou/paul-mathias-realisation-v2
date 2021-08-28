@@ -34,6 +34,7 @@
     "svelte": "^3.17.3",
     "svelte-check": "^2.1.0",
     "svelte-preprocess": "^4.7.3",
+    "swipe-detect": "^1.0.1",
     "tslib": "^2.3.0",
     "typescript": "^4.3.2"
   }
