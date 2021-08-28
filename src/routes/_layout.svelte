@@ -88,10 +88,11 @@
     bottom: 0;
     left: 0;
     width: 100%;
+    display: none;
   }
 
   .footer {
-    display: flex;
+    display: none;
     justify-content: center;
   }
 
@@ -107,6 +108,14 @@
       -ms-animation-fill-mode: both;
       -o-animation-fill-mode: both;
       animation-fill-mode: both;
+    }
+
+    .banner-pre-footer {
+      display: unset;
+    }
+
+    .footer {
+      display: flex;
     }
   }
 
