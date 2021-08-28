@@ -54,6 +54,8 @@
     display: flex;
     flex-direction: column;
     background-color: rgba(255, 255, 255);
+    box-sizing: border-box;
+    min-height: var(--navbar-height);
 
     transition: background-color 0.5s;
   }

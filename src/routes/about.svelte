@@ -1,6 +1,8 @@
 <script lang="ts">
   import VimeoLogo from "../components/social/VimeoLogo.svelte";
   import InstagramLogo from "../components/social/InstagramLogo.svelte";
+  import MailLink from "../components/social/MailLink.svelte";
+  import Copyright from "../components/Copyright.svelte";
 
   const FOUNDING_YEAR = 2016;
 
@@ -61,8 +63,14 @@
     </div>
   </section>
   <hr class="hr-sizein hr-full" />
-  <!-- <VimeoLogo background /> -->
-  <InstagramLogo background />
+  <section class="contact">
+    <span class="email-link"><MailLink /></span>
+    <div class="social-links">
+      <span class="social-link"><VimeoLogo background /></span>
+      <span class="social-link"><InstagramLogo background /></span>
+    </div>
+  </section>
+  <span class="copyright"><Copyright /></span>
 </div>
 
 <style>
@@ -74,16 +82,20 @@
     align-items: flex-end;
     text-align: right;
     box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.6);
   }
 
   .about-content {
     display: flex;
     font-family: SourceSansPro-Regular;
+    flex-direction: column-reverse;
   }
 
   .images-container {
     display: flex;
     min-width: 40%;
+    margin-top: 2em;
+    line-height: 0;
 
     -webkit-animation: fadein 1s ease;
     -moz-animation: fadein 1s ease;
@@ -98,29 +110,31 @@
   }
 
   .images-subcontainer-left {
-    flex-basis: 132%;
+    padding-bottom: calc(100% * 831 / 1480);
+    flex-basis: calc(100% * 835 / 1480);
+    height: 0;
   }
 
   .images-subcontainer-right {
     display: flex;
+    height: 100%;
     flex-direction: column;
-    margin-left: 5px;
-    flex-basis: 100%;
+    padding-left: 5px;
+    flex-basis: calc(100% * 640 / 1480);
   }
 
   .images-subcontainer-right > *:last-child {
-    margin-top: 5px;
+    padding-top: 5px;
   }
 
   .about-text-container {
-    margin-left: 2em;
+    margin-left: 0;
   }
 
   .about-text {
     font-size: 1.2em;
     line-height: 1.7;
     text-align: justify;
-    color: rgba(0, 0, 0, 0.6);
     margin: 0;
     margin-top: 1em;
 
@@ -161,6 +175,62 @@
   .hr-full {
     margin-top: 1em;
     animation-delay: 1.5s;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 3em;
+    padding-bottom: 2em;
+  }
+
+  .contact > * {
+    margin-top: 3em;
+  }
+  .contact > *:first-child {
+    margin-top: 0;
+  }
+
+  .email-link {
+    text-align: center;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-link {
+    width: 2em;
+    height: 2em;
+    margin-left: 2em;
+    display: inline-block;
+  }
+
+  .social-link:first-child {
+    margin-left: 0;
+  }
+
+  .copyright {
+    width: 100%;
+    text-align: center;
+    padding: 1.25em 0;
+  }
+
+  @media (min-width: 1100px) {
+    .about-content {
+      flex-direction: row;
+    }
+
+    .about-text-container {
+      margin-left: 2em;
+    }
+
+    .images-container {
+      margin-top: 0;
+    }
   }
 
   @keyframes sizein {

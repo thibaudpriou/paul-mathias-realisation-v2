@@ -66,7 +66,7 @@
     box-sizing: border-box;
     z-index: 0;
     width: 100%;
-    min-height: 100vh;
+    min-height: calc(100vh - var(--navbar-height));
   }
 
   .inverted {
@@ -97,6 +97,10 @@
   }
 
   @media (min-width: 1100px) {
+    main {
+      min-height: 100vh;
+    }
+
     .navbar-container {
       -webkit-animation: slidedown 1s ease 1s;
       -moz-animation: slidedown 1s ease 1s;

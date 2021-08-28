@@ -19,9 +19,9 @@
 <style>
   .transition-container {
     width: 100%;
-    min-height: 100vh;
+    min-height: calc(100vh - var(--navbar-height));
     position: absolute;
-    top: calc(.2em * 2 + .5em * 2 + 1.25em * 1.5); /* lol: see padding/font-sizes of nav children */
+    top: var(--navbar-height);
     left: 0;
     z-index: 1;
   }
@@ -29,6 +29,7 @@
   @media (min-width: 1100px) {
     .transition-container {
       top: 0;
+      min-height: 100vh;
     }
   }
 </style>
