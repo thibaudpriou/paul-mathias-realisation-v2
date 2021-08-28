@@ -45,6 +45,7 @@
     </div>
   </span>
 </nav>
+<span class="overlay" on:click={closeMenu} />
 
 <style>
   nav {
@@ -109,6 +110,22 @@
 
   .collapsed .links {
     display: flex;
+  }
+
+  .overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background-color: black;
+    opacity: 0.7;
+  }
+
+  .collapsed + .overlay {
+    display: block;
   }
 
   .social-links {
