@@ -21,9 +21,6 @@
       return { ...s, src: attrs.src, srcset: attrs.srcset, idx };
     });
 
-  $: canGoPrev = activeSlideIdx > 0;
-  $: canGoNext = activeSlideIdx < slides.length - 1;
-
   // --- methods
   interface ImgAttributes {
     src: string;
@@ -40,13 +37,15 @@
   }
 
   export function goPrev() {
-    if (activeSlideIdx === 0) return;
-    goTo(activeSlideIdx - 1);
+    let to = activeSlideIdx - 1;
+    if (to < 0) to = slides.length - 1;
+    goTo(to);
   }
 
   export function goNext() {
-    if (activeSlideIdx === slides.length - 1) return;
-    goTo(activeSlideIdx + 1);
+    let to = activeSlideIdx + 1;
+    if (to > slides.length - 1) to = 0;
+    goTo(to);
   }
 
   function goTo(index: number) {
@@ -81,16 +80,12 @@
     {/if}
   {/each}
 </div>
-{#if canGoPrev}
-  <button class="control prev" on:click={goPrev}>
-    <span class="control-icon"><CarouselControl /></span></button
-  >
-{/if}
-{#if canGoNext}
-  <button class="control next" on:click={goNext}
-    ><span class="control-icon"><CarouselControl invert /></span></button
-  >
-{/if}
+<button class="control prev" on:click={goPrev}>
+  <span class="control-icon"><CarouselControl /></span></button
+>
+<button class="control next" on:click={goNext}
+  ><span class="control-icon"><CarouselControl invert /></span></button
+>
 <span class="indicators">
   {#each slides as _, idx}
     <button class="indicator" on:click={() => goTo(idx)}>
