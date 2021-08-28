@@ -2,11 +2,21 @@
   "name": "paul-mathias-realisation.com-ssr",
   "description": "Statically generated website for paul-mathias-realisation.com",
   "version": "0.0.1",
+  "license": "UNLICENSED",
+  "private": true,
+  "author": {
+    "name": "Thibaud Priou",
+    "email": "thibaud.priou@gmail.com"
+  },
   "scripts": {
     "dev": "sapper dev",
     "build": "sapper build --legacy",
     "export": "sapper export --legacy",
     "start": "node __sapper__/build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thibaudpriou/paul-mathias-realisation.com-ssr.git"
   },
   "dependencies": {
     "@rollup/plugin-json": "^4.1.0",
