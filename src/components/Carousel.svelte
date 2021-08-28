@@ -65,7 +65,6 @@
       `,
     };
   }
-
 </script>
 
 <div class="slides-container">
@@ -83,11 +82,13 @@
   {/each}
 </div>
 {#if canGoPrev}
-  <button class="control prev" on:click={goPrev}><CarouselControl /></button>
+  <button class="control prev" on:click={goPrev}>
+    <span class="control-icon"><CarouselControl /></span></button
+  >
 {/if}
 {#if canGoNext}
   <button class="control next" on:click={goNext}
-    ><CarouselControl invert /></button
+    ><span class="control-icon"><CarouselControl invert /></span></button
   >
 {/if}
 <span class="indicators">
@@ -103,13 +104,18 @@
     position: absolute;
     top: 0;
     height: 100%;
-    width: 3em;
+    width: 10vw;
     background: none;
     border: none;
     fill: white;
     z-index: 1;
-    padding: 0 4em;
     cursor: pointer;
+    padding: 0;
+  }
+
+  .control-icon {
+    display: inline-block;
+    width: 15%;
   }
 
   .control.prev {

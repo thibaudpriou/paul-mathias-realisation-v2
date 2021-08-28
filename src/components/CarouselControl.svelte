@@ -4,8 +4,6 @@
 
 <style>
     svg {
-        width: 1em;
-        height: auto;
         opacity: 0.6;
     }
 
@@ -16,7 +14,7 @@
 
 <svg
   width="100%"
-  height="100%"
+  height="auto"
   class:invert
   viewBox="0 0 45 200"
   xmlns="http://www.w3.org/2000/svg"
