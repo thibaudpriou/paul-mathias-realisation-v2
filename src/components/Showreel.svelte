@@ -106,6 +106,7 @@
     cursor: pointer;
     outline: inherit;
     text-transform: inherit;
+    position: relative;
   }
 
   button.scroll-me:after {
