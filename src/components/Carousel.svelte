@@ -145,10 +145,10 @@
   .indicator::after {
     content: "";
     position: absolute;
-    top: calc(50% - 1.5em);
-    left: -1em;
-    width: 10em;
-    height: 3em;
+    top: -200%;
+    left: -25%;
+    width: 150%;
+    height: 400%;
     z-index: -1;
   }
 
