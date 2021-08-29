@@ -47,7 +47,7 @@
     <div class="about-text-container">
       <hr class="hr-sizein" />
       <p class="about-text">
-        Rencontrés durant nos études, cela fait un peu
+        Rencontrés durant leurs études, cela fait un peu
         <strong>plus de {foundingAge} ans</strong> que Paul Gojecki et Mathias
         Priou réalisent ensemble divers projets audiovisuels. Motivés par les
         mêmes références, ils aiment créer des
