@@ -22,56 +22,58 @@
 </svelte:head>
 
 <div class="container">
-  <section class="about-content">
-    <div class="images-container">
-      <div class="force-ratio">
-        <div class="images-subcontainer-left">
-          <img
-            class="img"
-            src="imgs/about-1.jpg"
-            alt="Paul et Mathias sur le tournage de l'Horloger"
-          />
-        </div>
-        <div class="images-subcontainer-right">
-          <img
-            class="img"
-            src="imgs/about-2.jpg"
-            alt="Paul et Mathias sur le tournage de Et c'était le monde"
-          />
-          <img
-            class="img"
-            src="imgs/about-3.jpg"
-            alt="Paul et Mathias sur le tournage de Et c'était le monde"
-          />
+  <div class="content">
+    <section class="about-content">
+      <div class="images-container">
+        <div class="force-ratio">
+          <div class="images-subcontainer-left">
+            <img
+              class="img"
+              src="imgs/about-1.jpg"
+              alt="Paul et Mathias sur le tournage de l'Horloger"
+            />
+          </div>
+          <div class="images-subcontainer-right">
+            <img
+              class="img"
+              src="imgs/about-2.jpg"
+              alt="Paul et Mathias sur le tournage de Et c'était le monde"
+            />
+            <img
+              class="img"
+              src="imgs/about-3.jpg"
+              alt="Paul et Mathias sur le tournage de Et c'était le monde"
+            />
+          </div>
         </div>
       </div>
-    </div>
-    <div class="about-text-container">
-      <hr class="hr-sizein" />
-      <p class="about-text">
-        Rencontrés durant leurs études, cela fait un peu
-        <strong>plus de {foundingAge} ans</strong> que Paul Gojecki et Mathias
-        Priou réalisent ensemble divers projets audiovisuels. Motivés par les
-        mêmes références, ils aiment créer des
-        <strong>univers atypiques</strong>
-        dans lesquels évoluent des personnages
-        <strong>hauts en couleur</strong>. Leur passion pour la technique les
-        amène à s'intéresser à
-        <strong>des méthodes de réalisation dans l'air du temps</strong>. Ils
-        mettent leur expérience et leurs compétences en exergue afin d’atteindre
-        leur objectif principal&nbsp;:
-        <strong>créer de l’émotion</strong> dans le cœur des spectateurs.
-      </p>
-    </div>
-  </section>
-  <hr class="hr-sizein hr-full" />
-  <section class="contact">
-    <span class="email-link"><MailLink /></span>
-    <div class="social-links">
-      <span class="social-link"><VimeoLogo background /></span>
-      <span class="social-link"><InstagramLogo background /></span>
-    </div>
-  </section>
+      <div class="about-text-container">
+        <hr class="hr-sizein" />
+        <p class="about-text">
+          Rencontrés durant leurs études, cela fait un peu
+          <strong>plus de {foundingAge} ans</strong> que Paul Gojecki et Mathias
+          Priou réalisent ensemble divers projets audiovisuels. Motivés par les
+          mêmes références, ils aiment créer des
+          <strong>univers atypiques</strong>
+          dans lesquels évoluent des personnages
+          <strong>hauts en couleur</strong>. Leur passion pour la technique les
+          amène à s'intéresser à
+          <strong>des méthodes de réalisation dans l'air du temps</strong>. Ils
+          mettent leur expérience et leurs compétences en exergue afin
+          d’atteindre leur objectif principal&nbsp;:
+          <strong>créer de l’émotion</strong> dans le cœur des spectateurs.
+        </p>
+      </div>
+    </section>
+    <hr class="hr-sizein hr-full" />
+    <section class="contact">
+      <span class="email-link"><MailLink /></span>
+      <div class="social-links">
+        <span class="social-link"><VimeoLogo background /></span>
+        <span class="social-link"><InstagramLogo background /></span>
+      </div>
+    </section>
+  </div>
   <span class="copyright"><Copyright /></span>
 </div>
 
@@ -85,6 +87,14 @@
     text-align: right;
     box-sizing: border-box;
     color: rgba(0, 0, 0, 0.6);
+    min-height: calc(100vh - var(--navbar-height));
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
   }
 
   .about-content {
@@ -198,8 +208,7 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    margin-top: 3em;
-    padding-bottom: 2em;
+    margin-top: 5em;
 
     -webkit-animation: fadein 1s ease 2s;
     -moz-animation: fadein 1s ease 2s;
@@ -214,22 +223,25 @@
   }
 
   .contact > * {
-    margin-top: 3em;
+    margin-top: 2em;
   }
   .contact > *:first-child {
     margin-top: 0;
   }
 
   .email-link {
+    color: rgba(0, 0, 0, 1);
     text-align: center;
   }
 
   .social-links {
     display: flex;
     justify-content: center;
+    padding: 1em 0;
   }
 
   .social-link {
+    font-size: 110%;
     width: 2em;
     height: 2em;
     margin-left: 2em;
@@ -244,6 +256,13 @@
     width: 100%;
     text-align: center;
     padding: 1.25em 0;
+    margin-top: 5em;
+  }
+
+  @media (min-width: 1100px) {
+    .container {
+      min-height: 100vh;
+    }
   }
 
   @media (min-width: 1400px) {
