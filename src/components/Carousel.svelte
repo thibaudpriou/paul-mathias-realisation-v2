@@ -154,7 +154,7 @@
 
   .slides-container {
     width: 100%;
-    height: min(100vh, 100vw * 9 / 16);
+    height: min(calc(100vh - var(--navbar-height)), 100vw * 9 / 16);
     position: relative;
     z-index: 0; /* stacking context creation for extra-safety */
   }
@@ -168,5 +168,11 @@
     top: 0;
     left: 0;
     z-index: 0;
+  }
+
+  @media (min-width: 1100px) {
+    .slides-container {
+      height: min(100vh, 100vw * 9 / 16);
+    }
   }
 </style>
