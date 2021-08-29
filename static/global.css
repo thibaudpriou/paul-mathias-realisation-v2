@@ -54,6 +54,7 @@ button, a {
 		url('../fonts/SourceSansPro-BlackIt.eot?#iefix') format('embedded-opentype');
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -68,6 +69,7 @@ button, a {
 			format('embedded-opentype');
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -81,6 +83,7 @@ button, a {
 		url('../fonts/SourceSansPro-LightIt.eot?#iefix') format('embedded-opentype');
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -95,6 +98,7 @@ button, a {
 			format('embedded-opentype');
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -108,6 +112,7 @@ button, a {
 		url('../fonts/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype');
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 }
 
 /* -- FADE IN -- */
