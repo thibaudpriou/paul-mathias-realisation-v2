@@ -106,8 +106,6 @@
     z-index: 1;
     cursor: pointer;
     padding: 0;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    -webkit-tap-highlight-color: transparent;
   }
 
   .control-icon {
