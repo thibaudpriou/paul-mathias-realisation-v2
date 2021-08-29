@@ -61,7 +61,7 @@
     align-items: center;
     color: white;
     opacity: 0.9;
-    font-size: clamp(0.5em, 1.25vw, 1em);
+    font-size: clamp(0.3em, 1.25vw, 1em);
   }
 
   .description > * {
