@@ -24,24 +24,26 @@
 <div class="container">
   <section class="about-content">
     <div class="images-container">
-      <div class="images-subcontainer-left">
-        <img
-          class="img"
-          src="imgs/about-1.jpg"
-          alt="Paul et Mathias sur le tournage de l'Horloger"
-        />
-      </div>
-      <div class="images-subcontainer-right">
-        <img
-          class="img"
-          src="imgs/about-2.jpg"
-          alt="Paul et Mathias sur le tournage de Et c'était le monde"
-        />
-        <img
-          class="img"
-          src="imgs/about-3.jpg"
-          alt="Paul et Mathias sur le tournage de Et c'était le monde"
-        />
+      <div class="force-ratio">
+        <div class="images-subcontainer-left">
+          <img
+            class="img"
+            src="imgs/about-1.jpg"
+            alt="Paul et Mathias sur le tournage de l'Horloger"
+          />
+        </div>
+        <div class="images-subcontainer-right">
+          <img
+            class="img"
+            src="imgs/about-2.jpg"
+            alt="Paul et Mathias sur le tournage de Et c'était le monde"
+          />
+          <img
+            class="img"
+            src="imgs/about-3.jpg"
+            alt="Paul et Mathias sur le tournage de Et c'était le monde"
+          />
+        </div>
       </div>
     </div>
     <div class="about-text-container">
@@ -92,7 +94,6 @@
   }
 
   .images-container {
-    display: flex;
     min-width: 40%;
     margin-top: 2em;
     line-height: 0;
@@ -107,12 +108,27 @@
     -ms-animation-fill-mode: both;
     -o-animation-fill-mode: both;
     animation-fill-mode: both;
+
+    -webkit-animation-delay: 1.25s;
+    -moz-animation-delay: 1.25s;
+    -ms-animation-delay: 1.25s;
+    -o-animation-delay: 1.25s;
+    animation-delay: 1.25s;
+  }
+
+  .force-ratio {
+    /** Ruse de sioux:
+      * I can not control image height to make them be perfectly aligned
+      * so I crop the bottom by 2px (empiric value)
+      */
+    height: 0;
+    padding-bottom: calc(100% * 831 / 1480 - 2px);
+    overflow: hidden;
+    display: flex;
   }
 
   .images-subcontainer-left {
-    padding-bottom: calc(100% * 831 / 1480);
     flex-basis: calc(100% * 835 / 1480);
-    height: 0;
   }
 
   .images-subcontainer-right {
@@ -173,7 +189,7 @@
   }
 
   .hr-full {
-    margin-top: 1em;
+    margin-top: 2em;
     animation-delay: 1.5s;
   }
 
@@ -184,6 +200,17 @@
     width: 100%;
     margin-top: 3em;
     padding-bottom: 2em;
+
+    -webkit-animation: fadein 1s ease 2s;
+    -moz-animation: fadein 1s ease 2s;
+    -ms-animation: fadein 1s ease 2s;
+    -o-animation: fadein 1s ease 2s;
+    animation: fadein 1s ease 2s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
   }
 
   .contact > * {
@@ -219,7 +246,7 @@
     padding: 1.25em 0;
   }
 
-  @media (min-width: 1100px) {
+  @media (min-width: 1400px) {
     .about-content {
       flex-direction: row;
     }
@@ -230,6 +257,11 @@
 
     .images-container {
       margin-top: 0;
+      -webkit-animation-delay: 0s;
+      -moz-animation-delay: 0s;
+      -ms-animation-delay: 0s;
+      -o-animation-delay: 0s;
+      animation-delay: 0s;
     }
   }
 
