@@ -32,7 +32,7 @@
     </NavLink>
     <span class="directors">Directors</span>
 
-    <button class="collapser" on:click={() => (collapsed = !collapsed)}>
+    <button class="collapser" on:click={() => (collapsed = !collapsed)} aria-label="afficher menu">
       <IconHambuger />
     </button>
   </span>

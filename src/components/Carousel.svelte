@@ -80,15 +80,15 @@
     {/if}
   {/each}
 </div>
-<button class="control prev" on:click={goPrev}>
+<button class="control prev" on:click={goPrev} aria-label="image suivante">
   <span class="control-icon"><CarouselControl /></span></button
 >
-<button class="control next" on:click={goNext}
+<button class="control next" on:click={goNext} aria-label="image précédente"
   ><span class="control-icon"><CarouselControl invert /></span></button
 >
 <span class="indicators">
   {#each slides as _, idx}
-    <button class="indicator" on:click={() => goTo(idx)}>
+    <button class="indicator" on:click={() => goTo(idx)} aria-label="voir image précise">
       <CarouselIndicator active={idx === activeSlideIdx} />
     </button>
   {/each}

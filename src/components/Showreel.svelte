@@ -40,7 +40,7 @@
   </video>
 
   <div class="scroll-me-container">
-    <button on:click={scrollPastShowreel} class="scroll-me">
+    <button on:click={scrollPastShowreel} class="scroll-me" aria-label="voir réalisations">
       <p class="scroll-me-text">Faire défiler</p>
       <svg
         class="chevron-down-icon"
