@@ -35,7 +35,8 @@
       class="seeVideoLink"
       href={realisation.videoUrl}
       rel="noopener noreferer"
-      target="_blank">Voir</a
+      target="_blank"
+      title="Ouvrir la vidéo dans un nouvel onglet">Voir</a
     >
   </div>
   <Carousel samples={realisation.samples} bind:this={carousel} />
