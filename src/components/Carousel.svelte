@@ -140,6 +140,7 @@
     border: none;
     height: 0.45em;
     position: relative;
+    display: inline-flex;
   }
 
   .indicator::after {
