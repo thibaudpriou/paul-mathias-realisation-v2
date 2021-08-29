@@ -10,8 +10,8 @@
 <svelte:head>
   <script
     defer
-    preload
-    src="http://cdn.dashjs.org/latest/dash.all.min.js"></script>
+    rel="preload"
+    src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
 </svelte:head>
 
 <div class="container" bind:this={container} id="showreel">
