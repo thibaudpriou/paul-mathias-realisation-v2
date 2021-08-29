@@ -155,6 +155,7 @@
 
   .slides-container {
     width: 100%;
+    /* TODO gérer différents aspect-ratios */
     height: min(calc(100vh - var(--navbar-height)), 100vw * 9 / 16);
     position: relative;
     z-index: 0; /* stacking context creation for extra-safety */
@@ -173,6 +174,7 @@
 
   @media (min-width: 1100px) {
     .slides-container {
+      /* TODO gérer différents aspect-ratios */
       height: min(100vh, 100vw * 9 / 16);
     }
   }
