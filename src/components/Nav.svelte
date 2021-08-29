@@ -50,12 +50,11 @@
 <style>
   nav {
     font-weight: 300;
-    padding: 0.2em 2.5em;
+    padding: 0 2.5em;
     display: flex;
     flex-direction: column;
     background-color: rgba(255, 255, 255);
     box-sizing: border-box;
-    min-height: var(--navbar-height);
 
     transition: background-color 0.5s;
   }
@@ -64,6 +63,8 @@
     display: flex;
     flex-grow: 1;
     align-items: center;
+    padding: 0.2em 0;
+    min-height: var(--navbar-height);
   }
 
   .navbar-brand {
