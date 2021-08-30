@@ -19,20 +19,26 @@
 
 <nav class:black-variant={blackVariant} class:collapsed>
   <span class="main">
-    <NavLink
-      logo
-      isAriaCurrent={segment === undefined}
-      href="."
-      {blackVariant}
-      on:nav-link={closeMenu}
-    >
-      <span class="navbar-brand"
-        >Paul <span class="fine-text">X</span> Mathias</span
+    <span class="logo-link">
+      <NavLink
+        logo
+        isAriaCurrent={segment === undefined}
+        href="."
+        {blackVariant}
+        on:nav-link={closeMenu}
       >
-    </NavLink>
+        <span class="navbar-brand"
+          >Paul <span class="fine-text">X</span> Mathias</span
+        >
+      </NavLink>
+    </span>
     <span class="directors">Directors</span>
 
-    <button class="collapser" on:click={() => (collapsed = !collapsed)} aria-label="afficher menu">
+    <button
+      class="collapser"
+      on:click={() => (collapsed = !collapsed)}
+      aria-label="afficher menu"
+    >
       <IconHambuger />
     </button>
   </span>
@@ -77,7 +83,7 @@
 
   .directors {
     margin-left: 1em;
-    padding-left: 1.5em;
+    padding: 0 1.5em;
     font-family: "SourceSansPro-Regular";
     font-weight: lighter;
     border-left: solid 1px black;
@@ -118,6 +124,10 @@
     justify-content: center;
     flex-direction: column;
     padding: 1em 0;
+  }
+
+  .logo-link {
+    margin-left: auto;
   }
 
   .collapsed .links {
@@ -190,6 +200,10 @@
       justify-content: flex-end;
       flex-direction: row;
       padding: 0;
+    }
+
+    .logo-link {
+      margin-left: 0;
     }
 
     .social-links {
