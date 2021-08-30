@@ -95,16 +95,15 @@
   }
 
   .collapser {
-    width: 1em;
-    height: 1em;
+    width: 1.5em;
+    height: 1.5em;
     box-sizing: content-box;
     margin-left: auto;
 
     background: none;
     cursor: pointer;
     padding: 0.25em 0.75em;
-    border-radius: 0.25em;
-    border: 1px solid black;
+    border: none;
     position: relative;
   }
 
