@@ -63,7 +63,6 @@
     display: flex;
     flex-grow: 1;
     align-items: center;
-    padding: 0.2em 0;
     min-height: var(--navbar-height);
   }
 
