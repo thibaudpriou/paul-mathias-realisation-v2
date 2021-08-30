@@ -58,7 +58,6 @@
 
   li {
     text-transform: uppercase;
-    font-weight: bold;
   }
 
   .nav-divider {
@@ -71,6 +70,10 @@
   @media (min-width: 1100px) {
     .nav-divider {
       display: flex;
+    }
+
+    li {
+      font-weight: bold;
     }
   }
 </style>

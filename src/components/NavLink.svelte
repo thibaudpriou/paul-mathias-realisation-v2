@@ -46,6 +46,11 @@
     left: 0.5em;
   }
 
+  .link[aria-current="page"]:not(.logo) {
+    font-weight: bold;
+  }
+
+
   .link:hover:after,
   .link[aria-current="page"]:not(.logo):after {
     width: calc(100% - 1em);

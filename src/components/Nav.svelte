@@ -169,7 +169,7 @@
   @media (min-width: 1100px) {
     nav {
       flex-direction: row;
-      background-color: rgba(255, 255, 255, 0.25);
+      background-color: rgba(255, 255, 255, 0.5);
     }
 
     .black-variant {
@@ -177,7 +177,7 @@
       color: white;
       fill: white;
       stroke: white;
-      background-color: rgba(0, 0, 0, 0.25);
+      background-color: rgba(0, 0, 0, 0.5);
     }
 
     .black-variant .directors {
