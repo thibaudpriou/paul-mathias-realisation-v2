@@ -8,8 +8,8 @@
 <div class="container">
   <span><MailLink /></span>
   <span><Copyright /></span>
-  <span class="social-link"><VimeoLogo /></span>
-  <span class="social-link"><InstagramLogo /></span>
+  <span class="social-link"><VimeoLogo background /></span>
+  <span class="social-link"><InstagramLogo background /></span>
 </div>
 
 <style>

@@ -46,8 +46,8 @@
   <span class="links">
     <NavLinks {categories} {segment} {blackVariant} on:nav-link={closeMenu} />
     <div class="social-links">
-      <span class="social-link"><VimeoLogo /></span>
-      <span class="social-link"><InstagramLogo /></span>
+      <span class="social-link"><VimeoLogo background /></span>
+      <span class="social-link"><InstagramLogo background /></span>
     </div>
   </span>
 </nav>
@@ -160,6 +160,7 @@
     height: 1.5em;
     display: inline-flex;
     margin-left: 1em;
+    z-index: 0; /* to create stacking context */
   }
 
   .social-link:first-child {
