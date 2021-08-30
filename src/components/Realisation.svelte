@@ -63,6 +63,7 @@
     color: white;
     opacity: 0.9;
     font-size: clamp(0.3em, 1.25vw, 1em);
+    padding-top: 3.5em;
   }
 
   .description > * {
@@ -88,7 +89,7 @@
   .seeVideoLink {
     text-decoration: none;
     font-size: 1.5em;
-    padding: 0 1.5rem 0 1.5rem;
+    padding: 0 1.5em 0 1.5em;
     border: 1px solid #fff;
     font-style: italic;
     box-sizing: border-box;
