@@ -110,7 +110,7 @@
 
   .control-icon {
     display: inline-block;
-    width: 15%;
+    width: 7.5%;
   }
 
   .control.prev {
