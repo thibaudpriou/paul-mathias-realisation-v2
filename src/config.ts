@@ -11,7 +11,7 @@ const categories: ICategory[] = [
         title: "Château Garreau Armagnac",
         type: RealisationType.Ad,
         videoUrl: "https://vimeo.com/510700451",
-        imageRatio: ImageRatio["16/9"],
+        imageRatio: ImageRatio["2.35/1"],
         samples: [
           {
             alt: "Échantillon publicité Château Garreau Armagnac 1",
@@ -40,6 +40,7 @@ const categories: ICategory[] = [
         title: "Skydrone",
         type: RealisationType.Ad,
         videoUrl: "https://vimeo.com/386964358",
+        imageRatio: ImageRatio["2.35/1"],
         samples: [
           {
             alt: "Échantillon publicité Skydrone 1",
@@ -155,6 +156,7 @@ const categories: ICategory[] = [
         title: "L'Horloger",
         type: RealisationType.Short,
         videoUrl: "https://vimeo.com/294550528",
+        imageRatio: ImageRatio["2.35/1"],
         samples: [
           {
             alt: "Échantillon de L'Horloger 1",
@@ -215,6 +217,7 @@ const categories: ICategory[] = [
         title: "Dosla - La tête Pleine",
         type: RealisationType.Clip,
         videoUrl: "https://www.youtube.com/watch?v=I7ixz5rmmQE",
+        imageRatio: ImageRatio["2.35/1"],
         samples: [
           {
             alt: "Échantillon du clip La tête Pleine 1",
@@ -242,19 +245,22 @@ const categories: ICategory[] = [
         globalRank: 3,
       },
       // ! Adun
-      //   {
-      //     title: "Adun",
-      //     videoUrl: "TODO",
+      // {
+      //   title: "Adun",
+      //   videoUrl: "TODO",
+      //   type: RealisationType.Clip,
+      //   imageRatio: ImageRatio["2.35/1"],
       //     samples: [
-      //       // TODO
-      //     ],
-      //     rank: 2,
-      //     globalRank: 10,
-      //   },
+      //     // TODO
+      //   ],
+      //   rank: 2,
+      //   globalRank: 10,
+      // },
       {
         title: "Dosla - Dans ma tchop",
         type: RealisationType.Clip,
         videoUrl: "https://www.youtube.com/watch?v=Z6-l8f84HR4",
+        imageRatio: ImageRatio["2.35/1"],
         samples: [
           {
             alt: "Échantillon du clip Dans ma tchop 1",
@@ -282,15 +288,17 @@ const categories: ICategory[] = [
         globalRank: 8,
       },
       // ! Pensando
-      //   {
-      //     title: "Pensando",
-      //     videoUrl: "TODO",
-      //     samples: [
-      //       // TODO
-      //     ],
-      //     rank: 4,
-      //     globalRank: 12,
-      //   },
+      // {
+      //   title: "Pensando",
+      //   videoUrl: "TODO",
+      //   type: RealisationType.Clip,
+      //   imageRatio: ImageRatio["2.35/1"],
+      //   samples: [
+      //     // TODO
+      //   ],
+      //   rank: 4,
+      //   globalRank: 12,
+      // },
       {
         title: "Charlie M - Et si j'intéresse encore",
         type: RealisationType.Clip,

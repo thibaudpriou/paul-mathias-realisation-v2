@@ -71,6 +71,7 @@
 <div
   class="slides-container"
   class:ratio-16-9={imageRatio === ImageRatio["16/9"]}
+  class:ratio-235-1={imageRatio === ImageRatio["2.35/1"]}
 >
   {#each slides as slide}
     {#if slide.idx === activeSlideIdx}
@@ -161,6 +162,11 @@
   .ratio-16-9 {
     --ratio-numerator: 16;
     --ratio-denominator: 9;
+  }
+
+  .ratio-235-1 {
+    --ratio-numerator: 2.35;
+    --ratio-denominator: 1;
   }
 
   .slides-container {
