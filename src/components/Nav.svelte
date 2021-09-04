@@ -69,7 +69,8 @@
     display: flex;
     flex-grow: 1;
     align-items: center;
-    min-height: var(--navbar-height);
+    height: var(--navbar-height);
+    background-color: inherit;
   }
 
   .navbar-brand {
@@ -117,12 +118,15 @@
   }
 
   .links {
-    display: none;
+    /* display: none; */
     flex-grow: 1;
-    display: none;
     justify-content: center;
     flex-direction: column;
-    padding: 1em 0;
+    opacity: 0;
+    height: 0;
+    padding: 0;
+    transition: opacity 0s;
+    transform: translateY(-100vh); /* so that it doesn't invisibly sit on top of realisations */
   }
 
   .logo-link {
@@ -130,7 +134,11 @@
   }
 
   .collapsed .links {
-    display: flex;
+    opacity: 1;
+    height: auto;
+    padding: 1em 0 1.5em 0;
+    transition: opacity .5s;
+    transform: none;
   }
 
   .overlay {
@@ -173,6 +181,10 @@
       background-color: rgba(255, 255, 255, 0.5);
     }
 
+    .main {
+      background: none;
+    }
+
     .black-variant {
       /* only for desktop */
       color: white;
@@ -200,6 +212,9 @@
       justify-content: flex-end;
       flex-direction: row;
       padding: 0;
+      opacity: 1;
+      height: auto;
+      transform: none;
     }
 
     .logo-link {
