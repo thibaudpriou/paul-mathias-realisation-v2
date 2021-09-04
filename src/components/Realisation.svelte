@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import swipeDetect from "../lib/swipe-detect";
+  import swipeDetect from "$lib/swipe-detect";
   import type IRealisation from "../types/realisation";
   import Carousel from "./Carousel.svelte";
 

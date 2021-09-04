@@ -10,7 +10,6 @@
     stroke-width="2"
     stroke-linecap="round"
     stroke-miter
-    limit="10"
     d="M4 7h22M4 15h22M4 23h22"
   />
 </svg>

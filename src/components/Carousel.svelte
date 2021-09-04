@@ -52,13 +52,13 @@
     activeSlideIdx = index;
   }
 
-  function customFadeIn(node, { delay = 0, duration = 400 }) {
+  function customFadeIn(node: Element, { delay = 0, duration = 400 }) {
     const o = +getComputedStyle(node).opacity;
 
     return {
       delay,
       duration,
-      css: (t) => `
+      css: (t: number) => `
         opacity: ${t * o};
         z-index: 1;
       `,

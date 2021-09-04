@@ -1,5 +1,10 @@
 <script context="module" lang="ts">
   import categories from "../config";
+
+  export async function load({ page }) {
+    return { props: {segment: page.path} };
+	}
+  
 </script>
 
 <script lang="ts">
@@ -12,14 +17,14 @@
 
   $: {
     // reset "blackNavVariant" data on "segment" prop change
-    blackNavVariant = segment === undefined;
+    blackNavVariant = segment === '/';
   }
 
   let lastKnownScrollPosition = 0;
   let ticking = false;
 
-  function adaptNavColor(scrollPos) {
-    if (segment !== undefined) return;
+  function adaptNavColor(scrollPos: number) {
+    if (segment !== '/') return;
 
     const showreel: HTMLElement = document.getElementById("showreel");
     if (!showreel) return;
@@ -47,14 +52,14 @@
   <Nav {segment} blackVariant={blackNavVariant} {categories} />
 </header>
 <Page refresh={segment} transitionDuration={10}>
-  <main class:inverted={segment === "about"}>
+  <main class:inverted={segment === "/about"}>
     <slot />
-    {#if segment !== "about"}
+    {#if segment !== "/about"}
       <img class="banner-pre-footer" src="/imgs/footer-banner.png" alt="" />
     {/if}
   </main>
-  {#if segment !== "about"}
-    <footer class="footer" class:inverted={segment === "about"}>
+  {#if segment !== "/about"}
+    <footer class="footer" class:inverted={segment === "/about"}>
       <Footer />
     </footer>
   {/if}

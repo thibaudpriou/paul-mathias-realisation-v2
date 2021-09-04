@@ -13,7 +13,7 @@
     <NavLink
       href="all"
       {blackVariant}
-      isAriaCurrent={segment === "all"}
+      isAriaCurrent={segment === "/all"}
       on:nav-link
     >
       Tout voir
@@ -25,7 +25,7 @@
       <NavLink
         href={category.path}
         {blackVariant}
-        isAriaCurrent={segment === category.path}
+        isAriaCurrent={segment === `/${category.path}`}
         on:nav-link
       >
         {category.title}
@@ -37,7 +37,7 @@
     <NavLink
       href="about"
       {blackVariant}
-      isAriaCurrent={segment === "about"}
+      isAriaCurrent={segment === "/about"}
       on:nav-link
     >
       À Propos

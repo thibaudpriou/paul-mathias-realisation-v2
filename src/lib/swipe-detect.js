@@ -1,4 +1,5 @@
 // ! copy pasted from swipe-detect library to make listeners passive...
+// @ts-nocheck
 /**
  * Used to ignore longer touches that are probably not
  * meant as a swipe by the user

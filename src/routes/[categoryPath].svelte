@@ -1,16 +1,16 @@
 <script lang="ts" context="module">
-  import Realisation from "../components/Realisation.svelte";
   import categories from "../config";
   import type ICategory from "../types/category";
   
-  export async function preload(page, ) {
+  export async function load({ page }) {
     const { categoryPath } = page.params;
-    const category: ICategory = categories.find((c) => c.path === categoryPath);
-		return { category };
+    const category: ICategory|undefined = categories.find((c) => c.path === categoryPath);
+		return category && { props: {category} };
 	}
 </script>
 
 <script lang="ts">
+  import Realisation from "../components/Realisation.svelte";
   export let category: ICategory;
   $: realisations = category.realisations.sort((r1, r2) => r1.rank - r2.rank);
 </script>

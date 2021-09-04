@@ -22,7 +22,7 @@
     <span class="logo-link">
       <NavLink
         logo
-        isAriaCurrent={segment === undefined}
+        isAriaCurrent={segment === '/'}
         href="."
         {blackVariant}
         on:nav-link={closeMenu}
