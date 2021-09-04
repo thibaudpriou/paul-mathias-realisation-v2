@@ -3,8 +3,10 @@
   import CarouselControl from "./CarouselControl.svelte";
   import CarouselIndicator from "./CarouselIndicator.svelte";
   import type IRealisation from "../types/realisation";
+  import { ImageRatio } from "../types/realisation";
 
   // --- props
+  export let imageRatio: IRealisation["imageRatio"] = ImageRatio["16/9"];
   export let samples: IRealisation["samples"];
   export let transitionDuration: number = 600;
 
@@ -66,7 +68,10 @@
   }
 </script>
 
-<div class="slides-container">
+<div
+  class="slides-container"
+  class:ratio-16-9={imageRatio === ImageRatio["16/9"]}
+>
   {#each slides as slide}
     {#if slide.idx === activeSlideIdx}
       <img
@@ -153,10 +158,14 @@
     z-index: -1;
   }
 
+  .ratio-16-9 {
+    --ratio-numerator: 16;
+    --ratio-denominator: 9;
+  }
+
   .slides-container {
     width: 100%;
-    /* TODO gérer différents aspect-ratios */
-    height: min(calc(100vh - var(--navbar-height)), 100vw * 9 / 16);
+    height: calc(100vw * var(--ratio-denominator) / var(--ratio-numerator));
     position: relative;
     z-index: 0; /* stacking context creation for extra-safety */
   }
@@ -174,8 +183,7 @@
 
   @media (min-width: 1100px) {
     .slides-container {
-      /* TODO gérer différents aspect-ratios */
-      height: min(100vh, 100vw * 9 / 16);
+      height: calc(100vw * var(--ratio-denominator) / var(--ratio-numerator));
     }
   }
 </style>

@@ -5,10 +5,18 @@ export enum RealisationType {
   Clip = "Clip",
 }
 
+export enum ImageRatio {
+  "16/9" = "16/9",
+}
+
 export default interface IRealisation {
   title: string;
   type: RealisationType;
   videoUrl: string;
+  /**
+   * @param imageRatio default to 16/9
+   */
+  imageRatio?: ImageRatio;
   samples: Array<{
     alt: string;
     defaultImagePath: string;

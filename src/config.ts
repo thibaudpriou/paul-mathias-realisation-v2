@@ -1,5 +1,5 @@
 import type ICategory from "./types/category";
-import { RealisationType } from './types/realisation';
+import { ImageRatio, RealisationType } from './types/realisation';
 
 const categories: ICategory[] = [
   {
@@ -11,6 +11,7 @@ const categories: ICategory[] = [
         title: "Château Garreau Armagnac",
         type: RealisationType.Ad,
         videoUrl: "https://vimeo.com/510700451",
+        imageRatio: ImageRatio["16/9"],
         samples: [
           {
             alt: "Échantillon publicité Château Garreau Armagnac 1",

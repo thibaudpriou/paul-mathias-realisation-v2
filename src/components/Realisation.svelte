@@ -39,14 +39,13 @@
       title="Ouvrir la vidéo dans un nouvel onglet">Voir</a
     >
   </div>
-  <Carousel samples={realisation.samples} bind:this={carousel} />
+  <Carousel samples={realisation.samples} imageRatio={realisation.imageRatio} bind:this={carousel} />
 </section>
 
 <style>
   .container {
     position: relative;
     font-family: "SourceSansPro-BlackIt";
-    max-height: 100vh;
     overflow: hidden;
   }
 
