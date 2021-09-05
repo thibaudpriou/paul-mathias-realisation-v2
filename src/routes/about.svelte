@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { assets } from '$app/paths';
   import VimeoLogo from "../components/social/VimeoLogo.svelte";
   import InstagramLogo from "../components/social/InstagramLogo.svelte";
   import MailLink from "../components/social/MailLink.svelte";
@@ -29,7 +30,7 @@
           <div class="images-subcontainer-left">
             <img
               class="img"
-              src="/imgs/about-1.jpg"
+              src={`${assets}/imgs/about-1.jpg`}
               width="835"
               height="831"
               alt="Paul et Mathias sur le tournage de l'Horloger"
@@ -38,14 +39,14 @@
           <div class="images-subcontainer-right">
             <img
               class="img"
-              src="/imgs/about-2.jpg"
+              src={`${assets}/imgs/about-2.jpg`}
               width="640"
               height="480"
               alt="Paul et Mathias sur le tournage de Et c'était le monde"
             />
             <img
               class="img"
-              src="/imgs/about-3.jpg"
+              src={`${assets}/imgs/about-3.jpg`}
               width="640"
               height="346"
               alt="Paul et Mathias sur le tournage de Et c'était le monde"

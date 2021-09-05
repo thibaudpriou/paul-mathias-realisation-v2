@@ -1,10 +1,12 @@
 <script context="module" lang="ts">
+  import { assets } from '$app/paths';
   import categories from "../config";
 
   export async function load({ page }) {
     return { props: {segment: page.path} };
 	}
-  
+
+  const SITE_URL = "http://paul-mathias-realisation.com/";
 </script>
 
 <script lang="ts">
@@ -46,6 +48,73 @@
   }
 </script>
 
+
+<svelte:head>
+  <meta
+    name="keywords"
+    content="Réalisation, Court-métrage, Pub, Clip, Fiction"
+  />
+  <meta
+    name="google-site-verification"
+    content="nUD7H3E87xDUaik5mFLa1QF7-XY1ZQyJC6cRxCWm4gY"
+  />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content={SITE_URL} />
+  <meta name="twitter:title" content="Paul & Mathias" />
+  <meta
+    name="twitter:description"
+    content="Réalisateurs français de fictions, de clips et de films publicitaires. Notre vocation : créer de l’émotion."
+  />
+  <meta name="twitter:creator" content="Paul & Mathias" />
+  <meta
+    name="twitter:image"
+    content={`${assets}/imgs/vignette-fb.png`}
+  />
+  <!-- TODO vignette-fb.png -->
+  <meta property="og:title" content="Paul & Mathias" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={SITE_URL} />
+  <meta
+    property="og:image"
+    content={`${assets}/imgs/vignette-fb.png`}
+  />
+  <!-- TODO vignette-fb.png -->
+  <meta
+    property="og:description"
+    content="Réalisateurs français de fictions, de clips et de films publicitaires. Notre vocation : créer de l’émotion."
+  />
+  <meta property="og:site_name" content="Paul & Mathias" />
+  <meta property="fb:admins" content="100000548772365,1552087045" />
+
+  <!-- Favicons -->
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href={`${assets}/favicon/apple-touch-icon.png`}
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href={`${assets}/favicon/favicon-32x32.png`}
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href={`${assets}/favicon/favicon-16x16.png`}
+  />
+  <link rel="manifest" href={`${assets}/favicon/site.webmanifest`} />
+  <link
+    rel="mask-icon"
+    href={`${assets}/favicon/safari-pinned-tab.svg`}
+    color="#000000"
+  />
+  <meta name="msapplication-TileColor" content="#f3f3f3" />
+  <meta name="theme-color" content="#ffffff" />
+</svelte:head>
+
 <svelte:window on:scroll={onScroll} />
 
 <header class="navbar-container">
@@ -55,7 +124,7 @@
   <main class:inverted={segment === "/about"}>
     <slot />
     {#if segment !== "/about"}
-      <img class="banner-pre-footer" src="/imgs/footer-banner.png" alt="" />
+      <img class="banner-pre-footer" src={`${assets}/imgs/footer-banner.png`} alt="" />
     {/if}
   </main>
   {#if segment !== "/about"}

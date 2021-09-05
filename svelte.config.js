@@ -1,15 +1,18 @@
-import adapter from '@sveltejs/adapter-static';
+import adaptaterStatic from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
-		adapter: adapter({
+		adapter: adaptaterStatic({
 			pages: 'build',
 			assets: 'build',
 			fallback: null
 		}),
 		target: '#svelte',
+		paths: {
+			// assets:"https://cdn.demo.paul-mathias-realisation.com"
+		}
 	},
 	preprocess: preprocess()
 };

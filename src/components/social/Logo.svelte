@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { assets } from '$app/paths';
     export let background: boolean = false;
     export let href: string;
     export let imgSrc: string;
@@ -15,12 +16,12 @@
       rel="noopener noreferrer"
       class="social-link"
     >
-      <img class="social-logo" src={imgSrc} alt={imgAlt} />
+      <img class="social-logo" src={`${assets}/${imgSrc}`} alt={imgAlt} />
     </a>
     {#if background}
       <img
         class="social-logo-bg"
-        src={bgSrc}
+        src={`${assets}/${bgSrc}`}
         alt={bgAlt}
       />
     {/if}

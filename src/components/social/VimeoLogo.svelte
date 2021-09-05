@@ -4,9 +4,9 @@
   export let background: boolean = false;
 
   const href = "https://vimeo.com/user72935796";
-  const imgSrc = "/imgs/logo.vimeo.png";
+  const imgSrc = "imgs/logo.vimeo.png";
   const imgAlt = "Logo Vimeo";
-  const bgSrc = "/imgs/logo-bg.vimeo.png";
+  const bgSrc = "imgs/logo-bg.vimeo.png";
   const bgAlt = "Fond pour logo Vimeo";
 </script>
 

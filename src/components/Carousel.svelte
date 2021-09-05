@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { assets } from '$app/paths';
   import { fade } from "svelte/transition";
   import CarouselControl from "./CarouselControl.svelte";
   import CarouselIndicator from "./CarouselIndicator.svelte";
@@ -33,8 +34,8 @@
     sample: IRealisation["samples"][0]
   ): ImgAttributes {
     return {
-      src: sample.defaultImagePath,
-      srcset: sample.images.map((i) => `${i.path} ${i.breakpoint}`).join(","),
+      src: `${assets}/${sample.defaultImagePath}`,
+      srcset: sample.images.map((i) => `${assets}/${i.path} ${i.breakpoint}`).join(","),
     };
   }
 

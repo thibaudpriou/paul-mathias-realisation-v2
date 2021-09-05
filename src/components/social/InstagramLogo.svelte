@@ -4,9 +4,9 @@
   export let background: boolean = false;
 
   const href = "https://www.instagram.com/paulmathias.realisation/";
-  const imgSrc = "/imgs/logo.instagram.png";
+  const imgSrc = "imgs/logo.instagram.png";
   const imgAlt = "Logo Instagram";
-  const bgSrc = "/imgs/logo-bg.instagram.png";
+  const bgSrc = "imgs/logo-bg.instagram.png";
   const bgAlt = "Fond pour logo Instagram";
 </script>
 
