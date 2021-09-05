@@ -1,13 +1,15 @@
 <script context="module" lang="ts">
-    import {categories} from "../config";
+    import {categories, homePageSamples} from "../config";
     import type IRealisation from "../types/realisation";
 
     let realisations = categories
         .reduce<IRealisation[]>((reals, cat) => [...reals, ...cat.realisations], [])
         .sort((r1, r2) => r1.globalRank - r2.globalRank);
+    let mobileSamples = homePageSamples.sort((s1, s2) => s1.rank - s2.rank);
 </script>
 
 <script lang="ts">
+    import AutoCarousel from "../components/carousel/AutoCarousel.svelte";
     import Realisation from "../components/Realisation.svelte";
     import Showreel from "../components/Showreel.svelte";
 </script>
@@ -21,7 +23,33 @@
     />
 </svelte:head>
 
-<Showreel />
-{#each realisations as realisation}
-    <Realisation {realisation} />
-{/each}
+<div class="desktop">
+    <Showreel />
+    {#each realisations as realisation}
+        <Realisation {realisation} />
+    {/each}
+</div>
+<div class="mobile">
+    <AutoCarousel samples={mobileSamples} fullscreen intervalDuration={2500} />
+</div>
+
+<style>
+    .desktop {
+        display: none;
+    }
+
+
+    .mobile {
+        height: calc(100vh - var(--navbar-height));
+    }
+
+    @media (min-width: 1100px) {
+        .desktop {
+            display: block;
+        }
+
+        .mobile {
+            display: none;
+        }
+    }
+</style>

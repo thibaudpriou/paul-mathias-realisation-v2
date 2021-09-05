@@ -3,7 +3,7 @@
     import {fade} from "svelte/transition";
     import CarouselControl from "./CarouselControl.svelte";
     import CarouselIndicator from "./CarouselIndicator.svelte";
-    import type {Sample} from "../../types/realisation";
+    import type Sample from "../../types/sample";
     import {ImageRatio} from "../../types/realisation";
 
     // --- props
@@ -12,6 +12,7 @@
     export let transitionDuration: number = 600;
     export let controls: boolean = true;
     export let indicators: boolean = true;
+    export let fullscreen: boolean = false;
 
     // --- data
     let activeSlideIdx: number = 0;
@@ -69,6 +70,7 @@
 
 <div
     class="slides-container"
+    class:fullscreen
     class:ratio-16-9={imageRatio === ImageRatio["16/9"]}
     class:ratio-235-1={imageRatio === ImageRatio["2.35/1"]}
 >
@@ -179,6 +181,10 @@
         z-index: 0; /* stacking context creation for extra-safety */
     }
 
+    .fullscreen {
+        height: 100%;
+    }
+
     .slide {
         height: 100%;
         width: 100%;
@@ -193,6 +199,10 @@
     @media (min-width: 1100px) {
         .slides-container {
             height: calc(100vw * var(--ratio-denominator) / var(--ratio-numerator));
+        }
+
+        .fullscreen {
+            height: 100%;
         }
     }
 </style>

@@ -1,3 +1,5 @@
+import type Sample from "./sample";
+
 export enum RealisationType {
     Ad = "Pub",
     Short = "Court-métrage",
@@ -8,16 +10,6 @@ export enum RealisationType {
 export enum ImageRatio {
     "16/9" = "16/9",
     "2.35/1" = "2.35/1",
-}
-
-export interface Sample {
-    alt: string;
-    defaultImagePath: string;
-    images: Array<{
-        path: string;
-        breakpoint: string;
-    }>;
-    rank: number; // image position inside realisation's carousel
 }
 
 export default interface IRealisation {

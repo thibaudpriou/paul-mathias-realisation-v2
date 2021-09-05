@@ -1,4 +1,5 @@
 import type ICategory from "./types/category";
+import type Sample from "./types/sample";
 import {ImageRatio, RealisationType} from "./types/realisation";
 
 const categories: ICategory[] = [
@@ -332,4 +333,47 @@ const categories: ICategory[] = [
     },
 ];
 
-export {categories};
+/**
+ * Only used for mobile version of home page
+ */
+const homePageSamples: Sample[] = [
+    // ! these are not the final images
+    {
+        alt: "Échantillon publicité Château Garreau Armagnac 1",
+        defaultImagePath: "imgs/realisations/chateau-garreau-armagnac-1.jpeg",
+        images: [],
+        rank: 1,
+    },
+    {
+        alt: "Échantillon publicité Château Garreau Armagnac 2",
+        defaultImagePath: "imgs/realisations/chateau-garreau-armagnac-2.jpeg",
+        images: [],
+        rank: 2,
+    },
+    {
+        alt: "Échantillon publicité Château Garreau Armagnac 3",
+        defaultImagePath: "imgs/realisations/chateau-garreau-armagnac-3.jpeg",
+        images: [],
+        rank: 3,
+    },
+    {
+        alt: "Échantillon du clip Et si j'intéresse encore 1",
+        images: [],
+        defaultImagePath: "imgs/realisations/et-si-j-interesse-encore-1.jpeg",
+        rank: 4,
+    },
+    {
+        alt: "Échantillon du clip Et si j'intéresse encore 2",
+        images: [],
+        defaultImagePath: "imgs/realisations/et-si-j-interesse-encore-2.jpeg",
+        rank: 5,
+    },
+    {
+        alt: "Échantillon du clip Et si j'intéresse encore 3",
+        images: [],
+        defaultImagePath: "imgs/realisations/et-si-j-interesse-encore-3.jpeg",
+        rank: 6,
+    },
+];
+
+export {categories, homePageSamples};
