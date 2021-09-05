@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <link rel="stylesheet" href="app.css" />
+        <link rel="stylesheet" href="app.css" />
 
-    %svelte.head%
-  </head>
-  <body>
-    <div id="svelte">%svelte.body%</div>
-    <style>
-      #svelte {
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        z-index: 0; /* stacking context creation to be extra-safe */
-      }
-    </style>
-  </body>
+        %svelte.head%
+    </head>
+    <body>
+        <div id="svelte">%svelte.body%</div>
+        <style>
+            #svelte {
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                z-index: 0; /* stacking context creation to be extra-safe */
+            }
+        </style>
+    </body>
 </html>

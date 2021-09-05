@@ -1,6 +1,5 @@
 # paul-mathias-realisation-ssr
 
-
 ## Getting started
 
 - Clone this repository:

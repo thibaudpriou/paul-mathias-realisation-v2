@@ -1,63 +1,62 @@
 <script lang="ts">
-  import { createEventDispatcher } from "svelte";
-  export let isAriaCurrent: boolean;
-  export let href: string;
-  export let blackVariant: boolean = false;
-  export let logo: boolean = false;
+    import {createEventDispatcher} from "svelte";
+    export let isAriaCurrent: boolean;
+    export let href: string;
+    export let blackVariant: boolean = false;
+    export let logo: boolean = false;
 
-  const dispatch = createEventDispatcher();
+    const dispatch = createEventDispatcher();
 
-  function forward() {
-    dispatch("nav-link");
-  }
+    function forward() {
+        dispatch("nav-link");
+    }
 </script>
 
 <a
-  class="link"
-  class:logo
-  class:black-variant={blackVariant}
-  aria-current={isAriaCurrent ? "page" : undefined}
-  {href}
-  on:click={forward}
+    class="link"
+    class:logo
+    class:black-variant={blackVariant}
+    aria-current={isAriaCurrent ? "page" : undefined}
+    {href}
+    on:click={forward}
 >
-  <slot />
+    <slot />
 </a>
 
 <style>
-  a {
-    text-decoration: none;
-    padding: 0.5em 0.5em;
-    display: block;
-  }
+    a {
+        text-decoration: none;
+        padding: 0.5em 0.5em;
+        display: block;
+    }
 
-  .link {
-    position: relative;
-    display: inline-block;
-    white-space: nowrap;
-  }
+    .link {
+        position: relative;
+        display: inline-block;
+        white-space: nowrap;
+    }
 
-  .link:after {
-    content: "";
-    background: black;
-    width: 0;
-    height: 1px;
-    position: absolute;
-    bottom: 0.25em;
-    left: 0.5em;
-  }
+    .link:after {
+        content: "";
+        background: black;
+        width: 0;
+        height: 1px;
+        position: absolute;
+        bottom: 0.25em;
+        left: 0.5em;
+    }
 
-  .link[aria-current="page"]:not(.logo) {
-    font-weight: bold;
-  }
+    .link[aria-current="page"]:not(.logo) {
+        font-weight: bold;
+    }
 
+    .link:hover:after,
+    .link[aria-current="page"]:not(.logo):after {
+        width: calc(100% - 1em);
+        transition: width 0.2s ease-in-out;
+    }
 
-  .link:hover:after,
-  .link[aria-current="page"]:not(.logo):after {
-    width: calc(100% - 1em);
-    transition: width 0.2s ease-in-out;
-  }
-
-  .link.black-variant:after {
-    background: white;
-  }
+    .link.black-variant:after {
+        background: white;
+    }
 </style>
