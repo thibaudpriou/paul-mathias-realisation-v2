@@ -2,7 +2,7 @@
   import { onMount } from "svelte";
   import swipeDetect from "$lib/swipe-detect";
   import type IRealisation from "../types/realisation";
-  import Carousel from "./Carousel.svelte";
+  import Carousel from "./carousel/Carousel.svelte";
 
   // --- props
   export let realisation: IRealisation;

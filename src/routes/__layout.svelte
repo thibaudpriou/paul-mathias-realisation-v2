@@ -1,6 +1,6 @@
 <script context="module" lang="ts">
   import { assets } from '$app/paths';
-  import categories from "../config";
+  import {categories} from "../config";
 
   export async function load({ page }) {
     return { props: {segment: page.path} };

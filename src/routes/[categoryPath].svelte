@@ -1,5 +1,5 @@
 <script lang="ts" context="module">
-  import categories from "../config";
+  import {categories} from "../config";
   import type ICategory from "../types/category";
   
   export async function load({ page }) {

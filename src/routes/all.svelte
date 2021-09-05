@@ -1,5 +1,5 @@
 <script context="module" lang="ts">
-    import categories from "../config";
+    import {categories} from "../config";
     import type IRealisation from "../types/realisation";
   
     let realisations = categories

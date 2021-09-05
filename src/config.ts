@@ -333,4 +333,4 @@ const categories: ICategory[] = [
   },
 ];
 
-export default categories;
+export {categories};

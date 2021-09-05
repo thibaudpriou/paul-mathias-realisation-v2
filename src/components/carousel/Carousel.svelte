@@ -3,15 +3,15 @@
   import { fade } from "svelte/transition";
   import CarouselControl from "./CarouselControl.svelte";
   import CarouselIndicator from "./CarouselIndicator.svelte";
-  import type IRealisation from "../types/realisation";
-  import { ImageRatio } from "../types/realisation";
+  import type { Sample } from "../../types/realisation";
+  import { ImageRatio } from "../../types/realisation";
 
   // --- props
-  export let imageRatio: IRealisation["imageRatio"] = ImageRatio["16/9"];
-  export let samples: IRealisation["samples"];
+  export let imageRatio: ImageRatio = ImageRatio["16/9"];
+  export let samples: Sample[];
   export let transitionDuration: number = 600;
-
-  // ! remove embla-carousel from package.json
+  export let controls: boolean = true;
+  export let indicators: boolean = true;
 
   // --- data
   let activeSlideIdx: number = 0;
@@ -30,9 +30,7 @@
     srcset: string;
   }
 
-  function getSampleImgAttributes(
-    sample: IRealisation["samples"][0]
-  ): ImgAttributes {
+  function getSampleImgAttributes(sample: Sample): ImgAttributes {
     return {
       src: `${assets}/${sample.defaultImagePath}`,
       srcset: sample.images.map((i) => `${assets}/${i.path} ${i.breakpoint}`).join(","),
@@ -87,12 +85,15 @@
     {/if}
   {/each}
 </div>
+{#if controls}
 <button class="control prev" on:click={goPrev} aria-label="image suivante">
   <span class="control-icon"><CarouselControl /></span></button
 >
 <button class="control next" on:click={goNext} aria-label="image précédente"
   ><span class="control-icon"><CarouselControl invert /></span></button
 >
+{/if}
+{#if indicators}
 <span class="indicators">
   {#each slides as _, idx}
     <button class="indicator" on:click={() => goTo(idx)} aria-label="voir image précise">
@@ -100,6 +101,7 @@
     </button>
   {/each}
 </span>
+{/if}
 
 <style>
   .control {
