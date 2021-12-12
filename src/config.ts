@@ -244,61 +244,6 @@ const categories: ICategory[] = [
                 rank: 1,
                 globalRank: 3,
             },
-            // ! Adun
-            // {
-            //   title: "Adun",
-            //   videoUrl: "TODO",
-            //   type: RealisationType.Clip,
-            //   imageRatio: ImageRatio["2.35/1"],
-            //     samples: [
-            //     // TODO
-            //   ],
-            //   rank: 2,
-            //   globalRank: 10,
-            // },
-            {
-                title: "Dosla - Dans ma tchop",
-                type: RealisationType.Clip,
-                videoUrl: "https://www.youtube.com/watch?v=Z6-l8f84HR4",
-                imageRatio: ImageRatio["2.35/1"],
-                samples: [
-                    {
-                        alt: "Échantillon du clip Dans ma tchop 1",
-                        images: [],
-                        defaultImagePath: "imgs/realisations/dans-ma-tchop-1.jpeg",
-
-                        rank: 1,
-                    },
-                    {
-                        alt: "Échantillon du clip Dans ma tchop 2",
-                        images: [],
-                        defaultImagePath: "imgs/realisations/dans-ma-tchop-2.jpeg",
-
-                        rank: 2,
-                    },
-                    {
-                        alt: "Échantillon du clip Dans ma tchop 3",
-                        images: [],
-                        defaultImagePath: "imgs/realisations/dans-ma-tchop-3.jpeg",
-
-                        rank: 3,
-                    },
-                ],
-                rank: 3,
-                globalRank: 8,
-            },
-            // ! Pensando
-            // {
-            //   title: "Pensando",
-            //   videoUrl: "TODO",
-            //   type: RealisationType.Clip,
-            //   imageRatio: ImageRatio["2.35/1"],
-            //   samples: [
-            //     // TODO
-            //   ],
-            //   rank: 4,
-            //   globalRank: 12,
-            // },
             {
                 title: "Charlie M - Et si j'intéresse encore",
                 type: RealisationType.Clip,
