@@ -82,6 +82,8 @@
     <link rel="mask-icon" href={`${assets}/favicon/safari-pinned-tab.svg`} color="#000000" />
     <meta name="msapplication-TileColor" content="#f3f3f3" />
     <meta name="theme-color" content="#ffffff" />
+
+    <link rel="stylesheet" href="{`${assets}/app.css`}" />
 </svelte:head>
 
 <svelte:window on:scroll={onScroll} />
