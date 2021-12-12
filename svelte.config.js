@@ -10,9 +10,15 @@ const config = {
             fallback: null,
         }),
         target: "#svelte",
-        paths: {
-            // assets:"https://cdn.demo.paul-mathias-realisation.com"
+        files: {
+            assets: "static",
         },
+        ...(process.env.NODE_ENV !== "development" && {
+            // This is a hack for dev env (see https://github.com/sveltejs/kit/issues/1154)
+            paths: {
+                assets: "https://assets.demo.paul-mathias-realisation.com",
+            },
+        }),
     },
     preprocess: preprocess(),
 };
