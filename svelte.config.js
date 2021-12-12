@@ -16,7 +16,7 @@ const config = {
         ...(process.env.NODE_ENV !== "development" && {
             // This is a hack for dev env (see https://github.com/sveltejs/kit/issues/1154)
             paths: {
-                assets: "https://assets.demo.paul-mathias-realisation.com",
+                assets: "https://cdn.paul-mathias-realisation.com",
             },
         }),
     },
