@@ -96,14 +96,14 @@
     <Nav {segment} blackVariant={blackNavVariant} greyVariant={greyNavVariant} {categories} />
 </header>
 <Page refresh={segment} transitionDuration={10}>
-    <main class:inverted={segment === "/about"}>
+    <main>
         <slot />
         {#if segment !== "/about"}
             <img class="banner-pre-footer" src={`${assets}/imgs/footer-banner.png`} alt="" />
         {/if}
     </main>
     {#if segment !== "/about"}
-        <footer class="footer" class:inverted={segment === "/about"}>
+        <footer class="footer">
             <Footer />
         </footer>
     {/if}
@@ -118,8 +118,9 @@
         min-height: calc(100vh - var(--navbar-height));
     }
 
-    .inverted {
+    main, footer {
         background-color: #ececec;
+        color: black;
     }
 
     .navbar-container {
@@ -169,6 +170,8 @@
 
         .footer {
             display: flex;
+            background-color: black;
+            color: white;
         }
     }
 
