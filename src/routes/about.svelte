@@ -80,8 +80,8 @@
 
 <style>
     .container {
-        padding: 10%;
-        padding-bottom: 0;
+        padding: 0 var(--wpadding-text);
+        padding-top: calc(var(--navbar-height) * 0.75);
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -264,10 +264,15 @@
     @media (min-width: 1100px) {
         .container {
             min-height: 100vh;
+            padding-top: calc(2 * var(--navbar-height));
         }
     }
 
     @media (min-width: 1400px) {
+        .container {
+            padding-top: 10%;
+        }
+
         .about-content {
             flex-direction: row;
         }

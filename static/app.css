@@ -8,6 +8,7 @@ body {
     background-color: black;
 
     --navbar-height: 3em;
+    --wpadding-text: 10%;
 }
 
 h1,

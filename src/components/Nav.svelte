@@ -45,7 +45,7 @@
 <style>
     nav {
         font-weight: 300;
-        padding: 0 2.5em;
+        padding: 0 calc(var(--wpadding-text) / 2 - 1.25em); /* to "center" hamburger icon in mobile */
         display: flex;
         flex-direction: column;
         background-color: rgba(255, 255, 255);
@@ -171,7 +171,8 @@
     @media (min-width: 1100px) {
         nav {
             flex-direction: row;
-            background-color: rgba(255, 255, 255, 0.5);
+            background-color: rgba(255, 255, 255);
+            padding: 0 2.5em;
         }
 
         .main {
