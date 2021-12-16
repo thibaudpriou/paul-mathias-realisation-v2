@@ -16,16 +16,20 @@
 
     export let segment: string;
     let blackNavVariant = false;
+    let greyNavVariant = false;
 
     $: {
         // reset "blackNavVariant" data on "segment" prop change
         blackNavVariant = segment === "/";
+        greyNavVariant = segment === "/about";
     }
 
     let lastKnownScrollPosition = 0;
     let ticking = false;
 
     function adaptNavColor(scrollPos: number) {
+        greyNavVariant = segment === "/about" && scrollPos === 0
+    
         if (segment !== "/") return;
 
         const showreel: HTMLElement = document.getElementById("showreel");
@@ -89,7 +93,7 @@
 <svelte:window on:scroll={onScroll} />
 
 <header class="navbar-container">
-    <Nav {segment} blackVariant={blackNavVariant} {categories} />
+    <Nav {segment} blackVariant={blackNavVariant} greyVariant={greyNavVariant} {categories} />
 </header>
 <Page refresh={segment} transitionDuration={10}>
     <main class:inverted={segment === "/about"}>

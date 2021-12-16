@@ -8,6 +8,7 @@
 
     export let segment: string;
     export let blackVariant: boolean; // ! ignored for mobile version
+    export let greyVariant: boolean;
     export let categories: ICategory[];
 
     let collapsed: boolean = false;
@@ -17,7 +18,7 @@
     }
 </script>
 
-<nav class:black-variant={blackVariant} class:collapsed>
+<nav class:black-variant={blackVariant} class:grey-variant={greyVariant} class:collapsed>
     <span class="main">
         <span class="logo-link">
             <NavLink logo isAriaCurrent={segment === "/"} href="." {blackVariant} on:nav-link={closeMenu}>
@@ -51,6 +52,10 @@
         box-sizing: border-box;
 
         transition: background-color 0.5s;
+    }
+
+    .grey-variant {
+        background-color: #ECECEC;
     }
 
     .main {
