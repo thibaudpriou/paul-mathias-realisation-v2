@@ -187,11 +187,11 @@
     }
 
     .hr-sizein {
-        -webkit-animation: sizein 1s ease 0.5s;
-        -moz-animation: sizein 1s ease 0.5s;
-        -ms-animation: sizein 1s ease 0.5s;
-        -o-animation: sizein 1s ease 0.5s;
-        animation: sizein 1s ease 0.5s;
+        -webkit-animation: sizein 1s ease 0.2s;
+        -moz-animation: sizein 1s ease 0.2s;
+        -ms-animation: sizein 1s ease 0.2s;
+        -o-animation: sizein 1s ease 0.2s;
+        animation: sizein 1s ease 0.2s;
         -webkit-animation-fill-mode: both;
         -moz-animation-fill-mode: both;
         -ms-animation-fill-mode: both;
