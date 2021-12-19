@@ -282,42 +282,35 @@ const categories: ICategory[] = [
  * Only used for mobile version of home page
  */
 const homePageSamples: Sample[] = [
-    // ! these are not the final images
     {
-        alt: "Échantillon publicité Château Garreau Armagnac 1",
-        defaultImagePath: "imgs/realisations/chateau-garreau-armagnac-1.jpeg",
+        alt: "Échantillon du clip Voler",
+        defaultImagePath: "imgs/home-carousel/home-carousel-1_voler.jpg",
         images: [],
         rank: 1,
     },
     {
-        alt: "Échantillon publicité Château Garreau Armagnac 2",
-        defaultImagePath: "imgs/realisations/chateau-garreau-armagnac-2.jpeg",
+        alt: "Échantillon du clip Voler",
+        defaultImagePath: "imgs/home-carousel/home-carousel-2_voler.jpg",
         images: [],
         rank: 2,
     },
     {
-        alt: "Échantillon publicité Château Garreau Armagnac 3",
-        defaultImagePath: "imgs/realisations/chateau-garreau-armagnac-3.jpeg",
+        alt: "Échantillon de la publicité Skydrone",
+        defaultImagePath: "imgs/home-carousel/home-carousel-3_skydrone.jpg",
         images: [],
         rank: 3,
     },
     {
-        alt: "Échantillon du clip Et si j'intéresse encore 1",
+        alt: "Échantillon du clip Voler",
+        defaultImagePath: "imgs/home-carousel/home-carousel-4_voler.jpg",
         images: [],
-        defaultImagePath: "imgs/realisations/et-si-j-interesse-encore-1.jpeg",
         rank: 4,
     },
     {
-        alt: "Échantillon du clip Et si j'intéresse encore 2",
+        alt: "Échantillon de la publicité Château Garreau Armagnac",
+        defaultImagePath: "imgs/home-carousel/home-carousel-5_armagnac.jpg",
         images: [],
-        defaultImagePath: "imgs/realisations/et-si-j-interesse-encore-2.jpeg",
         rank: 5,
-    },
-    {
-        alt: "Échantillon du clip Et si j'intéresse encore 3",
-        images: [],
-        defaultImagePath: "imgs/realisations/et-si-j-interesse-encore-3.jpeg",
-        rank: 6,
     },
 ];
 
