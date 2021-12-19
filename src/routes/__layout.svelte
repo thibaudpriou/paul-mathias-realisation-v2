@@ -6,7 +6,7 @@
         return {props: {segment: page.path}};
     }
 
-    const SITE_URL = "http://paul-mathias-realisation.com/";
+    const SITE_URL = "https://paul-mathias-realisation.com/";
 </script>
 
 <script lang="ts">
