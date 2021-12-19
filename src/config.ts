@@ -305,6 +305,37 @@ const categories: ICategory[] = [
                 rank: 1,
                 globalRank: 2.5,
             },
+            {
+                title: "Voler Guevn",
+                type: RealisationType.Clip,
+                videoUrl: "https://www.youtube.com/watch?v=t69xwlUDXeI",
+                samples: [
+                    {
+                        alt: "Échantillon du clip Voler Guevn 1",
+                        images: [],
+                        defaultImagePath: "imgs/realisations/voler-1.jpg",
+
+                        rank: 1,
+                    },
+                    {
+                        alt: "Échantillon du clip Voler Guevn 2",
+                        images: [],
+                        defaultImagePath: "imgs/realisations/voler-2.jpg",
+
+                        rank: 2,
+                    },
+                    {
+                        alt: "Échantillon du clip Voler Guevn 3",
+                        images: [],
+                        defaultImagePath: "imgs/realisations/voler-3.jpg",
+
+                        rank: 3,
+                    },
+                ],
+                imageRatio: ImageRatio["2.35/1"],
+                rank: 0,
+                globalRank: 0,
+            },
         ],
     },
 ];
