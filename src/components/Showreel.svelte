@@ -8,31 +8,22 @@
     }
 </script>
 
-<svelte:head>
-    <script defer rel="preload" as="script" src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
-</svelte:head>
-
 <div class="container" bind:this={container} id="showreel">
     <!-- TODO fix video url -->
     <video
-        data-dashjs-player
-        src="https://dash.akamaized.net/envivio/EnvivioDash3/manifest.mpd"
         autoplay
         class="demo"
         loop
         muted
         preload="metadata"
-        poster="imgs/demo_poster.jpeg"
+        poster={`${assets}/imgs/demo_poster.jpg`}
     >
-        <!-- Fallback: Dash video not supported -->
-        <!-- WEBM file is 50.8MB -->
-        <source src={`${assets}/video/demo_v4.webm`} type="video/webm" />
-        <!-- MOV file is 95.9MB -->
-        <source src={`${assets}/video/demo_v4.mov`} type="video/quicktime" />
-        <!-- MP4 file is 99.0MB -->
-        <source src={`${assets}/video/demo_v4.mp4`} type="video/mp4" />
-        <!-- OGV file is 39.7MB but it doesn't loop nicely: some black frame can be seen -->
-        <source src={`${assets}/video/demo_v4.ogv`} type="video/ogg" />
+        <!-- MP4 file is 157MB -->
+        <source src={`${assets}/videos/demo.mp4`} type="video/mp4" />
+        <!-- WEBM file is 753MB -->
+        <source src={`${assets}/videos/demo.webm`} type="video/webm" />
+        <!-- MOV file is 814MB -->
+        <source src={`${assets}/videos/demo.mov`} type="video/quicktime" />
         Votre navigateur ne supporte pas la lecture vidéo HTML5.
         <!-- tl;dr: your browser is utter shit -->
     </video>
