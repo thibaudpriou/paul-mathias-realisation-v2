@@ -60,8 +60,14 @@
 <style>
     .container {
         position: relative;
-        display: flex;
         font-family: "SourceSansPro-BlackIt";
+        display: none;
+    }
+
+    @media (min-width: 600px) {
+        .container {
+            display: flex;
+        } 
     }
 
     .demo {
