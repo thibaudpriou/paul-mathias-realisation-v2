@@ -39,7 +39,7 @@ const categories: ICategory[] = [
             {
                 title: "Skydrone",
                 type: RealisationType.Ad,
-                videoUrl: "https://vimeo.com/386964358",
+                videoUrl: "https://vimeo.com/430446941",
                 imageRatio: ImageRatio["2.35/1"],
                 samples: [
                     {
