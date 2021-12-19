@@ -275,26 +275,26 @@ const categories: ICategory[] = [
                 globalRank: 11,
             },
             {
-                title: "Think Positive Music TPM",
+                title: "TPM - Think Positive Music",
                 type: RealisationType.Clip,
                 videoUrl: "https://www.youtube.com/watch?v=6XuLEIjBreA",
                 samples: [
                     {
-                        alt: "Échantillon du clip Think Positive Music TPM 1",
+                        alt: "Échantillon du clip TPM - Think Positive Music 1",
                         images: [],
                         defaultImagePath: "imgs/realisations/tpm-1.jpg",
 
                         rank: 1,
                     },
                     {
-                        alt: "Échantillon du clip Think Positive Music TPM 2",
+                        alt: "Échantillon du clip TPM - Think Positive Music 2",
                         images: [],
                         defaultImagePath: "imgs/realisations/tpm-2.jpg",
 
                         rank: 2,
                     },
                     {
-                        alt: "Échantillon du clip Think Positive Music TPM 3",
+                        alt: "Échantillon du clip TPM - Think Positive Music 3",
                         images: [],
                         defaultImagePath: "imgs/realisations/tpm-3.jpg",
 
