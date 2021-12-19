@@ -18,6 +18,7 @@
     let blackNavVariant = false;
     let greyNavVariant = false;
     let isShowreelInPage = false;
+    let hasFooter = false;
     const pagesWithShowreel = ["/", "/all"];
 
     $: {
@@ -25,6 +26,7 @@
         isShowreelInPage = pagesWithShowreel.includes(segment);
         blackNavVariant = isShowreelInPage;
         greyNavVariant = segment === "/about";
+        hasFooter = segment !== "/about";
     }
 
     let lastKnownScrollPosition = 0;
@@ -101,11 +103,8 @@
 <Page refresh={segment} transitionDuration={10}>
     <main>
         <slot />
-        {#if segment !== "/about"}
-            <img class="banner-pre-footer" src={`${assets}/imgs/footer-banner.png`} alt="" />
-        {/if}
     </main>
-    {#if segment !== "/about"}
+    {#if hasFooter}
         <footer class="footer">
             <Footer />
         </footer>
@@ -137,14 +136,6 @@
         width: 100%;
     }
 
-    .banner-pre-footer {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        display: none;
-    }
-
     .footer {
         display: none;
         justify-content: center;
@@ -166,10 +157,6 @@
             -ms-animation-fill-mode: both;
             -o-animation-fill-mode: both;
             animation-fill-mode: both;
-        }
-
-        .banner-pre-footer {
-            display: unset;
         }
 
         .footer {
