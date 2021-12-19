@@ -174,3 +174,24 @@ Create another A record for `www` subdomain:
 - name = `www.paul-mathias-realisation.com`
 - type = `A`
 - value = `alias` to another record in our hosted zone: `paul-mathias-realisation.com`
+
+## Progressive JPEG images
+JPEG progressive images usage is prefered. To check whether or not website images are progressive, run the following script:
+```sh
+nb_progressive_img=0
+nb_not_progressive_img=0
+for image in $(ls static/**/*.(jpeg|jpg))
+do
+    if [[  -z $(file $image | grep progressive) ]]
+    then
+        nb_progressive_img=$((nb_progressive_img+1))
+        echo "\e[0;32m[PROGRESSIVE]\e[m\t\t - $image"
+    else
+        nb_not_progressive_img=$((nb_not_progressive_img+1))
+        echo "\e[0;31m[NOT PROGRESSIVE]\e[m\t - \e[0;31m$image\e[m"
+    fi
+done
+echo "Images found: $((nb_progressive_img+nb_not_progressive_img))"
+echo "Progressive JPEG Images found: \e[0;32m$nb_progressive_img\e[m"
+echo "Not Progressive JPEG Images found: \e[0;31m$nb_not_progressive_img\e[m"
+```
