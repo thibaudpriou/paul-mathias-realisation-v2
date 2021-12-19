@@ -241,7 +241,7 @@ const categories: ICategory[] = [
                         rank: 3,
                     },
                 ],
-                rank: 1,
+                rank: 2,
                 globalRank: 3,
             },
             {
@@ -271,8 +271,39 @@ const categories: ICategory[] = [
                         rank: 3,
                     },
                 ],
-                rank: 5,
+                rank: 3,
                 globalRank: 11,
+            },
+            {
+                title: "Think Positive Music TPM",
+                type: RealisationType.Clip,
+                videoUrl: "https://www.youtube.com/watch?v=6XuLEIjBreA",
+                samples: [
+                    {
+                        alt: "Échantillon du clip Think Positive Music TPM 1",
+                        images: [],
+                        defaultImagePath: "imgs/realisations/tpm-1.jpg",
+
+                        rank: 1,
+                    },
+                    {
+                        alt: "Échantillon du clip Think Positive Music TPM 2",
+                        images: [],
+                        defaultImagePath: "imgs/realisations/tpm-2.jpg",
+
+                        rank: 2,
+                    },
+                    {
+                        alt: "Échantillon du clip Think Positive Music TPM 3",
+                        images: [],
+                        defaultImagePath: "imgs/realisations/tpm-3.jpg",
+
+                        rank: 3,
+                    },
+                ],
+                imageRatio: ImageRatio["2.35/1"],
+                rank: 1,
+                globalRank: 2.5,
             },
         ],
     },
