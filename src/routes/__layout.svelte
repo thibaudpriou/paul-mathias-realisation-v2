@@ -17,10 +17,13 @@
     export let segment: string;
     let blackNavVariant = false;
     let greyNavVariant = false;
+    let isShowreelInPage = false;
+    const pagesWithShowreel = ["/", "/all"];
 
     $: {
-        // reset "blackNavVariant" data on "segment" prop change
-        blackNavVariant = segment === "/";
+        // on "segment" prop change
+        isShowreelInPage = pagesWithShowreel.includes(segment);
+        blackNavVariant = isShowreelInPage;
         greyNavVariant = segment === "/about";
     }
 
@@ -28,10 +31,10 @@
     let ticking = false;
 
     function adaptNavColor(scrollPos: number) {
-        greyNavVariant = segment === "/about" && scrollPos === 0
-    
-        if (segment !== "/") return;
+        greyNavVariant = segment === "/about" && scrollPos === 0;
 
+        if (!isShowreelInPage) return;
+        
         const showreel: HTMLElement = document.getElementById("showreel");
         if (!showreel) return;
 
@@ -87,7 +90,7 @@
     <meta name="msapplication-TileColor" content="#f3f3f3" />
     <meta name="theme-color" content="#ffffff" />
 
-    <link rel="stylesheet" href="{`${assets}/app.css`}" />
+    <link rel="stylesheet" href={`${assets}/app.css`} />
 </svelte:head>
 
 <svelte:window on:scroll={onScroll} />
@@ -118,7 +121,8 @@
         min-height: calc(100vh - var(--navbar-height));
     }
 
-    main, footer {
+    main,
+    footer {
         background-color: #ececec;
         color: black;
     }

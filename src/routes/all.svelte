@@ -9,6 +9,7 @@
 
 <script lang="ts">
     import Realisation from "../components/Realisation.svelte";
+    import Showreel from "../components/Showreel.svelte";
 </script>
 
 <svelte:head>
@@ -16,6 +17,7 @@
     <meta name="keywords" content="Réalisation, Court-métrage, Pub, Clip, Fiction" />
 </svelte:head>
 
+<Showreel />
 {#each realisations as realisation}
     <Realisation {realisation} />
 {/each}
