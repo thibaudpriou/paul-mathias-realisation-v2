@@ -61,12 +61,12 @@
         align-items: center;
         color: white;
         opacity: 0.9;
-        font-size: clamp(0.3em, 1.25vw, 1em);
+        font-size: clamp(0.4em, 1.25vw, 1em);
         padding-top: 3.5em;
     }
 
     .description > * {
-        margin-top: 0.5em;
+        margin-top: 0.25em;
     }
 
     .description > *:first-child {
@@ -86,6 +86,7 @@
     }
 
     .seeVideoLink {
+        position: relative;
         text-decoration: none;
         font-size: 1.5em;
         padding: 0 1.5em 0 1.5em;
@@ -98,5 +99,14 @@
     .seeVideoLink:hover {
         transform: scale(1.1);
         box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    }
+
+    .seeVideoLink::after {
+        content: '';
+        position: absolute;
+        width: calc(100% + 0.5em);
+        height: calc(100% + 0.5em);
+        top: -0.5em;
+        left: -0.5em;
     }
 </style>
