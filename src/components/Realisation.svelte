@@ -62,7 +62,13 @@
         color: white;
         opacity: 0.9;
         font-size: clamp(0.4em, 1.25vw, 1em);
-        padding-top: 3.5em;
+        padding-top: 0;
+    }
+
+    @media (min-width: 400px) {
+        .description {
+            padding-top: 3.5em;
+        }
     }
 
     .description > * {
@@ -82,7 +88,14 @@
     }
 
     .subtitle {
+        display: none;
         font-size: 1.5em;
+    }
+
+    @media (min-width: 400px) {
+        .subtitle {
+            display: block;
+        }
     }
 
     .seeVideoLink {
