@@ -346,31 +346,31 @@ const categories: ICategory[] = [
 const homePageSamples: Sample[] = [
     {
         alt: "Échantillon du clip Voler",
-        defaultImagePath: "imgs/home-carousel/home-carousel-1_voler.jpg",
+        defaultImagePath: "imgs/home-carousel/home-carousel-1_voler.jpeg",
         images: [],
         rank: 1,
     },
     {
         alt: "Échantillon du clip Voler",
-        defaultImagePath: "imgs/home-carousel/home-carousel-2_voler.jpg",
+        defaultImagePath: "imgs/home-carousel/home-carousel-2_voler.jpeg",
         images: [],
         rank: 2,
     },
     {
         alt: "Échantillon de la publicité Skydrone",
-        defaultImagePath: "imgs/home-carousel/home-carousel-3_skydrone.jpg",
+        defaultImagePath: "imgs/home-carousel/home-carousel-3_skydrone.jpeg",
         images: [],
         rank: 3,
     },
     {
         alt: "Échantillon du clip Voler",
-        defaultImagePath: "imgs/home-carousel/home-carousel-4_voler.jpg",
+        defaultImagePath: "imgs/home-carousel/home-carousel-4_voler.jpeg",
         images: [],
         rank: 4,
     },
     {
         alt: "Échantillon de la publicité Château Garreau Armagnac",
-        defaultImagePath: "imgs/home-carousel/home-carousel-5_armagnac.jpg",
+        defaultImagePath: "imgs/home-carousel/home-carousel-5_armagnac.jpeg",
         images: [],
         rank: 5,
     },
