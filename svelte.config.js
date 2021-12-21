@@ -5,8 +5,8 @@ import preprocess from "svelte-preprocess";
 const config = {
     kit: {
         adapter: adaptaterStatic({
-            pages: "build/pages",
-            assets: "build/assets",
+            pages: "build",
+            assets: "build",
             fallback: null,
         }),
         target: "#svelte",
