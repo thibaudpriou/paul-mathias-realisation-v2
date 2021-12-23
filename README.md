@@ -85,11 +85,11 @@ for image in $(ls static/**/*.(jpeg|jpg))
 do
     if [[  -z $(file $image | grep progressive) ]]
     then
-        nb_progressive_img=$((nb_progressive_img+1))
-        echo "\e[0;32m[PROGRESSIVE]\e[m\t\t - $image"
-    else
         nb_not_progressive_img=$((nb_not_progressive_img+1))
         echo "\e[0;31m[NOT PROGRESSIVE]\e[m\t - \e[0;31m$image\e[m"
+    else
+        nb_progressive_img=$((nb_progressive_img+1))
+        echo "\e[0;32m[PROGRESSIVE]\e[m\t\t - $image"
     fi
 done
 echo "Images found: $((nb_progressive_img+nb_not_progressive_img))"
