@@ -58,7 +58,6 @@
 </script>
 
 <svelte:head>
-    <meta name="keywords" content="Réalisation, Court-métrage, Pub, Clip, Fiction" />
     <meta name="google-site-verification" content="nUD7H3E87xDUaik5mFLa1QF7-XY1ZQyJC6cRxCWm4gY" />
 
     <meta name="twitter:card" content="summary_large_image" />
