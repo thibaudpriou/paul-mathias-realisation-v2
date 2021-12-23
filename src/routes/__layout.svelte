@@ -68,13 +68,13 @@
         content="Réalisateurs français de fictions, de clips et de films publicitaires. Notre vocation : créer de l’émotion."
     />
     <meta name="twitter:creator" content="Paul & Mathias" />
-    <meta name="twitter:image" content={`${assets}/imgs/vignette-fb.png`} />
-    <!-- TODO vignette-fb.png -->
+    <meta name="twitter:image" content={`${assets}/imgs/social-image-twitter.png`} />
     <meta property="og:title" content="Paul & Mathias" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={SITE_URL} />
-    <meta property="og:image" content={`${assets}/imgs/vignette-fb.png`} />
-    <!-- TODO vignette-fb.png -->
+    <meta property="og:image" content={`${assets}/imgs/social-image-og.png`} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="1200" />
     <meta
         property="og:description"
         content="Réalisateurs français de fictions, de clips et de films publicitaires. Notre vocation : créer de l’émotion."
