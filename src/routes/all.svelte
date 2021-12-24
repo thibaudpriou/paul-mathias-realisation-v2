@@ -1,10 +1,5 @@
 <script context="module" lang="ts">
-    import {categories} from "../config";
-    import type IRealisation from "../types/realisation";
-
-    let realisations = categories
-        .reduce<IRealisation[]>((reals, cat) => [...reals, ...cat.realisations], [])
-        .sort((r1, r2) => r1.globalRank - r2.globalRank);
+    import {allRealisations} from "../config";
 </script>
 
 <script lang="ts">
@@ -18,6 +13,6 @@
 </svelte:head>
 
 <Showreel />
-{#each realisations as realisation}
+{#each allRealisations as realisation}
     <Realisation {realisation} />
 {/each}

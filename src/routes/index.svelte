@@ -1,10 +1,6 @@
 <script context="module" lang="ts">
-    import {categories, homePageSamples} from "../config";
-    import type IRealisation from "../types/realisation";
+    import {allRealisations, homePageSamples} from "../config";
 
-    let realisations = categories
-        .reduce<IRealisation[]>((reals, cat) => [...reals, ...cat.realisations], [])
-        .sort((r1, r2) => r1.globalRank - r2.globalRank);
     let mobileSamples = homePageSamples.sort((s1, s2) => s1.rank - s2.rank);
 </script>
 
@@ -25,7 +21,7 @@
 
 <div class="desktop">
     <Showreel />
-    {#each realisations as realisation}
+    {#each allRealisations as realisation}
         <Realisation {realisation} />
     {/each}
 </div>

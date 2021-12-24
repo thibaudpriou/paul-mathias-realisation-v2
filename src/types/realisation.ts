@@ -21,6 +21,4 @@ export default interface IRealisation {
      */
     imageRatio?: ImageRatio;
     samples: Array<Sample>;
-    rank: number; // realisation position inside related category page
-    globalRank: number; // realisation position inside "All" page
 }
