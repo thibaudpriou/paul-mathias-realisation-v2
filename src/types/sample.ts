@@ -3,7 +3,7 @@ export default interface Sample {
     defaultImagePath: string;
     images: Array<{
         path: string;
-        breakpoint: string;
+        type: string;
     }>;
     rank: number; // image position inside realisation's carousel
 }

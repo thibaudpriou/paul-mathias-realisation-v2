@@ -20,24 +20,9 @@
     // --- reactive
     $: slides = samples
         .sort((s1, s2) => s1.rank - s2.rank)
-        .map((s, idx) => {
-            const attrs = getSampleImgAttributes(s);
-            return {...s, src: attrs.src, srcset: attrs.srcset, idx};
-        });
+        .map((s, idx) => ({...s, idx}))
 
     // --- methods
-    interface ImgAttributes {
-        src: string;
-        srcset: string;
-    }
-
-    function getSampleImgAttributes(sample: Sample): ImgAttributes {
-        return {
-            src: `${assets}/${sample.defaultImagePath}`,
-            srcset: sample.images.map(i => `${assets}/${i.path} ${i.breakpoint}`).join(","),
-        };
-    }
-
     export function goPrev() {
         let to = activeSlideIdx - 1;
         if (to < 0) to = slides.length - 1;
@@ -76,14 +61,16 @@
 >
     {#each slides as slide}
         {#if slide.idx === activeSlideIdx}
-            <img
+            <picture
+                class="slide"
                 in:customFadeIn={{duration: transitionDuration}}
                 out:fade={{delay: transitionDuration, duration: 0}}
-                class="slide"
-                src={slide.src}
-                srcset={slide.srcset}
-                alt={slide.alt}
-            />
+            >
+            {#each slide.images as image}
+                <source srcset={`${assets}/${image.path}`} type={image.type}/>
+            {/each}
+            <img src={`${assets}/${slide.defaultImagePath}`} alt={slide.alt} />
+        </picture>
         {/if}
     {/each}
 </div>
@@ -185,7 +172,7 @@
         height: 100%;
     }
 
-    .slide {
+    .slide>* {
         height: 100%;
         width: 100%;
         object-fit: cover;

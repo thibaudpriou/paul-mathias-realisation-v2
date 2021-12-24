@@ -12,19 +12,46 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
             {
                 alt: "Échantillon publicité Château Garreau Armagnac 1",
                 defaultImagePath: "imgs/realisations/armagnac/chateau-garreau-armagnac-1.jpeg",
-                images: [],
+                images: [
+                    {
+                        path: "imgs/realisations/armagnac/chateau-garreau-armagnac-1.webp",
+                        type: "image/webp",
+                    },
+                    {
+                        path: "imgs/realisations/armagnac/chateau-garreau-armagnac-1.jpeg",
+                        type: "image/jpeg",
+                    },
+                ],
                 rank: 1,
             },
             {
                 alt: "Échantillon publicité Château Garreau Armagnac 2",
                 defaultImagePath: "imgs/realisations/armagnac/chateau-garreau-armagnac-2.jpeg",
-                images: [],
+                images: [
+                    {
+                        path: "imgs/realisations/armagnac/chateau-garreau-armagnac-2.webp",
+                        type: "image/webp",
+                    },
+                    {
+                        path: "imgs/realisations/armagnac/chateau-garreau-armagnac-2.jpeg",
+                        type: "image/jpeg",
+                    },
+                ],
                 rank: 2,
             },
             {
                 alt: "Échantillon publicité Château Garreau Armagnac 3",
                 defaultImagePath: "imgs/realisations/armagnac/chateau-garreau-armagnac-3.jpeg",
-                images: [],
+                images: [
+                    {
+                        path: "imgs/realisations/armagnac/chateau-garreau-armagnac-3.webp",
+                        type: "image/webp",
+                    },
+                    {
+                        path: "imgs/realisations/armagnac/chateau-garreau-armagnac-3.jpeg",
+                        type: "image/jpeg",
+                    },
+                ],
                 rank: 3,
             },
         ],
@@ -38,19 +65,46 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
             {
                 alt: "Échantillon publicité Skydrone 1",
                 defaultImagePath: "imgs/realisations/skydrone/skydrone-1.jpeg",
-                images: [],
+                images: [
+                    {
+                        path: "imgs/realisations/skydrone/skydrone-1.webp",
+                        type: "image/webp",
+                    },
+                    {
+                        path: "imgs/realisations/skydrone/skydrone-1.jpeg",
+                        type: "image/jpeg",
+                    },
+                ],
                 rank: 1,
             },
             {
                 alt: "Échantillon publicité Skydrone 2",
                 defaultImagePath: "imgs/realisations/skydrone/skydrone-2.jpeg",
-                images: [],
+                images: [
+                    {
+                        path: "imgs/realisations/skydrone/skydrone-2.webp",
+                        type: "image/webp",
+                    },
+                    {
+                        path: "imgs/realisations/skydrone/skydrone-2.jpeg",
+                        type: "image/jpeg",
+                    },
+                ],
                 rank: 2,
             },
             {
                 alt: "Échantillon publicité Skydrone 3",
                 defaultImagePath: "imgs/realisations/skydrone/skydrone-3.jpeg",
-                images: [],
+                images: [
+                    {
+                        path: "imgs/realisations/skydrone/skydrone-3.webp",
+                        type: "image/webp",
+                    },
+                    {
+                        path: "imgs/realisations/skydrone/skydrone-3.jpeg",
+                        type: "image/jpeg",
+                    },
+                ],
                 rank: 3,
             },
         ],
@@ -63,19 +117,46 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
             {
                 alt: "Échantillon publicité Mini Streampunk 1",
                 defaultImagePath: "imgs/realisations/steampunk/mini-steampunk-1.jpeg",
-                images: [],
+                images: [
+                    {
+                        path: "imgs/realisations/steampunk/mini-steampunk-1.webp",
+                        type: "image/webp",
+                    },
+                    {
+                        path: "imgs/realisations/steampunk/mini-steampunk-1.jpeg",
+                        type: "image/jpeg",
+                    },
+                ],
                 rank: 1,
             },
             {
                 alt: "Échantillon publicité Mini Streampunk 2",
                 defaultImagePath: "imgs/realisations/steampunk/mini-steampunk-2.jpeg",
-                images: [],
+                images: [
+                    {
+                        path: "imgs/realisations/steampunk/mini-steampunk-2.webp",
+                        type: "image/webp",
+                    },
+                    {
+                        path: "imgs/realisations/steampunk/mini-steampunk-2.jpeg",
+                        type: "image/jpeg",
+                    },
+                ],
                 rank: 2,
             },
             {
                 alt: "Échantillon publicité Mini Streampunk 3",
                 defaultImagePath: "imgs/realisations/steampunk/mini-steampunk-3.jpeg",
-                images: [],
+                images: [
+                    {
+                        path: "imgs/realisations/steampunk/mini-steampunk-3.webp",
+                        type: "image/webp",
+                    },
+                    {
+                        path: "imgs/realisations/steampunk/mini-steampunk-3.jpeg",
+                        type: "image/jpeg",
+                    },
+                ],
                 rank: 3,
             },
         ],
@@ -88,19 +169,46 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
             {
                 alt: "Échantillon de C'était le Monde 1",
                 defaultImagePath: "imgs/realisations/ctlm/c-etait-le-monde-1.jpeg",
-                images: [],
+                images: [
+                    {
+                        path: "imgs/realisations/ctlm/c-etait-le-monde-1.webp",
+                        type: "image/webp",
+                    },
+                    {
+                        path: "imgs/realisations/ctlm/c-etait-le-monde-1.jpeg",
+                        type: "image/jpeg",
+                    },
+                ],
                 rank: 1,
             },
             {
                 alt: "Échantillon de C'était le Monde 2",
                 defaultImagePath: "imgs/realisations/ctlm/c-etait-le-monde-2.jpeg",
-                images: [],
+                images: [
+                    {
+                        path: "imgs/realisations/ctlm/c-etait-le-monde-2.webp",
+                        type: "image/webp",
+                    },
+                    {
+                        path: "imgs/realisations/ctlm/c-etait-le-monde-2.jpeg",
+                        type: "image/jpeg",
+                    },
+                ],
                 rank: 2,
             },
             {
                 alt: "Échantillon de C'était le Monde 3",
                 defaultImagePath: "imgs/realisations/ctlm/c-etait-le-monde-3.jpeg",
-                images: [],
+                images: [
+                    {
+                        path: "imgs/realisations/ctlm/c-etait-le-monde-3.webp",
+                        type: "image/webp",
+                    },
+                    {
+                        path: "imgs/realisations/ctlm/c-etait-le-monde-3.jpeg",
+                        type: "image/jpeg",
+                    },
+                ],
                 rank: 3,
             },
         ],
@@ -113,19 +221,46 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
             {
                 alt: "Échantillon de Et le bourgeon devint Étincelle 1",
                 defaultImagePath: "imgs/realisations/elbde/et-le-bourgeon-devint-etincelle-1.jpeg",
-                images: [],
+                images: [
+                    {
+                        path: "imgs/realisations/elbde/et-le-bourgeon-devint-etincelle-1.webp",
+                        type: "image/webp",
+                    },
+                    {
+                        path: "imgs/realisations/elbde/et-le-bourgeon-devint-etincelle-1.jpeg",
+                        type: "image/jpeg",
+                    },
+                ],
                 rank: 1,
             },
             {
                 alt: "Échantillon de Et le bourgeon devint Étincelle 2",
                 defaultImagePath: "imgs/realisations/elbde/et-le-bourgeon-devint-etincelle-2.jpeg",
-                images: [],
+                images: [
+                    {
+                        path: "imgs/realisations/elbde/et-le-bourgeon-devint-etincelle-2.webp",
+                        type: "image/webp",
+                    },
+                    {
+                        path: "imgs/realisations/elbde/et-le-bourgeon-devint-etincelle-2.jpeg",
+                        type: "image/jpeg",
+                    },
+                ],
                 rank: 2,
             },
             {
                 alt: "Échantillon de Et le bourgeon devint Étincelle 3",
-                images: [],
                 defaultImagePath: "imgs/realisations/elbde/et-le-bourgeon-devint-etincelle-3.jpeg",
+                images: [
+                    {
+                        path: "imgs/realisations/elbde/et-le-bourgeon-devint-etincelle-3.webp",
+                        type: "image/webp",
+                    },
+                    {
+                        path: "imgs/realisations/elbde/et-le-bourgeon-devint-etincelle-3.jpeg",
+                        type: "image/jpeg",
+                    },
+                ],
                 rank: 3,
             },
         ],
@@ -138,23 +273,47 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
         samples: [
             {
                 alt: "Échantillon de L'Horloger 1",
-                images: [],
                 defaultImagePath: "imgs/realisations/horloger/l-horloger-1.jpeg",
-
+                images: [
+                    {
+                        path: "imgs/realisations/horloger/l-horloger-1.webp",
+                        type: "image/webp",
+                    },
+                    {
+                        path: "imgs/realisations/horloger/l-horloger-1.jpeg",
+                        type: "image/jpeg",
+                    },
+                ],
                 rank: 1,
             },
             {
                 alt: "Échantillon de L'Horloger 2",
-                images: [],
                 defaultImagePath: "imgs/realisations/horloger/l-horloger-2.jpeg",
-
+                images: [
+                    {
+                        path: "imgs/realisations/horloger/l-horloger-2.webp",
+                        type: "image/webp",
+                    },
+                    {
+                        path: "imgs/realisations/horloger/l-horloger-2.jpeg",
+                        type: "image/jpeg",
+                    },
+                ],
                 rank: 2,
             },
             {
                 alt: "Échantillon de L'Horloger 3",
-                images: [],
                 defaultImagePath: "imgs/realisations/horloger/l-horloger-3.jpeg",
-
+                images: [
+                    {
+                        path: "imgs/realisations/horloger/l-horloger-3.webp",
+                        type: "image/webp",
+                    },
+                    {
+                        path: "imgs/realisations/horloger/l-horloger-3.jpeg",
+                        type: "image/jpeg",
+                    },
+                ],
                 rank: 3,
             },
         ],
@@ -166,16 +325,32 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
         samples: [
             {
                 alt: "Échantillon de Rage 1",
-                images: [],
                 defaultImagePath: "imgs/realisations/rage/rage-1.jpeg",
-
+                images: [
+                    {
+                        path: "imgs/realisations/rage/rage-1.webp",
+                        type: "image/webp",
+                    },
+                    {
+                        path: "imgs/realisations/rage/rage-1.jpeg",
+                        type: "image/jpeg",
+                    },
+                ],
                 rank: 1,
             },
             {
                 alt: "Échantillon de Rage 2",
-                images: [],
                 defaultImagePath: "imgs/realisations/rage/rage-2.jpeg",
-
+                images: [
+                    {
+                        path: "imgs/realisations/rage/rage-2.webp",
+                        type: "image/webp",
+                    },
+                    {
+                        path: "imgs/realisations/rage/rage-2.jpeg",
+                        type: "image/jpeg",
+                    },
+                ],
                 rank: 2,
             },
         ],
@@ -188,23 +363,47 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
         samples: [
             {
                 alt: "Échantillon du clip La tête Pleine 1",
-                images: [],
                 defaultImagePath: "imgs/realisations/tetepleine/la-tete-pleine-1.jpeg",
-
+                images: [
+                    {
+                        path: "imgs/realisations/tetepleine/la-tete-pleine-1.webp",
+                        type: "image/webp",
+                    },
+                    {
+                        path: "imgs/realisations/tetepleine/la-tete-pleine-1.jpeg",
+                        type: "image/jpeg",
+                    },
+                ],
                 rank: 1,
             },
             {
                 alt: "Échantillon du clip La tête Pleine 2",
-                images: [],
                 defaultImagePath: "imgs/realisations/tetepleine/la-tete-pleine-2.jpeg",
-
+                images: [
+                    {
+                        path: "imgs/realisations/tetepleine/la-tete-pleine-2.webp",
+                        type: "image/webp",
+                    },
+                    {
+                        path: "imgs/realisations/tetepleine/la-tete-pleine-2.jpeg",
+                        type: "image/jpeg",
+                    },
+                ],
                 rank: 2,
             },
             {
                 alt: "Échantillon du clip La tête Pleine 3",
-                images: [],
                 defaultImagePath: "imgs/realisations/tetepleine/la-tete-pleine-3.jpeg",
-
+                images: [
+                    {
+                        path: "imgs/realisations/tetepleine/la-tete-pleine-3.webp",
+                        type: "image/webp",
+                    },
+                    {
+                        path: "imgs/realisations/tetepleine/la-tete-pleine-3.jpeg",
+                        type: "image/jpeg",
+                    },
+                ],
                 rank: 3,
             },
         ],
@@ -216,23 +415,47 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
         samples: [
             {
                 alt: "Échantillon du clip Et si j'intéresse encore 1",
-                images: [],
                 defaultImagePath: "imgs/realisations/esje/et-si-j-interesse-encore-1.jpeg",
-
+                images: [
+                    {
+                        path: "imgs/realisations/esje/et-si-j-interesse-encore-1.webp",
+                        type: "image/webp",
+                    },
+                    {
+                        path: "imgs/realisations/esje/et-si-j-interesse-encore-1.jpeg",
+                        type: "image/jpeg",
+                    },
+                ],
                 rank: 1,
             },
             {
                 alt: "Échantillon du clip Et si j'intéresse encore 2",
-                images: [],
                 defaultImagePath: "imgs/realisations/esje/et-si-j-interesse-encore-2.jpeg",
-
+                images: [
+                    {
+                        path: "imgs/realisations/esje/et-si-j-interesse-encore-2.webp",
+                        type: "image/webp",
+                    },
+                    {
+                        path: "imgs/realisations/esje/et-si-j-interesse-encore-2.jpeg",
+                        type: "image/jpeg",
+                    },
+                ],
                 rank: 2,
             },
             {
                 alt: "Échantillon du clip Et si j'intéresse encore 3",
-                images: [],
                 defaultImagePath: "imgs/realisations/esje/et-si-j-interesse-encore-3.jpeg",
-
+                images: [
+                    {
+                        path: "imgs/realisations/esje/et-si-j-interesse-encore-3.webp",
+                        type: "image/webp",
+                    },
+                    {
+                        path: "imgs/realisations/esje/et-si-j-interesse-encore-3.jpeg",
+                        type: "image/jpeg",
+                    },
+                ],
                 rank: 3,
             },
         ],
@@ -244,23 +467,47 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
         samples: [
             {
                 alt: "Échantillon du clip TPM - Think Positive Music 1",
-                images: [],
                 defaultImagePath: "imgs/realisations/tpm/tpm-1.jpg",
-
+                images: [
+                    {
+                        path: "imgs/realisations/tpm/tpm-1.webp",
+                        type: "image/webp",
+                    },
+                    {
+                        path: "imgs/realisations/tpm/tpm-1.jpg",
+                        type: "image/jpeg",
+                    },
+                ],
                 rank: 1,
             },
             {
                 alt: "Échantillon du clip TPM - Think Positive Music 2",
-                images: [],
                 defaultImagePath: "imgs/realisations/tpm/tpm-2.jpg",
-
+                images: [
+                    {
+                        path: "imgs/realisations/tpm/tpm-2.webp",
+                        type: "image/webp",
+                    },
+                    {
+                        path: "imgs/realisations/tpm/tpm-2.jpg",
+                        type: "image/jpeg",
+                    },
+                ],
                 rank: 2,
             },
             {
                 alt: "Échantillon du clip TPM - Think Positive Music 3",
-                images: [],
                 defaultImagePath: "imgs/realisations/tpm/tpm-3.jpg",
-
+                images: [
+                    {
+                        path: "imgs/realisations/tpm/tpm-3.webp",
+                        type: "image/webp",
+                    },
+                    {
+                        path: "imgs/realisations/tpm/tpm-3.jpg",
+                        type: "image/jpeg",
+                    },
+                ],
                 rank: 3,
             },
         ],
@@ -273,36 +520,68 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
         samples: [
             {
                 alt: "Échantillon du clip Guevn - Voler 1",
-                images: [],
                 defaultImagePath: "imgs/realisations/guevn/voler-1.jpeg",
-
+                images: [
+                    {
+                        path: "imgs/realisations/guevn/voler-1.webp",
+                        type: "image/webp",
+                    },
+                    {
+                        path: "imgs/realisations/guevn/voler-1.jpeg",
+                        type: "image/jpeg",
+                    },
+                ],
                 rank: 1,
             },
             {
                 alt: "Échantillon du clip Guevn - Voler 2",
-                images: [],
                 defaultImagePath: "imgs/realisations/guevn/voler-2.jpeg",
-
+                images: [
+                    {
+                        path: "imgs/realisations/guevn/voler-2.webp",
+                        type: "image/webp",
+                    },
+                    {
+                        path: "imgs/realisations/guevn/voler-2.jpeg",
+                        type: "image/jpeg",
+                    },
+                ],
                 rank: 2,
             },
             {
                 alt: "Échantillon du clip Guevn - Voler 3",
-                images: [],
                 defaultImagePath: "imgs/realisations/guevn/voler-3.jpeg",
-
+                images: [
+                    {
+                        path: "imgs/realisations/guevn/voler-3.webp",
+                        type: "image/webp",
+                    },
+                    {
+                        path: "imgs/realisations/guevn/voler-3.jpeg",
+                        type: "image/jpeg",
+                    },
+                ],
                 rank: 3,
             },
             {
                 alt: "Échantillon du clip Guevn - Voler 4",
-                images: [],
                 defaultImagePath: "imgs/realisations/guevn/voler-4.jpeg",
-
+                images: [
+                    {
+                        path: "imgs/realisations/guevn/voler-4.webp",
+                        type: "image/webp",
+                    },
+                    {
+                        path: "imgs/realisations/guevn/voler-4.jpeg",
+                        type: "image/jpeg",
+                    },
+                ],
                 rank: 4,
             },
         ],
         imageRatio: ImageRatio["2.35/1"],
     },
-}
+};
 
 // sorted list of realisations IDs to display for each pages
 const realisationsOrder: string[] = [
@@ -317,27 +596,13 @@ const realisationsOrder: string[] = [
     "id-steampunk",
     "id-rage",
     "id-esje",
-]
-
-const commercialsRealisationsOrder: string[] = [
-    "id-armagnac",
-    "id-skydrone",
-    "id-steampunk",
 ];
 
-const filmsRealisationsOrder: string[] = [
-    "id-ctlm",
-    "id-elbde",
-    "id-horloger",
-    "id-rage",
-];
+const commercialsRealisationsOrder: string[] = ["id-armagnac", "id-skydrone", "id-steampunk"];
 
-const musicVideoRealisationsOrder: string[] = [
-    "id-guevn",
-    "id-tpm",
-    "id-tetepleine",
-    "id-esje",
-];
+const filmsRealisationsOrder: string[] = ["id-ctlm", "id-elbde", "id-horloger", "id-rage"];
+
+const musicVideoRealisationsOrder: string[] = ["id-guevn", "id-tpm", "id-tetepleine", "id-esje"];
 
 function getRealisations(ids: string[]): ICategory["realisations"] {
     return ids.map(id => realisations[id]);
