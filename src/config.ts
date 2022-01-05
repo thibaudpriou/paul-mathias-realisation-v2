@@ -59,7 +59,7 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
     "id-skydrone": {
         title: "Skydrone",
         type: RealisationType.Ad,
-        videoUrl: "https://vimeo.com/430446941",
+        videoUrl: "https://vimeo.com/430446941/84060ea81a",
         imageRatio: ImageRatio["2.35/1"],
         samples: [
             {
