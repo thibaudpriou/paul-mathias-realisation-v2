@@ -31,13 +31,20 @@
     <div class="description">
         <h2 class="title">{realisation.title}</h2>
         <span class="subtitle">{realisation.type}</span>
-        <a
-            class="seeVideoLink"
-            href={realisation.videoUrl}
-            rel="noopener noreferer"
-            target="_blank"
-            title="Ouvrir la vidéo dans un nouvel onglet">Voir</a
-        >
+        {#if realisation.videoUrl !== undefined}
+            <a
+                class="seeVideoLink"
+                href={realisation.videoUrl}
+                rel="noopener noreferer"
+                target="_blank"
+                title="Ouvrir la vidéo dans un nouvel onglet">Voir</a
+            >
+        {:else}
+            <span
+                class="seeVideoLink disabled"
+                title="Ouvrir la vidéo dans un nouvel onglet">- bientôt disponible -</span
+            >
+        {/if}
     </div>
     <Carousel samples={realisation.samples} imageRatio={realisation.imageRatio} bind:this={carousel} />
 </section>
@@ -109,9 +116,15 @@
         margin-top: 1em;
     }
 
-    .seeVideoLink:hover {
+    .seeVideoLink:not(.disabled):hover {
         transform: scale(1.1);
         box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    }
+
+    .seeVideoLink.disabled {
+        opacity: .7;
+        cursor: not-allowed;
+        border: none;
     }
 
     .seeVideoLink::after {

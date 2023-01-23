@@ -15,7 +15,7 @@ export enum ImageRatio {
 export default interface IRealisation {
     title: string;
     type: RealisationType;
-    videoUrl: string;
+    videoUrl?: string;
     /**
      * @param imageRatio default to 16/9
      */
