@@ -734,7 +734,51 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
             },
         ],
         imageRatio: ImageRatio["2.35/1"],
-    }
+    },
+    "id-rebecca-divague": {
+        title: "Rebecca - Divague en rêve",
+        type: RealisationType.Clip,
+        videoUrl: "https://www.youtube.com/watch?v=gXgkSZEWiyw",
+        samples: [
+            {
+                // TODO jpeg
+                alt: "Échantillon du clip Rebecca - Divague en rêve 1",
+                defaultImagePath: "imgs/realisations/rebecca/divague-1.png",
+                images: [
+                    {
+                        path: "imgs/realisations/rebecca/divague-1.png",
+                        type: "image/png",
+                    },
+                ],
+                rank: 1,
+            },
+            {
+                // TODO jpeg
+                alt: "Échantillon du clip Rebecca - Divague en rêve 2",
+                defaultImagePath: "imgs/realisations/rebecca/divague-2.png",
+                images: [
+                    {
+                        path: "imgs/realisations/rebecca/divague-2.png",
+                        type: "image/png",
+                    },
+                ],
+                rank: 2,
+            },
+            {
+                // TODO jpeg
+                alt: "Échantillon du clip Rebecca - Divague en rêve 3",
+                defaultImagePath: "imgs/realisations/rebecca/divague-3.png",
+                images: [
+                    {
+                        path: "imgs/realisations/rebecca/divague-3.png",
+                        type: "image/png",
+                    },
+                ],
+                rank: 3,
+            },
+        ],
+        imageRatio: ImageRatio["2.35/1"],
+    },
 };
 
 // sorted list of realisations IDs to display for each pages
@@ -745,7 +789,7 @@ const realisationsOrder: string[] = [
     "id-armagnac",
     "id-guevn-droguedouce",
     "id-skydrone",
-    // Rebecca - Divague en rêve
+    "id-rebecca-divague",
     // Sergio Alexjandro - Donde Estas
     "id-elbde",
     "id-tpm",
@@ -778,7 +822,7 @@ const musicVideoRealisationsOrder: string[] = [
     // "id-nome-diva",
     "id-guevn-droguedouce",
     // Sergio Alexjandro - Donde Estas
-    // Rebecca - Divague en rêve
+    "id-rebecca-divague",
     "id-tpm",
     "id-tetepleine",
     "id-esje",
