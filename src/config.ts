@@ -590,7 +590,7 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
             {
                 // TODO jpeg
                 alt: "Échantillon du trailer Tango Charlie 1",
-                defaultImagePath: "imgs/realisations/guevn/tango-charlie-1.png",
+                defaultImagePath: "imgs/realisations/tango-charlie/tango-charlie-1.png",
                 images: [
                     {
                         path: "imgs/realisations/tango-charlie/tango-charlie-1.png",
@@ -601,7 +601,7 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
             },
             {
                 // TODO jpeg
-                alt: "Échantillon du clip Tango Charlie 2",
+                alt: "Échantillon du trailer Tango Charlie 2",
                 defaultImagePath: "imgs/realisations/tango-charlie/tango-charlie-2.png",
                 images: [
                     {
@@ -613,7 +613,7 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
             },
             {
                 // TODO jpeg
-                alt: "Échantillon du clip Tango Charlie 3",
+                alt: "Échantillon du trailer Tango Charlie 3",
                 defaultImagePath: "imgs/realisations/tango-charlie/tango-charlie-3.png",
                 images: [
                     {
