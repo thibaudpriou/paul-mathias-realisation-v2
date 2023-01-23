@@ -874,22 +874,28 @@ const homePageSamples: Sample[] = [
         rank: 2,
     },
     {
+        alt: "Échantillon du la publicité Ivory",
+        defaultImagePath: "imgs/home-carousel/home-carousel-21_ivory.png",
+        images: [],
+        rank: 3,
+    },
+    {
         alt: "Échantillon de la publicité Skydrone",
         defaultImagePath: "imgs/home-carousel/home-carousel-3_skydrone.jpeg",
         images: [],
-        rank: 3,
+        rank: 4,
     },
     {
         alt: "Échantillon du clip Voler",
         defaultImagePath: "imgs/home-carousel/home-carousel-4_voler.jpeg",
         images: [],
-        rank: 4,
+        rank: 5,
     },
     {
         alt: "Échantillon de la publicité Château Garreau Armagnac",
         defaultImagePath: "imgs/home-carousel/home-carousel-5_armagnac.jpeg",
         images: [],
-        rank: 5,
+        rank: 6,
     },
 ];
 
