@@ -626,12 +626,68 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
         ],
         imageRatio: ImageRatio["2.35/1"],
     },
+    "id-ivory": {
+        title: "Ivory",
+        type: RealisationType.Ad,
+        videoUrl: undefined,
+        samples: [
+            {
+                // TODO jpeg
+                alt: "Échantillon publicité Ivory 1",
+                defaultImagePath: "imgs/realisations/ivory/ivory-1.png",
+                images: [
+                    {
+                        path: "imgs/realisations/ivory/ivory-1.png",
+                        type: "image/png",
+                    },
+                ],
+                rank: 1,
+            },
+            {
+                // TODO jpeg
+                alt: "Échantillon publicité Ivory 2",
+                defaultImagePath: "imgs/realisations/ivory/ivory-2.png",
+                images: [
+                    {
+                        path: "imgs/realisations/ivory/ivory-2.png",
+                        type: "image/png",
+                    },
+                ],
+                rank: 2,
+            },
+            {
+                // TODO jpeg
+                alt: "Échantillon publicité Ivory 3",
+                defaultImagePath: "imgs/realisations/ivory/ivory-3.png",
+                images: [
+                    {
+                        path: "imgs/realisations/ivory/ivory-3.png",
+                        type: "image/png",
+                    },
+                ],
+                rank: 3,
+            },
+            {
+                // TODO jpeg
+                alt: "Échantillon publicité Ivory 4",
+                defaultImagePath: "imgs/realisations/ivory/ivory-4.png",
+                images: [
+                    {
+                        path: "imgs/realisations/ivory/ivory-4.png",
+                        type: "image/png",
+                    },
+                ],
+                rank: 3,
+            },
+        ],
+        imageRatio: ImageRatio["2.35/1"],
+    },
 };
 
 // sorted list of realisations IDs to display for each pages
 const realisationsOrder: string[] = [
     "id-guevn-voler",
-    // Ivory
+    "id-ivory",
     // Nome diva - Hydrid Form of Humanity
     "id-armagnac",
     // Guevn - Drogue Douve
@@ -650,7 +706,7 @@ const realisationsOrder: string[] = [
 ];
 
 const commercialsRealisationsOrder: string[] = [
-    // Ivory
+    "id-ivory",
     "id-armagnac",
     "id-skydrone",
     "id-steampunk",
