@@ -797,7 +797,7 @@ const realisationsOrder: string[] = [
     "id-ctlm",
     "id-horloger",
     "id-steampunk",
-    // "id-tangocharlie",
+    "id-tangocharlie",
     "id-rage",
     "id-esje",
 ];
@@ -813,7 +813,7 @@ const filmsRealisationsOrder: string[] = [
     "id-elbde",
     "id-horloger",
     "id-ctlm",
-    // "id-tangocharlie",
+    "id-tangocharlie",
     "id-rage",
 ];
 
