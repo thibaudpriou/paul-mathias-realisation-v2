@@ -585,7 +585,8 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
     "id-tangocharlie": {
         title: "Tango Charlie",
         type: RealisationType.Trailer,
-        videoUrl: "https://vimeo.com/715563257", // ! does not yet work
+        // ! does not yet work
+        // videoUrl: "https://vimeo.com/715563257",
         samples: [
             {
                 // TODO jpeg
@@ -682,15 +683,67 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
         ],
         imageRatio: ImageRatio["2.35/1"],
     },
+    // TODO: [Nome Diva] videoUrl, images + fix imageRatio
+    // "id-nome-diva": {
+    //     title: "Nome Diva - Hybrid Form of Humanity",
+    //     type: RealisationType.Clip,
+    //     videoUrl: undefined,
+    //     samples: [],
+    //     imageRatio: ImageRatio["2.35/1"],
+    // }
+    "id-guevn-droguedouce": {
+        title: "Guevn - Drogue Douce",
+        type: RealisationType.Clip,
+        videoUrl: "https://www.youtube.com/watch?v=LDvtIJ8_D0Y",
+        samples: [
+            {
+                // TODO jpeg
+                alt: "Échantillon du clip Guevn - Drogue Douce 1",
+                defaultImagePath: "imgs/realisations/guevn/drogue-douce-1.png",
+                images: [
+                    {
+                        path: "imgs/realisations/guevn/drogue-douce-1.png",
+                        type: "image/png",
+                    },
+                ],
+                rank: 1,
+            },
+            {
+                // TODO jpeg
+                alt: "Échantillon du clip Guevn - Drogue Douce 2",
+                defaultImagePath: "imgs/realisations/guevn/drogue-douce-2.png",
+                images: [
+                    {
+                        path: "imgs/realisations/guevn/drogue-douce-2.png",
+                        type: "image/png",
+                    },
+                ],
+                rank: 2,
+            },
+            {
+                // TODO jpeg
+                alt: "Échantillon du clip Guevn - Drogue Douce 3",
+                defaultImagePath: "imgs/realisations/guevn/drogue-douce-3.png",
+                images: [
+                    {
+                        path: "imgs/realisations/guevn/drogue-douce-3.png",
+                        type: "image/png",
+                    },
+                ],
+                rank: 3,
+            },
+        ],
+        imageRatio: ImageRatio["2.35/1"],
+    }
 };
 
 // sorted list of realisations IDs to display for each pages
 const realisationsOrder: string[] = [
     "id-guevn-voler",
     "id-ivory",
-    // Nome diva - Hydrid Form of Humanity
+    // "id-nome-diva",
     "id-armagnac",
-    // Guevn - Drogue Douve
+    "id-guevn-droguedouce",
     "id-skydrone",
     // Rebecca - Divague en rêve
     // Sergio Alexjandro - Donde Estas
@@ -722,8 +775,8 @@ const filmsRealisationsOrder: string[] = [
 
 const musicVideoRealisationsOrder: string[] = [
     "id-guevn-voler",
-    // Nome diva - Hydrid Form of Humanity
-    // Guevn - Drogue Douve
+    // "id-nome-diva",
+    "id-guevn-droguedouce",
     // Sergio Alexjandro - Donde Estas
     // Rebecca - Divague en rêve
     "id-tpm",
