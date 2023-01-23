@@ -1,6 +1,7 @@
+import {ImageRatio, RealisationType} from "./types/realisation";
+
 import type ICategory from "./types/category";
 import type Sample from "./types/sample";
-import {ImageRatio, RealisationType} from "./types/realisation";
 
 const realisations: {[id: string]: ICategory["realisations"][0]} = {
     "id-armagnac": {
@@ -513,7 +514,7 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
         ],
         imageRatio: ImageRatio["2.35/1"],
     },
-    "id-guevn": {
+    "id-guevn-voler": {
         title: "Guevn - Voler",
         type: RealisationType.Clip,
         videoUrl: "https://www.youtube.com/watch?v=t69xwlUDXeI",
@@ -581,28 +582,100 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
         ],
         imageRatio: ImageRatio["2.35/1"],
     },
+    "id-tangocharlie": {
+        title: "Tango Charlie",
+        type: RealisationType.Trailer,
+        videoUrl: "https://vimeo.com/715563257", // ! does not yet work
+        samples: [
+            {
+                // TODO jpeg
+                alt: "Échantillon du trailer Tango Charlie 1",
+                defaultImagePath: "imgs/realisations/guevn/tango-charlie-1.png",
+                images: [
+                    {
+                        path: "imgs/realisations/tango-charlie/tango-charlie-1.png",
+                        type: "image/png",
+                    },
+                ],
+                rank: 1,
+            },
+            {
+                // TODO jpeg
+                alt: "Échantillon du clip Tango Charlie 2",
+                defaultImagePath: "imgs/realisations/tango-charlie/tango-charlie-2.png",
+                images: [
+                    {
+                        path: "imgs/realisations/tango-charlie/tango-charlie-2.png",
+                        type: "image/png",
+                    },
+                ],
+                rank: 2,
+            },
+            {
+                // TODO jpeg
+                alt: "Échantillon du clip Tango Charlie 3",
+                defaultImagePath: "imgs/realisations/tango-charlie/tango-charlie-3.png",
+                images: [
+                    {
+                        path: "imgs/realisations/tango-charlie/tango-charlie-3.png",
+                        type: "image/png",
+                    },
+                ],
+                rank: 3,
+            },
+        ],
+        imageRatio: ImageRatio["2.35/1"],
+    },
 };
 
 // sorted list of realisations IDs to display for each pages
 const realisationsOrder: string[] = [
-    "id-guevn",
+    "id-guevn-voler",
+    // Ivory
+    // Nome diva - Hydrid Form of Humanity
     "id-armagnac",
+    // Guevn - Drogue Douve
     "id-skydrone",
+    // Rebecca - Divague en rêve
+    // Sergio Alexjandro - Donde Estas
+    "id-elbde",
     "id-tpm",
     "id-tetepleine",
-    "id-elbde",
     "id-ctlm",
     "id-horloger",
     "id-steampunk",
+    // "id-tangocharlie",
     "id-rage",
     "id-esje",
 ];
 
-const commercialsRealisationsOrder: string[] = ["id-armagnac", "id-skydrone", "id-steampunk"];
+const commercialsRealisationsOrder: string[] = [
+    // Ivory
+    "id-armagnac",
+    "id-skydrone",
+    "id-steampunk",
+];
 
-const filmsRealisationsOrder: string[] = ["id-ctlm", "id-elbde", "id-horloger", "id-rage"];
+const filmsRealisationsOrder: string[] = [
+    "id-elbde",
+    "id-horloger",
+    "id-ctlm",
+    // "id-tangocharlie",
+    "id-rage",
+];
 
-const musicVideoRealisationsOrder: string[] = ["id-guevn", "id-tpm", "id-tetepleine", "id-esje"];
+const musicVideoRealisationsOrder: string[] = [
+    "id-guevn-voler",
+    // Nome diva - Hydrid Form of Humanity
+    // Guevn - Drogue Douve
+    // Sergio Alexjandro - Donde Estas
+    // Rebecca - Divague en rêve
+    "id-tpm",
+    "id-tetepleine",
+    "id-esje",
+];
+
+
 
 function getRealisations(ids: string[]): ICategory["realisations"] {
     return ids.map(id => realisations[id]);
