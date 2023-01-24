@@ -585,8 +585,7 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
     "id-tangocharlie": {
         title: "Tango Charlie",
         type: RealisationType.Trailer,
-        // ! does not yet work
-        // videoUrl: "https://vimeo.com/715563257",
+        videoUrl: "https://vimeo.com/715563257",
         samples: [
             {
                 // TODO jpeg
