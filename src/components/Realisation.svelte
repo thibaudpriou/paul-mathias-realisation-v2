@@ -42,7 +42,7 @@
         {:else}
             <span
                 class="seeVideoLink disabled"
-                title="Ouvrir la vidéo dans un nouvel onglet">- bientôt disponible -</span
+                title="Ouvrir la vidéo dans un nouvel onglet">- Bientôt Disponible -</span
             >
         {/if}
     </div>
