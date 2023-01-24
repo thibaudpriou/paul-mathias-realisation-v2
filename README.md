@@ -74,6 +74,11 @@ aws s3 sync --delete \
     aws cloudfront create-invalidation \
         --distribution-id EICMTRWR64DN7 \
         --paths "/_app/*" "/app.css"
+
+    # invalidate all imgs files for distribution=EICMTRWR64DN7
+    aws cloudfront create-invalidation \
+        --distribution-id EICMTRWR64DN7 \
+        --paths "/imgs/*"
     ```
 
 ## Progressive JPEG images
