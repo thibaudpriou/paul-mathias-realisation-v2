@@ -588,10 +588,13 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
         videoUrl: "https://vimeo.com/715563257",
         samples: [
             {
-                // TODO jpeg
                 alt: "Échantillon du trailer Tango Charlie 1",
-                defaultImagePath: "imgs/realisations/tango-charlie/tango-charlie-1.png",
+                defaultImagePath: "imgs/realisations/tango-charlie/tango-charlie-1.jpeg",
                 images: [
+                    {
+                        path: "imgs/realisations/tango-charlie/tango-charlie-1.jpeg",
+                        type: "image/jpeg",
+                    },
                     {
                         path: "imgs/realisations/tango-charlie/tango-charlie-1.png",
                         type: "image/png",
@@ -600,10 +603,13 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
                 rank: 1,
             },
             {
-                // TODO jpeg
                 alt: "Échantillon du trailer Tango Charlie 2",
-                defaultImagePath: "imgs/realisations/tango-charlie/tango-charlie-2.png",
+                defaultImagePath: "imgs/realisations/tango-charlie/tango-charlie-2.jpeg",
                 images: [
+                    {
+                        path: "imgs/realisations/tango-charlie/tango-charlie-2.jpeg",
+                        type: "image/jpeg",
+                    },
                     {
                         path: "imgs/realisations/tango-charlie/tango-charlie-2.png",
                         type: "image/png",
@@ -612,10 +618,13 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
                 rank: 2,
             },
             {
-                // TODO jpeg
                 alt: "Échantillon du trailer Tango Charlie 3",
-                defaultImagePath: "imgs/realisations/tango-charlie/tango-charlie-3.png",
+                defaultImagePath: "imgs/realisations/tango-charlie/tango-charlie-3.jpeg",
                 images: [
+                    {
+                        path: "imgs/realisations/tango-charlie/tango-charlie-3.jpeg",
+                        type: "image/jpeg",
+                    },
                     {
                         path: "imgs/realisations/tango-charlie/tango-charlie-3.png",
                         type: "image/png",
@@ -632,10 +641,13 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
         videoUrl: undefined,
         samples: [
             {
-                // TODO jpeg
                 alt: "Échantillon publicité Ivory 1",
-                defaultImagePath: "imgs/realisations/ivory/ivory-1.png",
+                defaultImagePath: "imgs/realisations/ivory/ivory-1.jpeg",
                 images: [
+                    {
+                        path: "imgs/realisations/ivory/ivory-1.jpeg",
+                        type: "image/jpeg",
+                    },
                     {
                         path: "imgs/realisations/ivory/ivory-1.png",
                         type: "image/png",
@@ -644,10 +656,13 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
                 rank: 1,
             },
             {
-                // TODO jpeg
                 alt: "Échantillon publicité Ivory 2",
-                defaultImagePath: "imgs/realisations/ivory/ivory-2.png",
+                defaultImagePath: "imgs/realisations/ivory/ivory-2.jpeg",
                 images: [
+                    {
+                        path: "imgs/realisations/ivory/ivory-2.jpeg",
+                        type: "image/jpeg",
+                    },
                     {
                         path: "imgs/realisations/ivory/ivory-2.png",
                         type: "image/png",
@@ -656,10 +671,13 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
                 rank: 2,
             },
             {
-                // TODO jpeg
                 alt: "Échantillon publicité Ivory 3",
-                defaultImagePath: "imgs/realisations/ivory/ivory-3.png",
+                defaultImagePath: "imgs/realisations/ivory/ivory-3.jpeg",
                 images: [
+                    {
+                        path: "imgs/realisations/ivory/ivory-3.jpeg",
+                        type: "image/jpeg",
+                    },
                     {
                         path: "imgs/realisations/ivory/ivory-3.png",
                         type: "image/png",
@@ -696,10 +714,13 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
         videoUrl: "https://www.youtube.com/watch?v=LDvtIJ8_D0Y",
         samples: [
             {
-                // TODO jpeg
                 alt: "Échantillon du clip Guevn - Drogue Douce 1",
-                defaultImagePath: "imgs/realisations/guevn/drogue-douce-1.png",
+                defaultImagePath: "imgs/realisations/guevn/drogue-douce-1.jpeg",
                 images: [
+                    {
+                        path: "imgs/realisations/guevn/drogue-douce-1.jpeg",
+                        type: "image/jpeg",
+                    },
                     {
                         path: "imgs/realisations/guevn/drogue-douce-1.png",
                         type: "image/png",
@@ -708,10 +729,13 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
                 rank: 1,
             },
             {
-                // TODO jpeg
                 alt: "Échantillon du clip Guevn - Drogue Douce 2",
-                defaultImagePath: "imgs/realisations/guevn/drogue-douce-2.png",
+                defaultImagePath: "imgs/realisations/guevn/drogue-douce-2.jpeg",
                 images: [
+                    {
+                        path: "imgs/realisations/guevn/drogue-douce-2.jpeg",
+                        type: "image/jpeg",
+                    },
                     {
                         path: "imgs/realisations/guevn/drogue-douce-2.png",
                         type: "image/png",
@@ -720,10 +744,13 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
                 rank: 2,
             },
             {
-                // TODO jpeg
                 alt: "Échantillon du clip Guevn - Drogue Douce 3",
-                defaultImagePath: "imgs/realisations/guevn/drogue-douce-3.png",
+                defaultImagePath: "imgs/realisations/guevn/drogue-douce-3.jpeg",
                 images: [
+                    {
+                        path: "imgs/realisations/guevn/drogue-douce-3.jpeg",
+                        type: "image/jpeg",
+                    },
                     {
                         path: "imgs/realisations/guevn/drogue-douce-3.png",
                         type: "image/png",
@@ -740,10 +767,13 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
         videoUrl: "https://www.youtube.com/watch?v=gXgkSZEWiyw",
         samples: [
             {
-                // TODO jpeg
                 alt: "Échantillon du clip Rebecca - Divague en rêve 1",
-                defaultImagePath: "imgs/realisations/rebecca/divague-1.png",
+                defaultImagePath: "imgs/realisations/rebecca/divague-1.jpeg",
                 images: [
+                    {
+                        path: "imgs/realisations/rebecca/divague-1.jpeg",
+                        type: "image/jpeg",
+                    },
                     {
                         path: "imgs/realisations/rebecca/divague-1.png",
                         type: "image/png",
@@ -752,10 +782,13 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
                 rank: 1,
             },
             {
-                // TODO jpeg
                 alt: "Échantillon du clip Rebecca - Divague en rêve 2",
-                defaultImagePath: "imgs/realisations/rebecca/divague-2.png",
+                defaultImagePath: "imgs/realisations/rebecca/divague-2.jpeg",
                 images: [
+                    {
+                        path: "imgs/realisations/rebecca/divague-2.jpeg",
+                        type: "image/jpeg",
+                    },
                     {
                         path: "imgs/realisations/rebecca/divague-2.png",
                         type: "image/png",
@@ -764,10 +797,13 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
                 rank: 2,
             },
             {
-                // TODO jpeg
                 alt: "Échantillon du clip Rebecca - Divague en rêve 3",
-                defaultImagePath: "imgs/realisations/rebecca/divague-3.png",
+                defaultImagePath: "imgs/realisations/rebecca/divague-3.jpeg",
                 images: [
+                    {
+                        path: "imgs/realisations/rebecca/divague-3.jpeg",
+                        type: "image/jpeg",
+                    },
                     {
                         path: "imgs/realisations/rebecca/divague-3.png",
                         type: "image/png",
