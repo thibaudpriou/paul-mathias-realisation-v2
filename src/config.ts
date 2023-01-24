@@ -778,6 +778,47 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
         ],
         imageRatio: ImageRatio["2.35/1"],
     },
+    "id-alejandro-donde-estas": {
+        title: "Sergio Alejandro - Donde Estas",
+        type: RealisationType.Clip,
+        videoUrl: "https://www.youtube.com/watch?v=jTKWWAIzhEo",
+        samples: [
+            {
+                alt: "Échantillon du clip Sergio Alejandro - Donde Estas 1",
+                defaultImagePath: "imgs/realisations/alejandro/donde-estas-1.jpeg",
+                images: [
+                    {
+                        path: "imgs/realisations/alejandro/donde-estas-1.jpeg",
+                        type: "image/jpeg",
+                    },
+                ],
+                rank: 1,
+            },
+            {
+                alt: "Échantillon du clip Sergio Alejandro - Donde Estas 2",
+                defaultImagePath: "imgs/realisations/alejandro/donde-estas-2.jpeg",
+                images: [
+                    {
+                        path: "imgs/realisations/alejandro/donde-estas-2.jpeg",
+                        type: "image/jpeg",
+                    },
+                ],
+                rank: 2,
+            },
+            {
+                alt: "Échantillon du clip Sergio Alejandro - Donde Estas 3",
+                defaultImagePath: "imgs/realisations/alejandro/donde-estas-3.jpeg",
+                images: [
+                    {
+                        path: "imgs/realisations/alejandro/donde-estas-3.jpeg",
+                        type: "image/jpeg",
+                    },
+                ],
+                rank: 3,
+            },
+        ],
+        imageRatio: ImageRatio["16/9"],
+    },
 };
 
 // sorted list of realisations IDs to display for each pages
@@ -789,7 +830,7 @@ const realisationsOrder: string[] = [
     "id-guevn-droguedouce",
     "id-skydrone",
     "id-rebecca-divague",
-    // Sergio Alexjandro - Donde Estas
+    "id-alejandro-donde-estas",
     "id-elbde",
     "id-tpm",
     "id-tetepleine",
@@ -820,7 +861,7 @@ const musicVideoRealisationsOrder: string[] = [
     "id-guevn-voler",
     // "id-nome-diva",
     "id-guevn-droguedouce",
-    // Sergio Alexjandro - Donde Estas
+    "id-alejandro-donde-estas",
     "id-rebecca-divague",
     "id-tpm",
     "id-tetepleine",
