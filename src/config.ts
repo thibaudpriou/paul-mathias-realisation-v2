@@ -766,6 +766,7 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
         type: RealisationType.Clip,
         videoUrl: "https://www.youtube.com/watch?v=gXgkSZEWiyw",
         samples: [
+            // ! here the order of samples does not match filenames, but don't worry ;)
             {
                 alt: "Échantillon du clip Rebecca - Divague en rêve 1",
                 defaultImagePath: "imgs/realisations/rebecca/divague-1.jpeg",
@@ -779,7 +780,7 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
                         type: "image/png",
                     },
                 ],
-                rank: 1,
+                rank: 3,
             },
             {
                 alt: "Échantillon du clip Rebecca - Divague en rêve 2",
@@ -809,7 +810,7 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
                         type: "image/png",
                     },
                 ],
-                rank: 3,
+                rank: 1,
             },
         ],
         imageRatio: ImageRatio["2.35/1"],
@@ -865,8 +866,8 @@ const realisationsOrder: string[] = [
     "id-armagnac",
     "id-guevn-droguedouce",
     "id-skydrone",
-    "id-rebecca-divague",
     "id-alejandro-donde-estas",
+    "id-rebecca-divague",
     "id-elbde",
     "id-tpm",
     "id-tetepleine",
