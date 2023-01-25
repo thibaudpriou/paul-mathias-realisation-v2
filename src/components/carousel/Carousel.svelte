@@ -65,12 +65,13 @@
                 class="slide"
                 in:customFadeIn={{duration: transitionDuration}}
                 out:fade={{delay: transitionDuration, duration: 0}}
+                data-idx={slide.idx}
             >
-            {#each slide.images as image}
-                <source srcset={`${assets}/${image.path}`} type={image.type}/>
-            {/each}
-            <img src={`${assets}/${slide.defaultImagePath}`} alt={slide.alt} />
-        </picture>
+                {#each slide.images as image}
+                    <source srcset={`${assets}/${image.path}`} type={image.type}/>
+                {/each}
+                <img src={`${assets}/${slide.defaultImagePath}`} alt={slide.alt} />
+            </picture>
         {/if}
     {/each}
 </div>
@@ -177,10 +178,15 @@
         width: 100%;
         object-fit: cover;
         object-position: center;
+    }
+
+    .slide {
         position: absolute;
         top: 0;
         left: 0;
         z-index: 0;
+        width: 100%;
+        height: 100%;
     }
 
     @media (min-width: 1100px) {
