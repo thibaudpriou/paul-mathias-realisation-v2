@@ -1,10 +1,10 @@
 <script context="module" lang="ts">
-    import {allRealisations} from "../config";
+    import {allRealisations} from "$config";
 </script>
 
 <script lang="ts">
-    import Realisation from "../components/Realisation.svelte";
-    import Showreel from "../components/Showreel.svelte";
+    import Realisation from "$components/Realisation.svelte";
+    import Showreel from "$components/Showreel.svelte";
 </script>
 
 <svelte:head>

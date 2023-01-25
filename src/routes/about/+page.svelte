@@ -1,9 +1,9 @@
 <script lang="ts">
     import {assets} from "$app/paths";
-    import VimeoLogo from "../components/social/VimeoLogo.svelte";
-    import InstagramLogo from "../components/social/InstagramLogo.svelte";
-    import MailLink from "../components/social/MailLink.svelte";
-    import Copyright from "../components/Copyright.svelte";
+    import VimeoLogo from "$components/social/VimeoLogo.svelte";
+    import InstagramLogo from "$components/social/InstagramLogo.svelte";
+    import MailLink from "$components/social/MailLink.svelte";
+    import Copyright from "$components/Copyright.svelte";
 
     const FOUNDING_YEAR = 2016;
 

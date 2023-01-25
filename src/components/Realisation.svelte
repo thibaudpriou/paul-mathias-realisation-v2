@@ -35,7 +35,7 @@
             <a
                 class="seeVideoLink"
                 href={realisation.videoUrl}
-                rel="noopener noreferer"
+                rel="noopener noreferrer"
                 target="_blank"
                 title="Ouvrir la vidéo dans un nouvel onglet">Voir</a
             >

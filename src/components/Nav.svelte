@@ -40,7 +40,7 @@
         </div>
     </span>
 </nav>
-<span class="overlay" on:click={closeMenu} />
+<span class="overlay" on:click={closeMenu} on:keypress={closeMenu} />
 
 <style>
     nav {

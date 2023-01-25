@@ -1,13 +1,13 @@
 <script context="module" lang="ts">
-    import {allRealisations, homePageSamples} from "../config";
+    import {allRealisations, homePageSamples} from "$config";
 
     let mobileSamples = homePageSamples.sort((s1, s2) => s1.rank - s2.rank);
 </script>
 
 <script lang="ts">
-    import AutoCarousel from "../components/carousel/AutoCarousel.svelte";
-    import Realisation from "../components/Realisation.svelte";
-    import Showreel from "../components/Showreel.svelte";
+    import AutoCarousel from "$components/carousel/AutoCarousel.svelte";
+    import Realisation from "$components/Realisation.svelte";
+    import Showreel from "$components/Showreel.svelte";
 </script>
 
 <svelte:head>

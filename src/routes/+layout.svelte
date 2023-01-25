@@ -1,20 +1,16 @@
-<script context="module" lang="ts">
+<script lang="ts">
+    import Footer from "$components/Footer.svelte";
+    import Nav from "$components/Nav.svelte";
+    import Page from "$components/Page.svelte";
+    import {categories} from "$config";
     import {assets} from "$app/paths";
-    import {categories} from "../config";
+    import type { PageData } from './$types';
 
-    export async function load({page}) {
-        return {props: {segment: page.path}};
-    }
+    export let data: PageData;
+    $: segment = data.segment
 
     const SITE_URL = "https://paul-mathias-realisation.com/";
-</script>
 
-<script lang="ts">
-    import Footer from "../components/Footer.svelte";
-    import Nav from "../components/Nav.svelte";
-    import Page from "../components/Page.svelte";
-
-    export let segment: string;
     let blackNavVariant = false;
     let greyNavVariant = false;
     let isShowreelInPage = false;
@@ -37,7 +33,7 @@
 
         if (!isShowreelInPage) return;
         
-        const showreel: HTMLElement = document.getElementById("showreel");
+        const showreel = document.getElementById("showreel");
         if (!showreel) return;
 
         blackNavVariant = scrollPos <= showreel.offsetHeight;

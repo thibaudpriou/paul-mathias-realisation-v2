@@ -4,10 +4,10 @@
         <meta http-equiv="content-type" content="text/html;charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-        %svelte.head%
+        %sveltekit.head%
     </head>
-    <body>
-        <div id="svelte">%svelte.body%</div>
+    <body  data-sveltekit-preload-data="hover">
+        <div id="svelte">%sveltekit.body%</div>
         <style>
             #svelte {
                 min-height: 100vh;

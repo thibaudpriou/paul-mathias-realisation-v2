@@ -4,12 +4,20 @@ import preprocess from "svelte-preprocess";
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
     kit: {
+        alias: {
+            '$lib': 'src/lib',
+            '$lib/*': 'src/lib/*',
+            '$components': 'src/components',
+            '$components/*': 'src/components/*',
+            '$components': 'src/components',
+            '$config': 'src/config',
+        },
         adapter: adaptaterStatic({
             pages: "build",
             assets: "build",
-            fallback: null,
+            precompress: false,
+            strict: true
         }),
-        target: "#svelte",
         files: {
             assets: "static",
         },

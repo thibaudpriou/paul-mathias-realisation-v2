@@ -23,7 +23,7 @@ yarn && yarn dev
 ## Deploy assets / code
 Build the project with:
 ```sh
-rm -rf ./build && yarn export
+rm -rf ./build && yarn build
 ```
 
 Deploy code & assets to S3 buckets with [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html). 

@@ -1,17 +1,9 @@
-<script lang="ts" context="module">
-    import {categories} from "../config";
-    import type ICategory from "../types/category";
-
-    export async function load({page}) {
-        const {categoryPath} = page.params;
-        const category: ICategory | undefined = categories.find(c => c.path === categoryPath);
-        return category && {props: {category}};
-    }
-</script>
-
 <script lang="ts">
-    import Realisation from "../components/Realisation.svelte";
-    export let category: ICategory;
+    import Realisation from "$components/Realisation.svelte";
+    import type { PageData } from './$types';
+
+    export let data: PageData;
+    $: category = data.category
 </script>
 
 <svelte:head>
