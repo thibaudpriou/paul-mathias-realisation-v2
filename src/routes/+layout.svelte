@@ -15,21 +15,23 @@
     let greyNavVariant = false;
     let isShowreelInPage = false;
     let hasFooter = false;
-    const pagesWithShowreel = ["/", "/all"];
+    let isAboutPage = false;
+    const pagesWithShowreel = ["/", "/all", "/all/"];
 
     $: {
         // on "segment" prop change
         isShowreelInPage = pagesWithShowreel.includes(segment);
         blackNavVariant = isShowreelInPage;
-        greyNavVariant = segment === "/about";
-        hasFooter = segment !== "/about";
+        isAboutPage = segment === "/about" || segment === "/about/"
+        greyNavVariant = isAboutPage;
+        hasFooter = !isAboutPage;
     }
 
     let lastKnownScrollPosition = 0;
     let ticking = false;
 
     function adaptNavColor(scrollPos: number) {
-        greyNavVariant = segment === "/about" && scrollPos === 0;
+        greyNavVariant = isAboutPage && scrollPos === 0;
 
         if (!isShowreelInPage) return;
         
