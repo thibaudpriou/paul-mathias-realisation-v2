@@ -16,13 +16,13 @@
     let isShowreelInPage = false;
     let hasFooter = false;
     let isAboutPage = false;
-    const pagesWithShowreel = ["/", "/all", "/all/"];
+    const pagesWithShowreel = ["/", "/all"];
 
     $: {
         // on "segment" prop change
         isShowreelInPage = pagesWithShowreel.includes(segment);
         blackNavVariant = isShowreelInPage;
-        isAboutPage = segment === "/about" || segment === "/about/"
+        isAboutPage = segment === "/about"
         greyNavVariant = isAboutPage;
         hasFooter = !isAboutPage;
     }
