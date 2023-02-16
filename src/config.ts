@@ -61,16 +61,12 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
         title: "Skydrone - Red Balloon",
         type: RealisationType.Ad,
         videoUrl: "https://vimeo.com/430446941/84060ea81a",
-        imageRatio: ImageRatio["2.35/1"],
+        imageRatio: ImageRatio["2.38/1"],
         samples: [
             {
                 alt: "Échantillon publicité Skydrone 1",
                 defaultImagePath: "imgs/realisations/skydrone/skydrone-1.jpeg",
                 images: [
-                    {
-                        path: "imgs/realisations/skydrone/skydrone-1.webp",
-                        type: "image/webp",
-                    },
                     {
                         path: "imgs/realisations/skydrone/skydrone-1.jpeg",
                         type: "image/jpeg",
@@ -83,10 +79,6 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
                 defaultImagePath: "imgs/realisations/skydrone/skydrone-2.jpeg",
                 images: [
                     {
-                        path: "imgs/realisations/skydrone/skydrone-2.webp",
-                        type: "image/webp",
-                    },
-                    {
                         path: "imgs/realisations/skydrone/skydrone-2.jpeg",
                         type: "image/jpeg",
                     },
@@ -97,10 +89,6 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
                 alt: "Échantillon publicité Skydrone 3",
                 defaultImagePath: "imgs/realisations/skydrone/skydrone-3.jpeg",
                 images: [
-                    {
-                        path: "imgs/realisations/skydrone/skydrone-3.webp",
-                        type: "image/webp",
-                    },
                     {
                         path: "imgs/realisations/skydrone/skydrone-3.jpeg",
                         type: "image/jpeg",
@@ -120,10 +108,6 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
                 defaultImagePath: "imgs/realisations/steampunk/mini-steampunk-1.jpeg",
                 images: [
                     {
-                        path: "imgs/realisations/steampunk/mini-steampunk-1.webp",
-                        type: "image/webp",
-                    },
-                    {
                         path: "imgs/realisations/steampunk/mini-steampunk-1.jpeg",
                         type: "image/jpeg",
                     },
@@ -134,10 +118,6 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
                 alt: "Échantillon publicité Mini Streampunk 2",
                 defaultImagePath: "imgs/realisations/steampunk/mini-steampunk-2.jpeg",
                 images: [
-                    {
-                        path: "imgs/realisations/steampunk/mini-steampunk-2.webp",
-                        type: "image/webp",
-                    },
                     {
                         path: "imgs/realisations/steampunk/mini-steampunk-2.jpeg",
                         type: "image/jpeg",
@@ -150,10 +130,6 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
                 defaultImagePath: "imgs/realisations/steampunk/mini-steampunk-3.jpeg",
                 images: [
                     {
-                        path: "imgs/realisations/steampunk/mini-steampunk-3.webp",
-                        type: "image/webp",
-                    },
-                    {
                         path: "imgs/realisations/steampunk/mini-steampunk-3.jpeg",
                         type: "image/jpeg",
                     },
@@ -161,6 +137,7 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
                 rank: 3,
             },
         ],
+        imageRatio: ImageRatio["2.35/1"],
     },
     "id-ctlm": {
         title: "C'était le monde",
@@ -171,10 +148,6 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
                 alt: "Échantillon de C'était le Monde 1",
                 defaultImagePath: "imgs/realisations/ctlm/c-etait-le-monde-1.jpeg",
                 images: [
-                    {
-                        path: "imgs/realisations/ctlm/c-etait-le-monde-1.webp",
-                        type: "image/webp",
-                    },
                     {
                         path: "imgs/realisations/ctlm/c-etait-le-monde-1.jpeg",
                         type: "image/jpeg",
@@ -187,10 +160,6 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
                 defaultImagePath: "imgs/realisations/ctlm/c-etait-le-monde-2.jpeg",
                 images: [
                     {
-                        path: "imgs/realisations/ctlm/c-etait-le-monde-2.webp",
-                        type: "image/webp",
-                    },
-                    {
                         path: "imgs/realisations/ctlm/c-etait-le-monde-2.jpeg",
                         type: "image/jpeg",
                     },
@@ -202,10 +171,6 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
                 defaultImagePath: "imgs/realisations/ctlm/c-etait-le-monde-3.jpeg",
                 images: [
                     {
-                        path: "imgs/realisations/ctlm/c-etait-le-monde-3.webp",
-                        type: "image/webp",
-                    },
-                    {
                         path: "imgs/realisations/ctlm/c-etait-le-monde-3.jpeg",
                         type: "image/jpeg",
                     },
@@ -213,6 +178,7 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
                 rank: 3,
             },
         ],
+        imageRatio: ImageRatio["2.35/1"],
     },
     "id-elbde": {
         title: "Et le Bourgeon devint Étincelle",
@@ -223,10 +189,6 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
                 alt: "Échantillon de Et le bourgeon devint Étincelle 1",
                 defaultImagePath: "imgs/realisations/elbde/et-le-bourgeon-devint-etincelle-1.jpeg",
                 images: [
-                    {
-                        path: "imgs/realisations/elbde/et-le-bourgeon-devint-etincelle-1.webp",
-                        type: "image/webp",
-                    },
                     {
                         path: "imgs/realisations/elbde/et-le-bourgeon-devint-etincelle-1.jpeg",
                         type: "image/jpeg",
@@ -239,10 +201,6 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
                 defaultImagePath: "imgs/realisations/elbde/et-le-bourgeon-devint-etincelle-2.jpeg",
                 images: [
                     {
-                        path: "imgs/realisations/elbde/et-le-bourgeon-devint-etincelle-2.webp",
-                        type: "image/webp",
-                    },
-                    {
                         path: "imgs/realisations/elbde/et-le-bourgeon-devint-etincelle-2.jpeg",
                         type: "image/jpeg",
                     },
@@ -254,10 +212,6 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
                 defaultImagePath: "imgs/realisations/elbde/et-le-bourgeon-devint-etincelle-3.jpeg",
                 images: [
                     {
-                        path: "imgs/realisations/elbde/et-le-bourgeon-devint-etincelle-3.webp",
-                        type: "image/webp",
-                    },
-                    {
                         path: "imgs/realisations/elbde/et-le-bourgeon-devint-etincelle-3.jpeg",
                         type: "image/jpeg",
                     },
@@ -265,6 +219,7 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
                 rank: 3,
             },
         ],
+        imageRatio: ImageRatio["2.35/1"],
     },
     "id-horloger": {
         title: "L'Horloger",
@@ -277,10 +232,6 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
                 defaultImagePath: "imgs/realisations/horloger/l-horloger-1.jpeg",
                 images: [
                     {
-                        path: "imgs/realisations/horloger/l-horloger-1.webp",
-                        type: "image/webp",
-                    },
-                    {
                         path: "imgs/realisations/horloger/l-horloger-1.jpeg",
                         type: "image/jpeg",
                     },
@@ -292,10 +243,6 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
                 defaultImagePath: "imgs/realisations/horloger/l-horloger-2.jpeg",
                 images: [
                     {
-                        path: "imgs/realisations/horloger/l-horloger-2.webp",
-                        type: "image/webp",
-                    },
-                    {
                         path: "imgs/realisations/horloger/l-horloger-2.jpeg",
                         type: "image/jpeg",
                     },
@@ -306,10 +253,6 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
                 alt: "Échantillon de L'Horloger 3",
                 defaultImagePath: "imgs/realisations/horloger/l-horloger-3.jpeg",
                 images: [
-                    {
-                        path: "imgs/realisations/horloger/l-horloger-3.webp",
-                        type: "image/webp",
-                    },
                     {
                         path: "imgs/realisations/horloger/l-horloger-3.jpeg",
                         type: "image/jpeg",
@@ -329,10 +272,6 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
                 defaultImagePath: "imgs/realisations/rage/rage-1.jpeg",
                 images: [
                     {
-                        path: "imgs/realisations/rage/rage-1.webp",
-                        type: "image/webp",
-                    },
-                    {
                         path: "imgs/realisations/rage/rage-1.jpeg",
                         type: "image/jpeg",
                     },
@@ -344,10 +283,6 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
                 defaultImagePath: "imgs/realisations/rage/rage-2.jpeg",
                 images: [
                     {
-                        path: "imgs/realisations/rage/rage-2.webp",
-                        type: "image/webp",
-                    },
-                    {
                         path: "imgs/realisations/rage/rage-2.jpeg",
                         type: "image/jpeg",
                     },
@@ -355,6 +290,7 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
                 rank: 2,
             },
         ],
+        imageRatio: ImageRatio["2.35/1"],
     },
     "id-tetepleine": {
         title: "Dosla - La tête Pleine",
@@ -419,10 +355,6 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
                 defaultImagePath: "imgs/realisations/esje/et-si-j-interesse-encore-1.jpeg",
                 images: [
                     {
-                        path: "imgs/realisations/esje/et-si-j-interesse-encore-1.webp",
-                        type: "image/webp",
-                    },
-                    {
                         path: "imgs/realisations/esje/et-si-j-interesse-encore-1.jpeg",
                         type: "image/jpeg",
                     },
@@ -433,10 +365,6 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
                 alt: "Échantillon du clip Et si j'intéresse encore 2",
                 defaultImagePath: "imgs/realisations/esje/et-si-j-interesse-encore-2.jpeg",
                 images: [
-                    {
-                        path: "imgs/realisations/esje/et-si-j-interesse-encore-2.webp",
-                        type: "image/webp",
-                    },
                     {
                         path: "imgs/realisations/esje/et-si-j-interesse-encore-2.jpeg",
                         type: "image/jpeg",
@@ -449,10 +377,6 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
                 defaultImagePath: "imgs/realisations/esje/et-si-j-interesse-encore-3.jpeg",
                 images: [
                     {
-                        path: "imgs/realisations/esje/et-si-j-interesse-encore-3.webp",
-                        type: "image/webp",
-                    },
-                    {
                         path: "imgs/realisations/esje/et-si-j-interesse-encore-3.jpeg",
                         type: "image/jpeg",
                     },
@@ -460,6 +384,7 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
                 rank: 3,
             },
         ],
+        imageRatio: ImageRatio["2.35/1"],
     },
     "id-tpm": {
         title: "TPM - Think Positive Music",
@@ -468,14 +393,10 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
         samples: [
             {
                 alt: "Échantillon du clip TPM - Think Positive Music 1",
-                defaultImagePath: "imgs/realisations/tpm/tpm-1.jpg",
+                defaultImagePath: "imgs/realisations/tpm/tpm-1.jpeg",
                 images: [
                     {
-                        path: "imgs/realisations/tpm/tpm-1.webp",
-                        type: "image/webp",
-                    },
-                    {
-                        path: "imgs/realisations/tpm/tpm-1.jpg",
+                        path: "imgs/realisations/tpm/tpm-1.jpeg",
                         type: "image/jpeg",
                     },
                 ],
@@ -483,14 +404,10 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
             },
             {
                 alt: "Échantillon du clip TPM - Think Positive Music 2",
-                defaultImagePath: "imgs/realisations/tpm/tpm-2.jpg",
+                defaultImagePath: "imgs/realisations/tpm/tpm-2.jpeg",
                 images: [
                     {
-                        path: "imgs/realisations/tpm/tpm-2.webp",
-                        type: "image/webp",
-                    },
-                    {
-                        path: "imgs/realisations/tpm/tpm-2.jpg",
+                        path: "imgs/realisations/tpm/tpm-2.jpeg",
                         type: "image/jpeg",
                     },
                 ],
@@ -498,14 +415,10 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
             },
             {
                 alt: "Échantillon du clip TPM - Think Positive Music 3",
-                defaultImagePath: "imgs/realisations/tpm/tpm-3.jpg",
+                defaultImagePath: "imgs/realisations/tpm/tpm-3.jpeg",
                 images: [
                     {
-                        path: "imgs/realisations/tpm/tpm-3.webp",
-                        type: "image/webp",
-                    },
-                    {
-                        path: "imgs/realisations/tpm/tpm-3.jpg",
+                        path: "imgs/realisations/tpm/tpm-3.jpeg",
                         type: "image/jpeg",
                     },
                 ],
@@ -854,7 +767,7 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
                 rank: 3,
             },
         ],
-        imageRatio: ImageRatio["16/9"],
+        imageRatio: ImageRatio["2.35/1"],
     },
 };
 

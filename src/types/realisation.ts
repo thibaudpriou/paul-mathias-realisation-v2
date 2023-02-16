@@ -10,6 +10,7 @@ export enum RealisationType {
 export enum ImageRatio {
     "16/9" = "16/9",
     "2.35/1" = "2.35/1",
+    "2.38/1" = "2.38/1",
 }
 
 export default interface IRealisation {
