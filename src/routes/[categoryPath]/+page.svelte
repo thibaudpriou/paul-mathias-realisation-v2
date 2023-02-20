@@ -13,7 +13,7 @@
 
 <ul class="container-realisation">
     {#each category.realisations as realisation}
-        <li>
+        <li class="fucking-subpixels">
             <Realisation {realisation} />
         </li>
     {/each}
@@ -24,5 +24,9 @@
         list-style: none;
         padding: 0;
         margin: 0;
+    }
+
+    .fucking-subpixels {
+        background-color: black;
     }
 </style>
