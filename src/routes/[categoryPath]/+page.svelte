@@ -29,4 +29,10 @@
     .fucking-subpixels {
         background-color: black;
     }
+
+    @media (min-width: 1100px) {
+        .container-realisation {
+            padding-top: var(--navbar-height);
+        }
+    }
 </style>

@@ -16,7 +16,7 @@
     let isShowreelInPage = false;
     let hasFooter = false;
     let isAboutPage = false;
-    const pagesWithShowreel = ["/", "/all"];
+    const pagesWithShowreel = ["", "/", "/all"];
 
     $: {
         // on "segment" prop change
@@ -94,7 +94,7 @@
 
 <svelte:window on:scroll={onScroll} />
 
-<header class="navbar-container">
+<header class="navbar-container" class:no-anim={!isShowreelInPage}>
     <Nav {segment} blackVariant={blackNavVariant} greyVariant={greyNavVariant} {categories} />
 </header>
 <Page refresh={segment} transitionDuration={10}>
@@ -143,7 +143,7 @@
             min-height: 100vh;
         }
 
-        .navbar-container {
+        .navbar-container:not(.no-anim) {
             -webkit-animation: slidedown 1s ease 1s;
             -moz-animation: slidedown 1s ease 1s;
             -ms-animation: slidedown 1s ease 1s;
