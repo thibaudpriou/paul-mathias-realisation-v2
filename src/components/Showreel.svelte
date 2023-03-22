@@ -16,14 +16,14 @@
         loop
         muted
         preload="metadata"
-        poster={`${assets}/imgs/demo_poster.jpg`}
+        poster={`${assets}/imgs/demo_poster_2023.jpg`}
     >
-        <!-- MP4 file is 157MB -->
-        <source src={`${assets}/videos/demo.mp4`} type="video/mp4" />
-        <!-- WEBM file is 753MB -->
-        <source src={`${assets}/videos/demo.webm`} type="video/webm" />
-        <!-- MOV file is 814MB -->
-        <source src={`${assets}/videos/demo.mov`} type="video/quicktime" />
+        <!-- MP4 file is 160MB -->
+        <source src={`${assets}/videos/demo_2023.mp4`} type="video/mp4" />
+        <!-- WEBM file is 266MB -->
+        <source src={`${assets}/videos/demo_2023.webm`} type="video/webm" />
+        <!-- MOV file is 700MB + colors are poorly rendered -->
+        <source src={`${assets}/videos/demo_2023.mov`} type="video/quicktime" />
         Votre navigateur ne supporte pas la lecture vidéo HTML5.
         <!-- tl;dr: your browser is utter shit -->
     </video>
