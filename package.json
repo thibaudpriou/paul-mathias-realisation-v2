@@ -24,18 +24,18 @@
     },
     "dependencies": {},
     "devDependencies": {
-        "@sveltejs/adapter-static": "^1.0.5",
-        "@sveltejs/kit": "^1.2.9",
-        "@types/html-minifier": "^4.0.1",
+        "@sveltejs/adapter-static": "^2.0.1",
+        "@sveltejs/kit": "^1.15.2",
+        "@types/html-minifier": "^4.0.2",
         "html-minifier": "^4.0.0",
-        "prettier": "^2.3.2",
-        "prettier-plugin-svelte": "^2.2.0",
-        "svelte": "^3.55.1",
-        "svelte-check": "^2.0.0",
-        "svelte-preprocess": "^4.0.0",
+        "prettier": "^2.8.7",
+        "prettier-plugin-svelte": "^2.10.0",
+        "svelte": "^3.58.0",
+        "svelte-check": "^3.2.0",
+        "svelte-preprocess": "^5.0.3",
         "swipe-detect": "^1.0.1",
-        "tslib": "^2.0.0",
-        "typescript": "^4.9.3",
-        "vite": "^4.0.4"
+        "tslib": "^2.5.0",
+        "typescript": "^5.0.4",
+        "vite": "^4.2.1"
     }
 }
