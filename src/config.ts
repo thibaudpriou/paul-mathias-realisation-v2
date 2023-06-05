@@ -551,7 +551,7 @@ const realisations: {[id: string]: ICategory["realisations"][0]} = {
     "id-ivory": {
         title: "Ivory",
         type: RealisationType.Ad,
-        videoUrl: undefined,
+        videoUrl: "https://vimeo.com/818378728",
         samples: [
             {
                 alt: "Échantillon publicité Ivory 1",
