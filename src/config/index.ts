@@ -6,50 +6,54 @@ import { realisations } from "./realisations";
 const realisationsOrder: string[] = [
     "id-guevn-voler",
     "id-ivory",
-    // "id-nome-diva",
-    "id-armagnac",
-    "id-guevn-droguedouce",
+    "id-rebecca-oma",
+    "id-garreau-armagnac",
+    "id-guevn-drogue-douce",
+    // "id-nome-diva-hfoh",
     "id-skydrone",
     "id-alejandro-donde-estas",
     "id-rebecca-divague",
     "id-elbde",
-    "id-tpm",
-    "id-tetepleine",
+    "id-tpm-think-positive",
+    "id-berry-province",
+    "id-dosla-tete-pleine",
     "id-ctlm",
     "id-horloger",
     "id-steampunk",
-    "id-tangocharlie",
+    "id-tango-charlie",
     "id-rage",
     "id-esje",
 ];
 
 const commercialsRealisationsOrder: string[] = [
     "id-ivory",
-    "id-armagnac",
+    "id-garreau-armagnac",
     "id-skydrone",
+    "id-berry-province",
     "id-steampunk",
 ];
+
+const musicVideoRealisationsOrder: string[] = [
+    "id-guevn-voler",
+    "id-rebecca-oma",
+    "id-guevn-drogue-douce",
+    // "id-nome-diva-hfoh",
+    "id-alejandro-donde-estas",
+    "id-rebecca-divague",
+    "id-tpm-think-positive",
+    "id-dosla-tete-pleine",
+    "id-esje",
+];
+
+
 
 const filmsRealisationsOrder: string[] = [
     "id-elbde",
     "id-horloger",
     "id-ctlm",
-    "id-tangocharlie",
+    "id-tango-charlie",
     "id-rage",
 ];
-
-const musicVideoRealisationsOrder: string[] = [
-    "id-guevn-voler",
-    // "id-nome-diva",
-    "id-guevn-droguedouce",
-    "id-alejandro-donde-estas",
-    "id-rebecca-divague",
-    "id-tpm",
-    "id-tetepleine",
-    "id-esje",
-];
-
-
 
 function getRealisations(ids: string[]): ICategory["realisations"] {
     return ids.map(id => realisations[id]);
