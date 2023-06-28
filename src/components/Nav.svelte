@@ -21,7 +21,7 @@
 <nav class:black-variant={blackVariant} class:grey-variant={greyVariant} class:collapsed>
     <span class="main">
         <span class="logo-link">
-            <NavLink logo isAriaCurrent={segment === "/"} href="." {blackVariant} on:nav-link={closeMenu}>
+            <NavLink logo isAriaCurrent={segment === "/"} href="/" {blackVariant} on:nav-link={closeMenu}>
                 <span class="navbar-brand">Paul <span class="fine-text">X</span> Mathias</span>
             </NavLink>
         </span>
