@@ -1,6 +1,6 @@
 import type ICategory from "../types/category";
 import type Sample from "../types/sample";
-import { realisations } from "./realisations";
+import {realisations} from "./realisations";
 
 // sorted list of realisations IDs to display for each pages
 const realisationsOrder: string[] = [
@@ -12,17 +12,17 @@ const realisationsOrder: string[] = [
     "id-nome-diva-hfoh",
     "id-skydrone",
     "id-alejandro-donde-estas",
-    "id-rebecca-divague",
-    "id-elbde",
-    "id-tpm-think-positive",
+    // "id-rebecca-divague",
+    // "id-elbde",
+    // "id-tpm-think-positive",
     "id-berry-province",
-    "id-dosla-tete-pleine",
-    "id-ctlm",
+    // "id-dosla-tete-pleine",
+    // "id-ctlm",
     "id-horloger",
-    "id-steampunk",
+    // "id-steampunk",
     "id-tango-charlie",
-    "id-rage",
-    "id-esje",
+    // "id-rage",
+    // "id-esje",
 ];
 
 const commercialsRealisationsOrder: string[] = [
@@ -30,7 +30,7 @@ const commercialsRealisationsOrder: string[] = [
     "id-garreau-armagnac",
     "id-skydrone",
     "id-berry-province",
-    "id-steampunk",
+    // "id-steampunk",
 ];
 
 const musicVideoRealisationsOrder: string[] = [
@@ -39,20 +39,18 @@ const musicVideoRealisationsOrder: string[] = [
     "id-guevn-drogue-douce",
     "id-nome-diva-hfoh",
     "id-alejandro-donde-estas",
-    "id-rebecca-divague",
-    "id-tpm-think-positive",
-    "id-dosla-tete-pleine",
-    "id-esje",
+    // "id-rebecca-divague",
+    // "id-tpm-think-positive",
+    // "id-dosla-tete-pleine",
+    // "id-esje",
 ];
 
-
-
 const filmsRealisationsOrder: string[] = [
-    "id-elbde",
+    //"id-elbde",
     "id-horloger",
-    "id-ctlm",
+    // "id-ctlm",
     "id-tango-charlie",
-    "id-rage",
+    // "id-rage",
 ];
 
 function getRealisations(ids: string[]): ICategory["realisations"] {
