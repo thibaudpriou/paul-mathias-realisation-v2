@@ -10,20 +10,13 @@
 
 <div class="container" bind:this={container} id="showreel">
     <!-- TODO fix video url -->
-    <video
-        autoplay
-        class="demo"
-        loop
-        muted
-        preload="metadata"
-        poster={`${assets}/imgs/demo_poster_2023.jpg`}
-    >
-        <!-- MP4 file is 160MB -->
-        <source src={`${assets}/videos/demo_2023.mp4`} type="video/mp4" />
-        <!-- WEBM file is 266MB -->
-        <source src={`${assets}/videos/demo_2023.webm`} type="video/webm" />
-        <!-- MOV file is 700MB + colors are poorly rendered -->
-        <source src={`${assets}/videos/demo_2023.mov`} type="video/quicktime" />
+    <video autoplay class="demo" loop muted preload="metadata" poster={`${assets}/imgs/demo_poster_2023.jpg`}>
+        <!-- MP4 file is 80MB -->
+        <source src={`${assets}/videos/demo_20244.mp4`} type="video/mp4" />
+        <!-- WEBM file is 81MB -->
+        <source src={`${assets}/videos/demo_2024.webm`} type="video/webm" />
+        <!-- MOV file is 871MB + colors are poorly rendered -->
+        <source src={`${assets}/videos/demo_2024.mov`} type="video/quicktime" />
         Votre navigateur ne supporte pas la lecture vidéo HTML5.
         <!-- tl;dr: your browser is utter shit -->
     </video>
@@ -67,7 +60,7 @@
     @media (min-width: 600px) {
         .container {
             display: flex;
-        } 
+        }
     }
 
     .demo {
