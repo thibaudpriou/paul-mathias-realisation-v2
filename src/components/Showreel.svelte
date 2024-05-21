@@ -10,9 +10,9 @@
 
 <div class="container" bind:this={container} id="showreel">
     <!-- TODO fix video url -->
-    <video autoplay class="demo" loop muted preload="metadata" poster={`${assets}/imgs/demo_poster_2023.jpg`}>
+    <video autoplay class="demo" loop muted preload="metadata" poster={`${assets}/imgs/demo_poster_2024.jpg`}>
         <!-- MP4 file is 80MB -->
-        <source src={`${assets}/videos/demo_20244.mp4`} type="video/mp4" />
+        <source src={`${assets}/videos/demo_2024.mp4`} type="video/mp4" />
         <!-- WEBM file is 81MB -->
         <source src={`${assets}/videos/demo_2024.webm`} type="video/webm" />
         <!-- MOV file is 871MB + colors are poorly rendered -->
