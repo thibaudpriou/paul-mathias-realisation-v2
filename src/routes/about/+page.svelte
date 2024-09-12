@@ -4,10 +4,6 @@
     import InstagramLogo from "$components/social/InstagramLogo.svelte";
     import MailLink from "$components/social/MailLink.svelte";
     import Copyright from "$components/Copyright.svelte";
-
-    const FOUNDING_YEAR = 2016;
-
-    let foundingAge: number = new Date().getFullYear() - FOUNDING_YEAR;
 </script>
 
 <svelte:head>
@@ -21,52 +17,33 @@
 
 <div class="container">
     <div class="content">
+        <hr class="hr-sizein hr-semifull" />
         <section class="about-content">
             <div class="images-container">
-                <div class="force-ratio">
-                    <div class="images-subcontainer-left">
-                        <img
-                            class="img"
-                            src={`${assets}/imgs/about-1.jpg`}
-                            width="835"
-                            height="831"
-                            alt="Paul et Mathias sur le tournage de l'Horloger"
-                        />
-                    </div>
-                    <div class="images-subcontainer-right">
-                        <img
-                            class="img"
-                            src={`${assets}/imgs/about-2.jpg`}
-                            width="640"
-                            height="480"
-                            alt="Paul et Mathias sur le tournage de Et c'était le monde"
-                        />
-                        <img
-                            class="img"
-                            src={`${assets}/imgs/about-3.jpg`}
-                            width="640"
-                            height="346"
-                            alt="Paul et Mathias sur le tournage de Et c'était le monde"
-                        />
-                    </div>
-                </div>
+                <img class="img" src={`${assets}/imgs/about-2024_1.jpg`} alt="Paul et Mathias sur un tournage" />
             </div>
+
             <div class="about-text-container">
-                <hr class="hr-sizein" />
                 <p class="about-text">
-                    Rencontrés durant leurs études, cela fait un peu
-                    <strong>plus de {foundingAge} ans</strong> que Paul Gojecki et Mathias Priou réalisent ensemble
-                    divers projets audiovisuels. Motivés par les mêmes références, ils aiment créer des
-                    <strong>univers atypiques</strong>
-                    dans lesquels évoluent des personnages
-                    <strong>hauts en couleur</strong>. Leur passion pour la technique les amène à s'intéresser à
-                    <strong>des méthodes de réalisation dans l'air du temps</strong>. Ils mettent leur expérience et
-                    leurs compétences en exergue afin d’atteindre leur objectif principal&nbsp;:
-                    <strong>créer de l’émotion</strong> dans le cœur des spectateurs.
+                    <strong>Paul Gojecki</strong> et <strong>Mathias Priou</strong> sont des auteurs et réalisateurs
+                    basés à <strong>Paris</strong>.
+                </p>
+                <p class="about-text">
+                    Leur style de narration est nourri par des références cinématographiques communes et vient insuffler
+                    une dimension et une âme saisissante aux différents médiums auxquels ils se confrontent.
+                </p>
+                <p class="about-text">
+                    Avec près de 200 réalisations dans la publicité, le clip et la fiction, leur goût pour la technique
+                    et l'expérimentation les amène à repousser les limites de leur art au service d'un seul but&nbsp;:
+                    <strong>l'émotion</strong>.
                 </p>
             </div>
+
+            <div class="images-container">
+                <img class="img" src={`${assets}/imgs/about-2024_2.jpg`} alt="Paul et Mathias sur un tournage" />
+            </div>
         </section>
-        <hr class="hr-sizein hr-full" />
+        <hr class="hr-sizein hr-semifull" />
         <section class="contact">
             <span class="email-link"><MailLink /></span>
             <div class="social-links">
@@ -100,13 +77,15 @@
 
     .about-content {
         display: flex;
+        gap: 2em;
+        margin: 2em 0;
         font-family: SourceSansPro-Regular;
         flex-direction: column-reverse;
     }
 
     .images-container {
-        min-width: 40%;
-        margin-top: 2em;
+        display: flex;
+        align-items: center;
         line-height: 0;
 
         -webkit-animation: fadein 1s ease;
@@ -127,33 +106,6 @@
         animation-delay: 1.25s;
     }
 
-    .force-ratio {
-        /** Ruse de sioux:
-      * I can not control image height to make them be perfectly aligned
-      * so I crop the bottom by 2px (empiric value)
-      */
-        height: 0;
-        padding-bottom: calc(100% * 831 / 1480 - 2px);
-        overflow: hidden;
-        display: flex;
-    }
-
-    .images-subcontainer-left {
-        flex-basis: calc(100% * 835 / 1480);
-    }
-
-    .images-subcontainer-right {
-        display: flex;
-        height: 100%;
-        flex-direction: column;
-        padding-left: 5px;
-        flex-basis: calc(100% * 640 / 1480);
-    }
-
-    .images-subcontainer-right > *:last-child {
-        padding-top: 5px;
-    }
-
     .about-text-container {
         margin-left: 0;
     }
@@ -163,7 +115,7 @@
         line-height: 1.7;
         text-align: justify;
         margin: 0;
-        margin-top: 1em;
+        margin-bottom: 1em;
 
         -webkit-animation: fadein 0.5s ease 1s;
         -moz-animation: fadein 0.5s ease 1s;
@@ -200,8 +152,7 @@
         margin: 0;
     }
 
-    .hr-full {
-        margin-top: 2em;
+    .hr-semifull {
         animation-delay: 1.5s;
     }
 
@@ -268,7 +219,7 @@
         }
     }
 
-    @media (min-width: 1400px) {
+    @media (min-width: 1100px) {
         .container {
             padding-top: 10%;
         }
@@ -277,8 +228,8 @@
             flex-direction: row;
         }
 
-        .about-text-container {
-            margin-left: 2em;
+        .about-text {
+            font-size: 1.1vw;
         }
 
         .images-container {
@@ -288,6 +239,12 @@
             -ms-animation-delay: 0s;
             -o-animation-delay: 0s;
             animation-delay: 0s;
+        }
+
+        .hr-semifull {
+            max-width: calc(100% - 18vw);
+            align-self: center;
+            animation-delay: 1.5s;
         }
     }
 
