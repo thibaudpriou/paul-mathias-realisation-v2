@@ -226,10 +226,11 @@
 
         .about-content {
             flex-direction: row;
+            gap: 2vw;
         }
 
         .about-text {
-            font-size: 1.1vw;
+            font-size: 1.2vw;
         }
 
         .images-container {
@@ -239,6 +240,7 @@
             -ms-animation-delay: 0s;
             -o-animation-delay: 0s;
             animation-delay: 0s;
+            flex-basis: 60%;
         }
 
         .hr-semifull {
