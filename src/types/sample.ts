@@ -6,4 +6,5 @@ export default interface Sample {
         type: string;
     }>;
     rank: number; // image position inside realisation's carousel
+    variation?: "inverted";
 }

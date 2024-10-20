@@ -375,45 +375,45 @@ export const realisations: Record<string, ICategory["realisations"][0]> = {
         videoUrl: "https://vimeo.com/510700451",
     },
     "id-nome-diva-hfoh": {
-            title: "Nome Diva - Hybrid Form of Humanity",
-            type: RealisationType.Clip,
-            videoUrl: 'https://www.youtube.com/watch?v=JLbjU_Zr8xE',
-            samples: [
-                {
-                    alt: "Échantillon du clip Nome Diva - Hybrid Form of Humanity 1",
-                    defaultImagePath: "imgs/realisations/nome-diva-hfoh/1.jpg",
-                    images: [
-                        {
-                            path: "imgs/realisations/nome-diva-hfoh/1.jpg",
-                            type: "image/jpeg",
-                        },
-                    ],
-                    rank: 1,
-                },
-                {
-                    alt: "Échantillon du clip Nome Diva - Hybrid Form of Humanity 2",
-                    defaultImagePath: "imgs/realisations/nome-diva-hfoh/2.jpg",
-                    images: [
-                        {
-                            path: "imgs/realisations/nome-diva-hfoh/2.jpg",
-                            type: "image/jpeg",
-                        },
-                    ],
-                    rank: 2,
-                },
-                {
-                    alt: "Échantillon du clip Nome Diva - Hybrid Form of Humanity 3",
-                    defaultImagePath: "imgs/realisations/nome-diva-hfoh/3.jpg",
-                    images: [
-                        {
-                            path: "imgs/realisations/nome-diva-hfoh/3.jpg",
-                            type: "image/jpeg",
-                        },
-                    ],
-                    rank: 3,
-                },
-            ],
-            imageRatio: ImageRatio["2.5/1"],
+        title: "Nome Diva - Hybrid Form of Humanity",
+        type: RealisationType.Clip,
+        videoUrl: "https://www.youtube.com/watch?v=JLbjU_Zr8xE",
+        samples: [
+            {
+                alt: "Échantillon du clip Nome Diva - Hybrid Form of Humanity 1",
+                defaultImagePath: "imgs/realisations/nome-diva-hfoh/1.jpg",
+                images: [
+                    {
+                        path: "imgs/realisations/nome-diva-hfoh/1.jpg",
+                        type: "image/jpeg",
+                    },
+                ],
+                rank: 1,
+            },
+            {
+                alt: "Échantillon du clip Nome Diva - Hybrid Form of Humanity 2",
+                defaultImagePath: "imgs/realisations/nome-diva-hfoh/2.jpg",
+                images: [
+                    {
+                        path: "imgs/realisations/nome-diva-hfoh/2.jpg",
+                        type: "image/jpeg",
+                    },
+                ],
+                rank: 2,
+            },
+            {
+                alt: "Échantillon du clip Nome Diva - Hybrid Form of Humanity 3",
+                defaultImagePath: "imgs/realisations/nome-diva-hfoh/3.jpg",
+                images: [
+                    {
+                        path: "imgs/realisations/nome-diva-hfoh/3.jpg",
+                        type: "image/jpeg",
+                    },
+                ],
+                rank: 3,
+            },
+        ],
+        imageRatio: ImageRatio["2.5/1"],
     },
     "id-guevn-drogue-douce": {
         imageRatio: ImageRatio["2.5/1"],
@@ -753,7 +753,7 @@ export const realisations: Record<string, ICategory["realisations"][0]> = {
         imageRatio: ImageRatio["2.5/1"],
         samples: [
             {
-                alt: "Échantillon du clip Rebecca - Oh Mon Amante 1",
+                alt: "Échantillon du clip Rebecca Moon - Oh Mon Amante 1",
                 defaultImagePath: "imgs/realisations/rebecca-oma/1.jpg",
                 images: [
                     {
@@ -768,7 +768,7 @@ export const realisations: Record<string, ICategory["realisations"][0]> = {
                 rank: 1,
             },
             {
-                alt: "Échantillon du clip Rebecca - Oh Mon Amante 2",
+                alt: "Échantillon du clip Rebecca Moon - Oh Mon Amante 2",
                 defaultImagePath: "imgs/realisations/rebecca-oma/2.jpg",
                 images: [
                     {
@@ -783,7 +783,7 @@ export const realisations: Record<string, ICategory["realisations"][0]> = {
                 rank: 2,
             },
             {
-                alt: "Échantillon du clip Rebecca - Oh Mon Amante 3",
+                alt: "Échantillon du clip Rebecca Moon - Oh Mon Amante 3",
                 defaultImagePath: "imgs/realisations/rebecca-oma/3.jpg",
                 images: [
                     {
@@ -798,9 +798,78 @@ export const realisations: Record<string, ICategory["realisations"][0]> = {
                 rank: 3,
             },
         ],
-        title: "Rebecca - Oh Mon Amante",
+        title: "Rebecca Moon - Oh Mon Amante",
         type: RealisationType.Clip,
         videoUrl: "https://youtu.be/YPaD-LVwecU",
+    },
+    "id-rebecca-pills": {
+        imageRatio: ImageRatio["2.5/1"],
+        samples: [
+            {
+                alt: "Échantillon du clip Rebecca Moon - Pills 1",
+                defaultImagePath: "imgs/realisations/rebecca-pills/1.jpg",
+                images: [
+                    {
+                        path: "imgs/realisations/rebecca-pills/1.jpg",
+                        type: "image/jpeg",
+                    },
+                    {
+                        path: "imgs/realisations/rebecca-pills/1.png",
+                        type: "image/png",
+                    },
+                ],
+                rank: 1,
+            },
+            {
+                alt: "Échantillon du clip Rebecca Moon - Pills 2",
+                defaultImagePath: "imgs/realisations/rebecca-pills/2.jpg",
+                images: [
+                    {
+                        path: "imgs/realisations/rebecca-pills/2.jpg",
+                        type: "image/jpeg",
+                    },
+                    {
+                        path: "imgs/realisations/rebecca-pills/2.png",
+                        type: "image/png",
+                    },
+                ],
+                rank: 2,
+                variation: "inverted",
+            },
+            {
+                alt: "Échantillon du clip Rebecca Moon - Pills 3",
+                defaultImagePath: "imgs/realisations/rebecca-pills/3.jpg",
+                images: [
+                    {
+                        path: "imgs/realisations/rebecca-pills/3.jpg",
+                        type: "image/jpeg",
+                    },
+                    {
+                        path: "imgs/realisations/rebecca-pills/3.png",
+                        type: "image/png",
+                    },
+                ],
+                rank: 3,
+            },
+            {
+                alt: "Échantillon du clip Rebecca Moon - Pills 4",
+                defaultImagePath: "imgs/realisations/rebecca-pills/4.jpg",
+                images: [
+                    {
+                        path: "imgs/realisations/rebecca-pills/4.jpg",
+                        type: "image/jpeg",
+                    },
+                    {
+                        path: "imgs/realisations/rebecca-pills/4.png",
+                        type: "image/png",
+                    },
+                ],
+                rank: 4,
+            },
+        ],
+        title: "Rebecca Moon - Pills",
+        type: RealisationType.Clip,
+        videoUrl: "https://youtu.be/iwYQC98RfmA",
     },
     "id-skydrone": {
         imageRatio: ImageRatio["2.5/1"],

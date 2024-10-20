@@ -3,6 +3,7 @@
     import swipeDetect from "$lib/swipe-detect";
     import type IRealisation from "../types/realisation";
     import Carousel from "./carousel/Carousel.svelte";
+    import type Sample from "../types/sample";
 
     // --- props
     export let realisation: IRealisation;
@@ -25,9 +26,15 @@
         if (!container) return;
         swipeDetect(container, onSwipe, THRESHOLD_FOR_SWIPE);
     });
+
+    let isActiveSampleInverted = false;
+
+    const onChangeActiveSample = (event: CustomEvent<Sample | undefined>) => {
+        isActiveSampleInverted = event.detail?.variation === "inverted";
+    };
 </script>
 
-<section class="container" bind:this={container}>
+<section class="container" bind:this={container} class:inverted={isActiveSampleInverted}>
     <div class="description">
         <h2 class="title">{realisation.title}</h2>
         <span class="subtitle">{realisation.type}</span>
@@ -40,13 +47,17 @@
                 title="Ouvrir la vidéo dans un nouvel onglet">Voir</a
             >
         {:else}
-            <span
-                class="seeVideoLink disabled"
-                title="Ouvrir la vidéo dans un nouvel onglet">- Bientôt Disponible -</span
+            <span class="seeVideoLink disabled" title="Ouvrir la vidéo dans un nouvel onglet"
+                >- Bientôt Disponible -</span
             >
         {/if}
     </div>
-    <Carousel samples={realisation.samples} imageRatio={realisation.imageRatio} bind:this={carousel} />
+    <Carousel
+        on:changeActiveSample={onChangeActiveSample}
+        samples={realisation.samples}
+        imageRatio={realisation.imageRatio}
+        bind:this={carousel}
+    />
 </section>
 
 <style>
@@ -70,6 +81,10 @@
         opacity: 0.9;
         font-size: clamp(0.4em, 1.25vw, 1.5em);
         padding-top: 0;
+    }
+
+    .inverted .description {
+        text-shadow: 1px 1px 1px black;
     }
 
     @media (min-width: 400px) {
@@ -116,22 +131,29 @@
         margin-top: 1em;
     }
 
+    .inverted .seeVideoLink {
+        background: rgba(255, 255, 255, 0.4);
+        border-color: rgb(50, 50, 50);
+        color: rgb(50, 50, 50);
+        text-shadow: none;
+    }
+
     .seeVideoLink:not(.disabled):hover {
         transform: scale(1.1);
         box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
     }
 
     .seeVideoLink.disabled {
-        opacity: .7;
+        opacity: 0.7;
         cursor: not-allowed;
         border: none;
     }
 
     .seeVideoLink::after {
-        content: '';
+        content: "";
         position: absolute;
-        width: calc(100% + 0.5em);
-        height: calc(100% + 0.5em);
+        width: calc(100% + 1em);
+        height: calc(100% + 1em);
         top: -0.5em;
         left: -0.5em;
     }

@@ -1,14 +1,16 @@
-<script>
-    export let active;
+<script lang="ts">
+    export let active: boolean;
+    export let inverted: boolean;
 </script>
 
-<span class="carousel-indicator carousel-indicator-dash" class:active />
+<span class="carousel-indicator carousel-indicator-dash" class:active class:inverted />
 <svg
     xmlns="http://www.w3.org/2000/svg"
     class="carousel-indicator carousel-indicator-dot"
     width="100%"
     height="100%"
     class:active
+    class:inverted
     viewBox="0 0 10 10"
     fill="inehrit"
     stroke="none"
@@ -26,10 +28,20 @@
         display: block;
     }
 
-    .active {
+    .carousel-indicator.active {
         opacity: 0.8;
         background-color: #fff;
         fill: #fff;
+    }
+
+    .carousel-indicator.inverted {
+        background-color: #aaa;
+        fill: #aaa;
+    }
+
+    .carousel-indicator.active.inverted {
+        background-color: black;
+        fill: black;
     }
 
     .carousel-indicator-dot {

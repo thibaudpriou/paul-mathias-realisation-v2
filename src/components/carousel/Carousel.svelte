@@ -5,6 +5,7 @@
     import CarouselIndicator from "./CarouselIndicator.svelte";
     import type Sample from "../../types/sample";
     import {ImageRatio} from "../../types/realisation";
+    import {createEventDispatcher} from "svelte";
 
     // --- props
     export let imageRatio: ImageRatio = ImageRatio["16/9"];
@@ -16,11 +17,10 @@
 
     // --- data
     let activeSlideIdx: number = 0;
+    let isActiveSampleInverted = false;
 
     // --- reactive
-    $: slides = samples
-        .sort((s1, s2) => s1.rank - s2.rank)
-        .map((s, idx) => ({...s, idx}))
+    $: slides = samples.sort((s1, s2) => s1.rank - s2.rank).map((s, idx) => ({...s, idx}));
 
     // --- methods
     export function goPrev() {
@@ -34,9 +34,13 @@
         if (to > slides.length - 1) to = 0;
         goTo(to);
     }
+    const dispatch = createEventDispatcher();
 
     function goTo(index: number) {
         activeSlideIdx = index;
+        const activeSample = slides.find(s => s.idx === activeSlideIdx);
+        dispatch("changeActiveSample", activeSample);
+        isActiveSampleInverted = activeSample?.variation === "inverted";
     }
 
     function customFadeIn(node: Element, {delay = 0, duration = 400}) {
@@ -70,7 +74,7 @@
                 data-idx={slide.idx}
             >
                 {#each slide.images as image}
-                    <source srcset={`${assets}/${image.path}`} type={image.type}/>
+                    <source srcset={`${assets}/${image.path}`} type={image.type} />
                 {/each}
                 <img src={`${assets}/${slide.defaultImagePath}`} alt={slide.alt} />
             </picture>
@@ -79,17 +83,17 @@
 </div>
 {#if controls}
     <button class="control prev" on:click={goPrev} aria-label="image suivante">
-        <span class="control-icon"><CarouselControl /></span></button
+        <span class="control-icon" class:inverted={isActiveSampleInverted}><CarouselControl /></span></button
     >
     <button class="control next" on:click={goNext} aria-label="image précédente"
-        ><span class="control-icon"><CarouselControl invert /></span></button
+        ><span class="control-icon" class:inverted={isActiveSampleInverted}><CarouselControl invert /></span></button
     >
 {/if}
 {#if indicators}
     <span class="indicators">
         {#each slides as _, idx}
             <button class="indicator" on:click={() => goTo(idx)} aria-label="voir image précise">
-                <CarouselIndicator active={idx === activeSlideIdx} />
+                <CarouselIndicator active={idx === activeSlideIdx} inverted={isActiveSampleInverted} />
             </button>
         {/each}
     </span>
@@ -112,6 +116,10 @@
     .control-icon {
         display: inline-block;
         width: 7.5%;
+    }
+
+    .control-icon.inverted {
+        fill: black;
     }
 
     .control.prev {
@@ -185,7 +193,7 @@
         height: 100%;
     }
 
-    .slide>* {
+    .slide > * {
         height: 100%;
         width: 100%;
         object-fit: cover;
