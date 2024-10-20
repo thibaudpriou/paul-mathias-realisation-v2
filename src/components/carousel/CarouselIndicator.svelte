@@ -20,7 +20,6 @@
 
 <style>
     .carousel-indicator {
-        background-color: #aaa;
         fill: #aaa;
         width: 100%;
         height: 100%;
@@ -30,17 +29,15 @@
 
     .carousel-indicator.active {
         opacity: 0.8;
-        background-color: #fff;
         fill: #fff;
     }
 
     .carousel-indicator.inverted {
-        background-color: #aaa;
         fill: #aaa;
     }
 
     .carousel-indicator.active.inverted {
-        background-color: black;
+        background: none;
         fill: black;
     }
 
@@ -50,14 +47,26 @@
     }
 
     .carousel-indicator-dash {
-        display: none;
-    }
-    .carousel-indicator-dot {
         background: none;
-        display: block;
+        display: none;
     }
 
     @media (min-width: 800px) {
+        .carousel-indicator {
+            background-color: #aaa;
+        }
+        .carousel-indicator.active {
+            background-color: #fff;
+        }
+
+        .carousel-indicator.inverted {
+            background-color: #aaa;
+        }
+
+        .carousel-indicator.active.inverted {
+            background-color: black;
+        }
+
         .carousel-indicator-dash {
             display: block;
         }
