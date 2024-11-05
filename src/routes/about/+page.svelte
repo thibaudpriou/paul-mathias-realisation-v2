@@ -26,7 +26,7 @@
             <div class="about-text-container">
                 <p class="about-text">
                     <strong>Paul Gojecki</strong> et <strong>Mathias Priou</strong> sont des auteurs et réalisateurs
-                    basés à <strong>Paris</strong>.
+                    basés à <strong>Paris</strong> et <strong>Luxembourg</strong>.
                 </p>
                 <p class="about-text">
                     Leur style de narration est nourri par des références cinématographiques communes et vient insuffler
